@@ -1,0 +1,4422 @@
+{
+  "thai_words": [
+    {
+      "thai": "สวัสดี",
+      "example_th": "ตอนเช้าฉันทักว่า สวัสดี กับเพื่อนบ้าน",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Hallo; Gruß",
+      "example_de": "Am Morgen sage ich Hallo zur Nachbarin.",
+      "forvo_slug": "สวัสดี",
+      "rtgs": "sawasdi"
+    },
+    {
+      "thai": "ขอบคุณ",
+      "example_th": "เธอกล่าว ขอบคุณ สำหรับความช่วยเหลือ",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Danke",
+      "example_de": "Sie sagte Danke für die Hilfe.",
+      "forvo_slug": "ขอบคุณ",
+      "rtgs": "khop khun"
+    },
+    {
+      "thai": "ขอโทษ",
+      "example_th": "ผมพูด ขอโทษ ที่มาสาย",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Entschuldigung",
+      "example_de": "Ich sage Entschuldigung, dass ich zu spät bin.",
+      "forvo_slug": "ขอโทษ",
+      "rtgs": "kho thot"
+    },
+    {
+      "thai": "ได้โปรด",
+      "example_th": "ช่วยเปิดหน้าต่างให้หน่อย ได้โปรด",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "bitte",
+      "example_de": "Bitte öffne das Fenster.",
+      "forvo_slug": "ได้โปรด",
+      "rtgs": "dai prot"
+    },
+    {
+      "thai": "ใช่",
+      "example_th": "เขาตอบว่า ใช่ อย่างมั่นใจ",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "ja",
+      "example_de": "Er antwortete selbstbewusst: Ja.",
+      "forvo_slug": "ใช่",
+      "rtgs": "chai"
+    },
+    {
+      "thai": "ไม่",
+      "example_th": "วันนี้ฉัน ไม่ ว่าง",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "kurz"
+      ],
+      "gloss_de": "nein; nicht",
+      "example_de": "Heute habe ich keine Zeit.",
+      "forvo_slug": "ไม่",
+      "rtgs": "mai"
+    },
+    {
+      "thai": "กรุณา",
+      "example_th": "กรุณา รอที่นี่สักครู่",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "bitte; freundlich",
+      "example_de": "Bitte warten Sie hier einen Moment.",
+      "forvo_slug": "กรุณา",
+      "rtgs": "karuna"
+    },
+    {
+      "thai": "ไป",
+      "example_th": "เราจะ ไป ตลาดตอนบ่าย",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "gehen; fahren",
+      "example_de": "Wir gehen am Nachmittag auf den Markt.",
+      "forvo_slug": "ไป",
+      "rtgs": "pai"
+    },
+    {
+      "thai": "มา",
+      "example_th": "เธอ มา บ้านของฉันทุกเสาร์",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "kommen",
+      "example_de": "Sie kommt jeden Samstag zu mir nach Hause.",
+      "forvo_slug": "มา",
+      "rtgs": "ma"
+    },
+    {
+      "thai": "ถึง",
+      "example_th": "รถไฟจะ ถึง กรุงเทพฯ ตอนสิบโมง",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "ankommen; bis",
+      "example_de": "Der Zug kommt um zehn Uhr in Bangkok an.",
+      "forvo_slug": "ถึง",
+      "rtgs": "thueng"
+    },
+    {
+      "thai": "ออก",
+      "example_th": "เครื่องบิน ออก ตอนเจ็ดโมงเช้า",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "abfahren; heraus",
+      "example_de": "Das Flugzeug startet um sieben Uhr morgens.",
+      "forvo_slug": "ออก",
+      "rtgs": "ok"
+    },
+    {
+      "thai": "เข้า",
+      "example_th": "กรุณา เข้า แถวก่อนขึ้นรถ",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "hinein; eintreten",
+      "example_de": "Bitte stellen Sie sich vor dem Einsteigen an.",
+      "forvo_slug": "เข้า",
+      "rtgs": "khao"
+    },
+    {
+      "thai": "กิน",
+      "example_th": "เรา กิน ข้าวเย็นด้วยกัน",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "essen",
+      "example_de": "Wir essen zusammen zu Abend.",
+      "forvo_slug": "กิน",
+      "rtgs": "kin"
+    },
+    {
+      "thai": "ดื่ม",
+      "example_th": "ฉัน ดื่ม น้ำมากขึ้นในหน้าร้อน",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "trinken",
+      "example_de": "Ich trinke im Sommer mehr Wasser.",
+      "forvo_slug": "ดื่ม",
+      "rtgs": "duem"
+    },
+    {
+      "thai": "ซื้อ",
+      "example_th": "แม่ ซื้อ ผลไม้จากตลาดสด",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "kaufen",
+      "example_de": "Mama kauft Obst auf dem Frischmarkt.",
+      "forvo_slug": "ซื้อ",
+      "rtgs": "sue"
+    },
+    {
+      "thai": "ขาย",
+      "example_th": "เขา ขาย หนังสือมือสอง",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "verkaufen",
+      "example_de": "Er verkauft gebrauchte Bücher.",
+      "forvo_slug": "ขาย",
+      "rtgs": "khai"
+    },
+    {
+      "thai": "ราคา",
+      "example_th": "ราคา นี้ต่อรองได้ไหม",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Preis",
+      "example_de": "Ist dieser Preis verhandelbar?",
+      "forvo_slug": "ราคา",
+      "rtgs": "rakha"
+    },
+    {
+      "thai": "ถูก",
+      "example_th": "ของชิ้นนี้ ถูก และคุ้มค่า",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "billig; korrekt",
+      "example_de": "Dieses Stück ist günstig und sein Geld wert.",
+      "forvo_slug": "ถูก",
+      "rtgs": "thuk"
+    },
+    {
+      "thai": "แพง",
+      "example_th": "กาแฟร้านนี้ แพง กว่าปกติ",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "teuer",
+      "example_de": "Der Kaffee hier ist teurer als üblich.",
+      "forvo_slug": "แพง",
+      "rtgs": "phaeng"
+    },
+    {
+      "thai": "เงิน",
+      "example_th": "ฉันเก็บ เงิน ทุกเดือน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Geld",
+      "example_de": "Ich spare jeden Monat Geld.",
+      "forvo_slug": "เงิน",
+      "rtgs": "ngoen"
+    },
+    {
+      "thai": "บาท",
+      "example_th": "ขนมราคายี่สิบ บาท เท่านั้น",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Baht",
+      "example_de": "Die Süßigkeit kostet nur zwanzig Baht.",
+      "forvo_slug": "บาท",
+      "rtgs": "bat"
+    },
+    {
+      "thai": "บัตร",
+      "example_th": "ฉันจ่ายด้วย บัตร เครดิต",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Karte; Ausweis",
+      "example_de": "Ich zahle mit Kreditkarte.",
+      "forvo_slug": "บัตร",
+      "rtgs": "bat"
+    },
+    {
+      "thai": "ใบเสร็จ",
+      "example_th": "ขอ ใบเสร็จ ด้วยค่ะ",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Quittung",
+      "example_de": "Bitte geben Sie mir eine Quittung.",
+      "forvo_slug": "ใบเสร็จ",
+      "rtgs": "bai set"
+    },
+    {
+      "thai": "ตลาด",
+      "example_th": "เช้าๆ คนไป ตลาด กันเยอะ",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Markt",
+      "example_de": "Morgens gehen viele zum Markt.",
+      "forvo_slug": "ตลาด",
+      "rtgs": "talat"
+    },
+    {
+      "thai": "ร้านค้า",
+      "example_th": "ร้านค้า นี้เปิดถึงสองทุ่ม",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Geschäft; Laden",
+      "example_de": "Dieser Laden hat bis 20 Uhr geöffnet.",
+      "forvo_slug": "ร้านค้า",
+      "rtgs": "ran kha"
+    },
+    {
+      "thai": "ซุปเปอร์มาร์เก็ต",
+      "example_th": "ฉันไป ซุปเปอร์มาร์เก็ต ทุกอาทิตย์",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Supermarkt",
+      "example_de": "Ich gehe jede Woche in den Supermarkt.",
+      "forvo_slug": "ซุปเปอร์มาร์เก็ต",
+      "rtgs": "supphoemarket"
+    },
+    {
+      "thai": "ข้าว",
+      "example_th": "เรากิน ข้าว กับแกงเผ็ด",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Reis; Mahlzeit",
+      "example_de": "Wir essen Reis mit rotem Curry.",
+      "forvo_slug": "ข้าว",
+      "rtgs": "khao"
+    },
+    {
+      "thai": "แกง",
+      "example_th": "แกง เขียวหวานหอมมาก",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Curry; Suppe",
+      "example_de": "Das grüne Curry duftet sehr gut.",
+      "forvo_slug": "แกง",
+      "rtgs": "kaeng"
+    },
+    {
+      "thai": "ผัด",
+      "example_th": "เขาชอบ ผัด ผักกับกระเทียม",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "anbraten; Pfanne",
+      "example_de": "Er mag Gemüse mit Knoblauch anbraten.",
+      "forvo_slug": "ผัด",
+      "rtgs": "phat"
+    },
+    {
+      "thai": "ต้ม",
+      "example_th": "แม่ ต้ม ซุปไก่ตอนเย็น",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "kochen; sieden",
+      "example_de": "Mama kocht abends Hühnersuppe.",
+      "forvo_slug": "ต้ม",
+      "rtgs": "tom"
+    },
+    {
+      "thai": "ทอด",
+      "example_th": "ร้านนี้ ทอด ปลากรอบดี",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "frittieren; braten",
+      "example_de": "Dieser Laden frittiert Fisch sehr knusprig.",
+      "forvo_slug": "ทอด",
+      "rtgs": "thot"
+    },
+    {
+      "thai": "หวาน",
+      "example_th": "ขนมนี้ หวาน ไปหน่อย",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "süß",
+      "example_de": "Dieses Dessert ist ein bisschen zu süß.",
+      "forvo_slug": "หวาน",
+      "rtgs": "wan"
+    },
+    {
+      "thai": "เค็ม",
+      "example_th": "ซุปเค็มไป เติมน้ำได้ไหม",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "salzig",
+      "example_de": "Die Suppe ist zu salzig, können Sie Wasser nachfüllen?",
+      "forvo_slug": "เค็ม",
+      "rtgs": "khem"
+    },
+    {
+      "thai": "เผ็ด",
+      "example_th": "ฉันกิน เผ็ด ได้นิดหน่อย",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "scharf",
+      "example_de": "Ich kann ein bisschen scharf essen.",
+      "forvo_slug": "เผ็ด",
+      "rtgs": "phet"
+    },
+    {
+      "thai": "เปรี้ยว",
+      "example_th": "มะนาวมีรส เปรี้ยว จัด",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "sauer",
+      "example_de": "Zitronen sind stark sauer.",
+      "forvo_slug": "เปรี้ยว",
+      "rtgs": "priao"
+    },
+    {
+      "thai": "ขม",
+      "example_th": "ยาบางชนิด ขม มาก",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "bitter",
+      "example_de": "Manche Medikamente sind sehr bitter.",
+      "forvo_slug": "ขม",
+      "rtgs": "khom"
+    },
+    {
+      "thai": "หิว",
+      "example_th": "ตอนเที่ยงฉัน หิว ข้าว",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "hungrig",
+      "example_de": "Mittags bin ich hungrig auf Reis.",
+      "forvo_slug": "หิว",
+      "rtgs": "hiu"
+    },
+    {
+      "thai": "อิ่ม",
+      "example_th": "กินก๋วยเตี๋ยวแล้ว ฉัน อิ่ม มาก",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "satt",
+      "example_de": "Nach den Nudeln bin ich sehr satt.",
+      "forvo_slug": "อิ่ม",
+      "rtgs": "im"
+    },
+    {
+      "thai": "น้ำ",
+      "example_th": "ขอน้ำเย็นหนึ่งแก้วได้ไหม",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Wasser",
+      "example_de": "Kann ich ein Glas kaltes Wasser haben?",
+      "forvo_slug": "น้ำ",
+      "rtgs": "nam"
+    },
+    {
+      "thai": "ชา",
+      "example_th": "ฉันดื่ม ชา ตอนบ่าย",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Tee",
+      "example_de": "Ich trinke nachmittags Tee.",
+      "forvo_slug": "ชา",
+      "rtgs": "cha"
+    },
+    {
+      "thai": "กาแฟ",
+      "example_th": "เขาชอบ กาแฟ ดำไม่ใส่น้ำตาล",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Kaffee",
+      "example_de": "Er mag schwarzen Kaffee ohne Zucker.",
+      "forvo_slug": "กาแฟ",
+      "rtgs": "kafe"
+    },
+    {
+      "thai": "นม",
+      "example_th": "ลูกดื่ม นม อุ่นก่อนนอน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Milch",
+      "example_de": "Das Kind trinkt vor dem Schlafen warme Milch.",
+      "forvo_slug": "นม",
+      "rtgs": "nom"
+    },
+    {
+      "thai": "น้ำผลไม้",
+      "example_th": "ฉันชอบ น้ำผลไม้ ส้มสด",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Saft",
+      "example_de": "Ich mag frischen Orangensaft.",
+      "forvo_slug": "น้ำผลไม้",
+      "rtgs": "nam phonlamai"
+    },
+    {
+      "thai": "อร่อย",
+      "example_th": "อาหารร้านนี้ อร่อย มาก",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "lecker",
+      "example_de": "Das Essen hier ist sehr lecker.",
+      "forvo_slug": "อร่อย",
+      "rtgs": "aroi"
+    },
+    {
+      "thai": "ไม่อร่อย",
+      "example_th": "จานนี้ ไม่อร่อย เท่าไหร่",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "kurz"
+      ],
+      "gloss_de": "nicht lecker",
+      "example_de": "Dieses Gericht ist nicht besonders lecker.",
+      "forvo_slug": "ไม่อร่อย",
+      "rtgs": "mai aroi"
+    },
+    {
+      "thai": "บ้าน",
+      "example_th": "เย็นนี้กลับ บ้าน ดึกหน่อย",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Haus; Zuhause",
+      "example_de": "Heute Abend komme ich etwas spät nach Hause.",
+      "forvo_slug": "บ้าน",
+      "rtgs": "ban"
+    },
+    {
+      "thai": "ห้อง",
+      "example_th": "ห้อง นอนอยู่ชั้นสอง",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Zimmer; Raum",
+      "example_de": "Das Schlafzimmer ist im zweiten Stock.",
+      "forvo_slug": "ห้อง",
+      "rtgs": "hong"
+    },
+    {
+      "thai": "ห้องครัว",
+      "example_th": "ฉันทำอาหารใน ห้องครัว ทุกวัน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Küche",
+      "example_de": "Ich koche jeden Tag in der Küche.",
+      "forvo_slug": "ห้องครัว",
+      "rtgs": "hong khrua"
+    },
+    {
+      "thai": "ห้องน้ำ",
+      "example_th": "ห้องน้ำ อยู่ทางซ้ายมือ",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Bad; Toilette",
+      "example_de": "Das Bad ist auf der linken Seite.",
+      "forvo_slug": "ห้องน้ำ",
+      "rtgs": "hong nam"
+    },
+    {
+      "thai": "ห้องนั่งเล่น",
+      "example_th": "ครอบครัวนั่งคุยกันใน ห้องนั่งเล่น",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Wohnzimmer",
+      "example_de": "Die Familie sitzt im Wohnzimmer und plaudert.",
+      "forvo_slug": "ห้องนั่งเล่น",
+      "rtgs": "hong nang len"
+    },
+    {
+      "thai": "เตียง",
+      "example_th": "ฉันปูผ้าปูที่นอนบน เตียง ใหม่",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Bett",
+      "example_de": "Ich beziehe das Bett neu.",
+      "forvo_slug": "เตียง",
+      "rtgs": "tiang"
+    },
+    {
+      "thai": "โต๊ะ",
+      "example_th": "เราวางหนังสือบน โต๊ะ กลาง",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Tisch",
+      "example_de": "Wir legen das Buch auf den Couchtisch.",
+      "forvo_slug": "โต๊ะ",
+      "rtgs": "to"
+    },
+    {
+      "thai": "เก้าอี้",
+      "example_th": "มี เก้าอี้ ว่างอีกตัวไหม",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Stuhl",
+      "example_de": "Gibt es noch einen freien Stuhl?",
+      "forvo_slug": "เก้าอี้",
+      "rtgs": "kao i"
+    },
+    {
+      "thai": "ตู้เย็น",
+      "example_th": "นมอยู่ใน ตู้เย็น ชั้นล่าง",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Kühlschrank",
+      "example_de": "Die Milch steht im Kühlschrank unten.",
+      "forvo_slug": "ตู้เย็น",
+      "rtgs": "tu yen"
+    },
+    {
+      "thai": "ไฟ",
+      "example_th": "ตอนค่ำเปิด ไฟ ในห้องทำงาน",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Licht; Feuer",
+      "example_de": "Abends schalte ich das Licht im Arbeitszimmer an.",
+      "forvo_slug": "ไฟ",
+      "rtgs": "fai"
+    },
+    {
+      "thai": "ปิด",
+      "example_th": "ออกจากห้องแล้วช่วย ปิด ไฟ",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "schließen; ausmachen",
+      "example_de": "Bitte mach das Licht aus, wenn du den Raum verlässt.",
+      "forvo_slug": "ปิด",
+      "rtgs": "pit"
+    },
+    {
+      "thai": "เปิด",
+      "example_th": "อากาศร้อนมาก เปิด หน้าต่างเถอะ",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "öffnen; einschalten",
+      "example_de": "Es ist sehr heiß, lass uns das Fenster öffnen.",
+      "forvo_slug": "เปิด",
+      "rtgs": "poet"
+    },
+    {
+      "thai": "สะอาด",
+      "example_th": "ห้องครัววันนี้ สะอาด มาก",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "sauber",
+      "example_de": "Die Küche ist heute sehr sauber.",
+      "forvo_slug": "สะอาด",
+      "rtgs": "sa-at"
+    },
+    {
+      "thai": "สกปรก",
+      "example_th": "รองเท้า สกปรก เพราะฝน",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "schmutzig",
+      "example_de": "Die Schuhe sind wegen des Regens schmutzig.",
+      "forvo_slug": "สกปรก",
+      "rtgs": "sokkaprok"
+    },
+    {
+      "thai": "ซัก",
+      "example_th": "ฉันต้อง ซัก เสื้อพรุ่งนี้",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "waschen",
+      "example_de": "Ich muss morgen die Hemden waschen.",
+      "forvo_slug": "ซัก",
+      "rtgs": "sak"
+    },
+    {
+      "thai": "รีด",
+      "example_th": "เธอ รีด ผ้าอย่างเรียบร้อย",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "bügeln",
+      "example_de": "Sie bügelt die Wäsche ordentlich.",
+      "forvo_slug": "รีด",
+      "rtgs": "rit"
+    },
+    {
+      "thai": "ทำความสะอาด",
+      "example_th": "เราจะ ทำความสะอาด บ้านวันอาทิตย์",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "reinigen",
+      "example_de": "Wir reinigen das Haus am Sonntag.",
+      "forvo_slug": "ทำความสะอาด",
+      "rtgs": "tham khwam sa-at"
+    },
+    {
+      "thai": "ครอบครัว",
+      "example_th": "ครอบครัว ของฉันอยู่ต่างจังหวัด",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Familie",
+      "example_de": "Meine Familie lebt außerhalb der Hauptstadt.",
+      "forvo_slug": "ครอบครัว",
+      "rtgs": "khropkhrua"
+    },
+    {
+      "thai": "พ่อ",
+      "example_th": "พ่อ ชอบปลูกผักหลังบ้าน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Vater",
+      "example_de": "Mein Vater pflanzt gern Gemüse hinter dem Haus.",
+      "forvo_slug": "พ่อ",
+      "rtgs": "pho"
+    },
+    {
+      "thai": "แม่",
+      "example_th": "แม่ ทำกับข้าวอร่อยมาก",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Mutter",
+      "example_de": "Meine Mutter kocht sehr lecker.",
+      "forvo_slug": "แม่",
+      "rtgs": "mae"
+    },
+    {
+      "thai": "ลูก",
+      "example_th": "ลูก ไปโรงเรียนตอนเช้า",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Kind",
+      "example_de": "Das Kind geht morgens zur Schule.",
+      "forvo_slug": "ลูก",
+      "rtgs": "luk"
+    },
+    {
+      "thai": "พี่",
+      "example_th": "พี่ สอนการบ้านให้ฉัน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "älteres Geschwister",
+      "example_de": "Mein älteres Geschwister hilft mir bei den Hausaufgaben.",
+      "forvo_slug": "พี่",
+      "rtgs": "phi"
+    },
+    {
+      "thai": "น้อง",
+      "example_th": "น้อง เล่นกับเพื่อนข้างบ้าน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "jüngeres Geschwister",
+      "example_de": "Mein jüngeres Geschwister spielt mit dem Nachbarskind.",
+      "forvo_slug": "น้อง",
+      "rtgs": "nong"
+    },
+    {
+      "thai": "สามี",
+      "example_th": "สามี กลับบ้านดึก",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Ehemann",
+      "example_de": "Der Ehemann kommt spät nach Hause.",
+      "forvo_slug": "สามี",
+      "rtgs": "sami"
+    },
+    {
+      "thai": "ภรรยา",
+      "example_th": "ภรรยา ทำงานใกล้บ้าน",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Ehefrau",
+      "example_de": "Die Ehefrau arbeitet in der Nähe des Hauses.",
+      "forvo_slug": "ภรรยา",
+      "rtgs": "phanraya"
+    },
+    {
+      "thai": "เพื่อน",
+      "example_th": "ฉันไปดูหนังกับ เพื่อน",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Freund; Freundin",
+      "example_de": "Ich gehe mit Freunden ins Kino.",
+      "forvo_slug": "เพื่อน",
+      "rtgs": "phuean"
+    },
+    {
+      "thai": "ผู้หญิง",
+      "example_th": "ผู้หญิง คนนั้นเป็นครู",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Frau; weiblich",
+      "example_de": "Diese Frau ist Lehrerin.",
+      "forvo_slug": "ผู้หญิง",
+      "rtgs": "phuying"
+    },
+    {
+      "thai": "ผู้ชาย",
+      "example_th": "ผู้ชาย ใส่เสื้อเชิ้ตสีฟ้า",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Mann; männlich",
+      "example_de": "Der Mann trägt ein hellblaues Hemd.",
+      "forvo_slug": "ผู้ชาย",
+      "rtgs": "phuchai"
+    },
+    {
+      "thai": "คน",
+      "example_th": "วันนี้มี คน เยอะในสวนสาธารณะ",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Person; Mensch",
+      "example_de": "Heute sind viele Menschen im Park.",
+      "forvo_slug": "คน",
+      "rtgs": "khon"
+    },
+    {
+      "thai": "ชื่อ",
+      "example_th": "คุณ ชื่อ อะไรครับ",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Name",
+      "example_de": "Wie heißen Sie?",
+      "forvo_slug": "ชื่อ",
+      "rtgs": "chue"
+    },
+    {
+      "thai": "อยู่",
+      "example_th": "ตอนนี้ฉัน อยู่ กรุงเทพฯ",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "wohnen; sich befinden",
+      "example_de": "Ich wohne derzeit in Bangkok.",
+      "forvo_slug": "อยู่",
+      "rtgs": "yu"
+    },
+    {
+      "thai": "เรียน",
+      "example_th": "เธอ เรียน ภาษาไทยทุกวัน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "lernen; studieren",
+      "example_de": "Sie lernt jeden Tag Thai.",
+      "forvo_slug": "เรียน",
+      "rtgs": "rian"
+    },
+    {
+      "thai": "สอน",
+      "example_th": "ครู สอน ภาษาอังกฤษเก่งมาก",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "unterrichten",
+      "example_de": "Die Lehrerin unterrichtet sehr gut Englisch.",
+      "forvo_slug": "สอน",
+      "rtgs": "son"
+    },
+    {
+      "thai": "หนังสือ",
+      "example_th": "ฉันอ่าน หนังสือ ก่อนนอน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Buch",
+      "example_de": "Ich lese vor dem Schlafengehen ein Buch.",
+      "forvo_slug": "หนังสือ",
+      "rtgs": "nang sue"
+    },
+    {
+      "thai": "ปากกา",
+      "example_th": "ขอยืม ปากกา ได้ไหม",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Stift; Kugelschreiber",
+      "example_de": "Kann ich deinen Stift leihen?",
+      "forvo_slug": "ปากกา",
+      "rtgs": "pakka"
+    },
+    {
+      "thai": "สมุด",
+      "example_th": "ฉันเขียนใน สมุด ทุกเช้า",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Heft; Notizbuch",
+      "example_de": "Ich schreibe jeden Morgen ins Notizbuch.",
+      "forvo_slug": "สมุด",
+      "rtgs": "samut"
+    },
+    {
+      "thai": "เวลา",
+      "example_th": "ตอนนี้ เวลา เท่าไหร่",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Zeit; Uhrzeit",
+      "example_de": "Wie spät ist es jetzt?",
+      "forvo_slug": "เวลา",
+      "rtgs": "wela"
+    },
+    {
+      "thai": "ชั่วโมง",
+      "example_th": "เราเรียนสอง ชั่วโมง ต่อวัน",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Stunde",
+      "example_de": "Wir lernen zwei Stunden pro Tag.",
+      "forvo_slug": "ชั่วโมง",
+      "rtgs": "chua mong"
+    },
+    {
+      "thai": "นาที",
+      "example_th": "โปรดรอห้า นาที",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Minute",
+      "example_de": "Bitte warte fünf Minuten.",
+      "forvo_slug": "นาที",
+      "rtgs": "nathi"
+    },
+    {
+      "thai": "เมื่อวาน",
+      "example_th": "เมื่อวาน ฉันทำงานจากบ้าน",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "gestern",
+      "example_de": "Gestern habe ich von zu Hause gearbeitet.",
+      "forvo_slug": "เมื่อวาน",
+      "rtgs": "muea wan"
+    },
+    {
+      "thai": "วันนี้",
+      "example_th": "วันนี้ อากาศดีมาก",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "heute",
+      "example_de": "Heute ist das Wetter sehr gut.",
+      "forvo_slug": "วันนี้",
+      "rtgs": "wan ni"
+    },
+    {
+      "thai": "พรุ่งนี้",
+      "example_th": "พรุ่งนี้ เรามีนัดตอนเช้า",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "morgen",
+      "example_de": "Morgen haben wir morgens einen Termin.",
+      "forvo_slug": "พรุ่งนี้",
+      "rtgs": "phrung ni"
+    },
+    {
+      "thai": "เช้า",
+      "example_th": "ฉันตื่นแต่ เช้า เพื่อออกกำลังกาย",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Morgen; früh",
+      "example_de": "Ich stehe früh auf, um Sport zu machen.",
+      "forvo_slug": "เช้า",
+      "rtgs": "chao"
+    },
+    {
+      "thai": "บ่าย",
+      "example_th": "เราเจอกันตอน บ่าย โมงสอง",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Nachmittag",
+      "example_de": "Wir treffen uns um zwei am Nachmittag.",
+      "forvo_slug": "บ่าย",
+      "rtgs": "bai"
+    },
+    {
+      "thai": "เย็น",
+      "example_th": "ตอน เย็น ฉันเดินเล่นในสวน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Abend; kühl",
+      "example_de": "Am Abend spaziere ich im Park.",
+      "forvo_slug": "เย็น",
+      "rtgs": "yen"
+    },
+    {
+      "thai": "คืน",
+      "example_th": "คืนนี้ ดาวสวยมาก",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Nacht; zurückgeben",
+      "example_de": "Heute Nacht sind die Sterne sehr schön.",
+      "forvo_slug": "คืน",
+      "rtgs": "khuen"
+    },
+    {
+      "thai": "วันจันทร์",
+      "example_th": "ประชุมใหญ่ใน วันจันทร์ หน้า",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Montag",
+      "example_de": "Die große Sitzung ist nächsten Montag.",
+      "forvo_slug": "วันจันทร์",
+      "rtgs": "wan jan"
+    },
+    {
+      "thai": "วันอังคาร",
+      "example_th": "ฉันมีคลาสโยคะทุก วันอังคาร",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Dienstag",
+      "example_de": "Ich habe jeden Dienstag einen Yogakurs.",
+      "forvo_slug": "วันอังคาร",
+      "rtgs": "wan angkhan"
+    },
+    {
+      "thai": "วันพุธ",
+      "example_th": "วันพุธ ฉันทำงานนอกสำนักงาน",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Mittwoch",
+      "example_de": "Mittwochs arbeite ich außerhalb des Büros.",
+      "forvo_slug": "วันพุธ",
+      "rtgs": "wan phut"
+    },
+    {
+      "thai": "วันพฤหัสบดี",
+      "example_th": "นัดพบแพทย์ใน วันพฤหัสบดี",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Donnerstag",
+      "example_de": "Der Arzttermin ist am Donnerstag.",
+      "forvo_slug": "วันพฤหัสบดี",
+      "rtgs": "wan pharuehat"
+    },
+    {
+      "thai": "วันศุกร์",
+      "example_th": "เราจัดงานเลี้ยงวันศุกร์นี้",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Freitag",
+      "example_de": "Wir veranstalten diesen Freitag eine Feier.",
+      "forvo_slug": "วันศุกร์",
+      "rtgs": "wan suk"
+    },
+    {
+      "thai": "วันเสาร์",
+      "example_th": "วันเสาร์ ฉันไปเที่ยวภูเขา",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Samstag",
+      "example_de": "Am Samstag fahre ich in die Berge.",
+      "forvo_slug": "วันเสาร์",
+      "rtgs": "wan sao"
+    },
+    {
+      "thai": "วันอาทิตย์",
+      "example_th": "วันอาทิตย์ เราพักผ่อนที่บ้าน",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Sonntag",
+      "example_de": "Am Sonntag ruhen wir uns zu Hause aus.",
+      "forvo_slug": "วันอาทิตย์",
+      "rtgs": "wan athit"
+    },
+    {
+      "thai": "เดือน",
+      "example_th": "ฉันวางแผนท่องเที่ยวเดือนหน้า",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Monat; Mond",
+      "example_de": "Ich plane eine Reise für nächsten Monat.",
+      "forvo_slug": "เดือน",
+      "rtgs": "duean"
+    },
+    {
+      "thai": "ปี",
+      "example_th": "ปี หน้าอยากเรียนภาษาเพิ่ม",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Jahr",
+      "example_de": "Nächstes Jahr möchte ich mehr Sprachen lernen.",
+      "forvo_slug": "ปี",
+      "rtgs": "pi"
+    },
+    {
+      "thai": "ฤดูฝน",
+      "example_th": "ฤดูฝน ถนนลื่นควรระวัง",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Regenzeit",
+      "example_de": "In der Regenzeit sind die Straßen rutschig, Vorsicht.",
+      "forvo_slug": "ฤดูฝน",
+      "rtgs": "rudu fon"
+    },
+    {
+      "thai": "ฤดูหนาว",
+      "example_th": "ฤดูหนาว อากาศเย็นสบาย",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Winter",
+      "example_de": "Im Winter ist es angenehm kühl.",
+      "forvo_slug": "ฤดูหนาว",
+      "rtgs": "rudu nao"
+    },
+    {
+      "thai": "ฤดูร้อน",
+      "example_th": "ฤดูร้อน ต้องดื่มน้ำมากขึ้น",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Sommer",
+      "example_de": "Im Sommer sollte man mehr Wasser trinken.",
+      "forvo_slug": "ฤดูร้อน",
+      "rtgs": "rudu ron"
+    },
+    {
+      "thai": "อากาศ",
+      "example_th": "อากาศ วันนี้แจ่มใส",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Wetter; Luft",
+      "example_de": "Das Wetter ist heute heiter.",
+      "forvo_slug": "อากาศ",
+      "rtgs": "akat"
+    },
+    {
+      "thai": "ฝน",
+      "example_th": "ฝน ตกตั้งแต่เช้า",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Regen",
+      "example_de": "Es regnet seit dem Morgen.",
+      "forvo_slug": "ฝน",
+      "rtgs": "fon"
+    },
+    {
+      "thai": "แดด",
+      "example_th": "วันนี้มี แดด จ้า",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Sonne; Sonnenlicht",
+      "example_de": "Heute ist es sehr sonnig.",
+      "forvo_slug": "แดด",
+      "rtgs": "daet"
+    },
+    {
+      "thai": "ลม",
+      "example_th": "ลม พัดแรงตอนบ่าย",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Wind",
+      "example_de": "Nachmittags weht ein starker Wind.",
+      "forvo_slug": "ลม",
+      "rtgs": "lom"
+    },
+    {
+      "thai": "หนาว",
+      "example_th": "เช้านี้ หนาว ต้องใส่เสื้อกันหนาว",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "kalt",
+      "example_de": "Heute Morgen ist es kalt, man braucht eine Jacke.",
+      "forvo_slug": "หนาว",
+      "rtgs": "nao"
+    },
+    {
+      "thai": "ร้อน",
+      "example_th": "กลางวันวันนี้ ร้อน มาก",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "heiß",
+      "example_de": "Mittags ist es heute sehr heiß.",
+      "forvo_slug": "ร้อน",
+      "rtgs": "ron"
+    },
+    {
+      "thai": "รถ",
+      "example_th": "เขาขับ รถ ไปทำงานทุกวัน",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Auto; Fahrzeug",
+      "example_de": "Er fährt jeden Tag mit dem Auto zur Arbeit.",
+      "forvo_slug": "รถ",
+      "rtgs": "rot"
+    },
+    {
+      "thai": "รถไฟ",
+      "example_th": "เรานั่ง รถไฟ ไปเชียงใหม่",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Zug",
+      "example_de": "Wir fahren mit dem Zug nach Chiang Mai.",
+      "forvo_slug": "รถไฟ",
+      "rtgs": "rot fai"
+    },
+    {
+      "thai": "เครื่องบิน",
+      "example_th": "เครื่องบิน ออกเวลาเจ็ดโมง",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Flugzeug",
+      "example_de": "Das Flugzeug startet um sieben Uhr.",
+      "forvo_slug": "เครื่องบิน",
+      "rtgs": "khrueang bin"
+    },
+    {
+      "thai": "รถเมล์",
+      "example_th": "ฉันขึ้น รถเมล์ สายห้า",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Bus",
+      "example_de": "Ich nehme den Bus Linie 5.",
+      "forvo_slug": "รถเมล์",
+      "rtgs": "rot mei"
+    },
+    {
+      "thai": "แท็กซี่",
+      "example_th": "เรานั่ง แท็กซี่ ไปสนามบิน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Taxi",
+      "example_de": "Wir fahren mit dem Taxi zum Flughafen.",
+      "forvo_slug": "แท็กซี่",
+      "rtgs": "thaeksi"
+    },
+    {
+      "thai": "จักรยาน",
+      "example_th": "เขาปั่น จักรยาน ทุกเช้า",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Fahrrad",
+      "example_de": "Er fährt jeden Morgen Fahrrad.",
+      "forvo_slug": "จักรยาน",
+      "rtgs": "chakkrayan"
+    },
+    {
+      "thai": "เดิน",
+      "example_th": "ฉัน เดิน ไปทำงานถ้าอากาศดี",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "gehen; laufen",
+      "example_de": "Ich gehe zu Fuß zur Arbeit, wenn das Wetter gut ist.",
+      "forvo_slug": "เดิน",
+      "rtgs": "doen"
+    },
+    {
+      "thai": "วิ่ง",
+      "example_th": "เขา วิ่ง ในสวนสาธารณะ",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "laufen; rennen",
+      "example_de": "Er läuft im Park.",
+      "forvo_slug": "วิ่ง",
+      "rtgs": "wing"
+    },
+    {
+      "thai": "ถึงเวลา",
+      "example_th": "ถึงเวลา ออกเดินทางแล้ว",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "es ist Zeit",
+      "example_de": "Es ist Zeit, aufzubrechen.",
+      "forvo_slug": "ถึงเวลา",
+      "rtgs": "thueng wela"
+    },
+    {
+      "thai": "ตั๋ว",
+      "example_th": "ซื้อตั๋ว รถไฟ ล่วงหน้า",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Ticket",
+      "example_de": "Kaufe die Zugtickets im Voraus.",
+      "forvo_slug": "ตั๋ว",
+      "rtgs": "tua"
+    },
+    {
+      "thai": "แผนที่",
+      "example_th": "เปิด แผนที่ ดูเส้นทางก่อนออกเดินทาง",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Karte; Plan",
+      "example_de": "Öffne die Karte und schau dir die Route an.",
+      "forvo_slug": "แผนที่",
+      "rtgs": "phaen thi"
+    },
+    {
+      "thai": "โรงแรม",
+      "example_th": "เราเลือก โรงแรม ใกล้สถานี",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Hotel",
+      "example_de": "Wir wählen ein Hotel in der Nähe des Bahnhofs.",
+      "forvo_slug": "โรงแรม",
+      "rtgs": "rong raem"
+    },
+    {
+      "thai": "จอง",
+      "example_th": "ช่วย จอง ห้องพักสองคืน",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "reservieren; buchen",
+      "example_de": "Bitte reserviere ein Zimmer für zwei Nächte.",
+      "forvo_slug": "จอง",
+      "rtgs": "chong"
+    },
+    {
+      "thai": "กระเป๋า",
+      "example_th": "ฉันแพ็คของใส่ กระเป๋า เสร็จแล้ว",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Tasche; Koffer",
+      "example_de": "Ich habe den Koffer fertig gepackt.",
+      "forvo_slug": "กระเป๋า",
+      "rtgs": "krapao"
+    },
+    {
+      "thai": "หนัง",
+      "example_th": "คืนนี้ดู หนัง ที่โรงภาพยนตร์",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Film; Leder",
+      "example_de": "Heute Nacht schauen wir im Kino einen Film.",
+      "forvo_slug": "หนัง",
+      "rtgs": "nang"
+    },
+    {
+      "thai": "เพลง",
+      "example_th": "ฉันฟัง เพลง ระหว่างทำงาน",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Lied; Musik",
+      "example_de": "Ich höre während der Arbeit Musik.",
+      "forvo_slug": "เพลง",
+      "rtgs": "phleng"
+    },
+    {
+      "thai": "กีฬา",
+      "example_th": "กีฬา ช่วยให้สุขภาพดี",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Sport",
+      "example_de": "Sport hält gesund.",
+      "forvo_slug": "กีฬา",
+      "rtgs": "kila"
+    },
+    {
+      "thai": "อ่าน",
+      "example_th": "เด็กๆ อ่าน หนังสือก่อนนอน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "lesen",
+      "example_de": "Die Kinder lesen vor dem Schlafengehen.",
+      "forvo_slug": "อ่าน",
+      "rtgs": "an"
+    },
+    {
+      "thai": "เขียน",
+      "example_th": "วันนี้ฉัน เขียน จดหมาย",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "schreiben",
+      "example_de": "Heute schreibe ich einen Brief.",
+      "forvo_slug": "เขียน",
+      "rtgs": "khian"
+    },
+    {
+      "thai": "วาด",
+      "example_th": "เธอ วาด รูปดอกไม้สวย",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "zeichnen; malen",
+      "example_de": "Sie zeichnet schöne Blumen.",
+      "forvo_slug": "วาด",
+      "rtgs": "wat"
+    },
+    {
+      "thai": "ทำงาน",
+      "example_th": "ฉัน ทำงาน จากบ้านสัปดาห์ละสองวัน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "arbeiten",
+      "example_de": "Ich arbeite zwei Tage pro Woche von zu Hause.",
+      "forvo_slug": "ทำงาน",
+      "rtgs": "tham ngan"
+    },
+    {
+      "thai": "ประชุม",
+      "example_th": "เรามี ประชุม เวลาเก้าโมง",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Besprechung; Meeting",
+      "example_de": "Wir haben um neun Uhr ein Meeting.",
+      "forvo_slug": "ประชุม",
+      "rtgs": "prachum"
+    },
+    {
+      "thai": "บริษัท",
+      "example_th": "เขาทำงานที่ บริษัท ขนาดกลาง",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Firma; Unternehmen",
+      "example_de": "Er arbeitet in einem mittelgroßen Unternehmen.",
+      "forvo_slug": "บริษัท",
+      "rtgs": "borisat"
+    },
+    {
+      "thai": "เพื่อนร่วมงาน",
+      "example_th": "เพื่อนร่วมงาน ของฉันใจดี",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Kollege; Kollegin",
+      "example_de": "Meine Kollegin ist freundlich.",
+      "forvo_slug": "เพื่อนร่วมงาน",
+      "rtgs": "phuean ruam ngan"
+    },
+    {
+      "thai": "เจ้านาย",
+      "example_th": "เจ้านาย นัดคุยตอนบ่าย",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Chef; Vorgesetzter",
+      "example_de": "Der Chef hat für den Nachmittag ein Gespräch angesetzt.",
+      "forvo_slug": "เจ้านาย",
+      "rtgs": "chao nai"
+    },
+    {
+      "thai": "เงินเดือน",
+      "example_th": "บริษัทปรับขึ้น เงินเดือน ปีละหนึ่งครั้ง",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Gehalt",
+      "example_de": "Die Firma erhöht das Gehalt einmal im Jahr.",
+      "forvo_slug": "เงินเดือน",
+      "rtgs": "ngoen duean"
+    },
+    {
+      "thai": "วันหยุด",
+      "example_th": "วันหยุด หน้าเราไปทะเลกัน",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Feiertag; Urlaubstag",
+      "example_de": "Am nächsten freien Tag fahren wir ans Meer.",
+      "forvo_slug": "วันหยุด",
+      "rtgs": "wan yut"
+    },
+    {
+      "thai": "งานอดิเรก",
+      "example_th": "งานอดิเรก ของฉันคือถ่ายรูป",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Hobby",
+      "example_de": "Mein Hobby ist Fotografieren.",
+      "forvo_slug": "งานอดิเรก",
+      "rtgs": "ngan odit rek"
+    },
+    {
+      "thai": "สุขภาพ",
+      "example_th": "ฉันใส่ใจ สุขภาพ มากขึ้น",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Gesundheit",
+      "example_de": "Ich achte mehr auf meine Gesundheit.",
+      "forvo_slug": "สุขภาพ",
+      "rtgs": "sukkhaphap"
+    },
+    {
+      "thai": "ป่วย",
+      "example_th": "เขา ป่วย เลยไม่ได้มางาน",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "krank",
+      "example_de": "Er ist krank und konnte daher nicht kommen.",
+      "forvo_slug": "ป่วย",
+      "rtgs": "puai"
+    },
+    {
+      "thai": "ไข้",
+      "example_th": "เมื่อคืนมี ไข้ เล็กน้อย",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Fieber",
+      "example_de": "Letzte Nacht hatte ich leichtes Fieber.",
+      "forvo_slug": "ไข้",
+      "rtgs": "khai"
+    },
+    {
+      "thai": "ยา",
+      "example_th": "แพทย์สั่ง ยา ให้กินหลังอาหาร",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Medizin; Medikament",
+      "example_de": "Der Arzt verschreibt Medikamente nach dem Essen.",
+      "forvo_slug": "ยา",
+      "rtgs": "ya"
+    },
+    {
+      "thai": "หมอ",
+      "example_th": "พรุ่งนี้ไปพบ หมอ ตอนสิบโมง",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Arzt; Ärztin",
+      "example_de": "Morgen gehe ich um zehn Uhr zum Arzt.",
+      "forvo_slug": "หมอ",
+      "rtgs": "mo"
+    },
+    {
+      "thai": "โรงพยาบาล",
+      "example_th": "เขาถูกส่งไป โรงพยาบาล ทันที",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Krankenhaus",
+      "example_de": "Er wurde sofort ins Krankenhaus gebracht.",
+      "forvo_slug": "โรงพยาบาล",
+      "rtgs": "rong phayaban"
+    },
+    {
+      "thai": "ฟัน",
+      "example_th": "ฉันแปรง ฟัน วันละสองครั้ง",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Zahn",
+      "example_de": "Ich putze zweimal am Tag die Zähne.",
+      "forvo_slug": "ฟัน",
+      "rtgs": "fan"
+    },
+    {
+      "thai": "มือ",
+      "example_th": "ล้าง มือ ก่อนกินข้าว",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Hand",
+      "example_de": "Wasch dir vor dem Essen die Hände.",
+      "forvo_slug": "มือ",
+      "rtgs": "mue"
+    },
+    {
+      "thai": "หัวใจ",
+      "example_th": "ออกกำลังกายดีต่อ หัวใจ",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Herz",
+      "example_de": "Sport ist gut fürs Herz.",
+      "forvo_slug": "หัวใจ",
+      "rtgs": "hua chai"
+    },
+    {
+      "thai": "ปาก",
+      "example_th": "ระวัง ปาก ตอนพูดในที่ประชุม",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Mund",
+      "example_de": "Achte auf deine Wortwahl im Meeting.",
+      "forvo_slug": "ปาก",
+      "rtgs": "pak"
+    },
+    {
+      "thai": "ตา",
+      "example_th": "แสงจ้าแสบ ตา มาก",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Auge",
+      "example_de": "Grelles Licht schmerzt in den Augen.",
+      "forvo_slug": "ตา",
+      "rtgs": "ta"
+    },
+    {
+      "thai": "หู",
+      "example_th": "เสียงดังทำให้ หู อื้อ",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Ohr",
+      "example_de": "Laute Geräusche verursachen Ohrendruck.",
+      "forvo_slug": "หู",
+      "rtgs": "hu"
+    },
+    {
+      "thai": "ปวด",
+      "example_th": "วันนี้ ปวด หลังเล็กน้อย",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "schmerzen",
+      "example_de": "Heute habe ich leichte Rückenschmerzen.",
+      "forvo_slug": "ปวด",
+      "rtgs": "puat"
+    },
+    {
+      "thai": "เหนื่อย",
+      "example_th": "เดินไกลมากเลยรู้สึก เหนื่อย",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "müde; erschöpft",
+      "example_de": "Nach dem langen Weg bin ich erschöpft.",
+      "forvo_slug": "เหนื่อย",
+      "rtgs": "nuai"
+    },
+    {
+      "thai": "สบาย",
+      "example_th": "วันนี้รู้สึก สบาย ดี",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "angenehm; wohl",
+      "example_de": "Heute fühle ich mich wohl.",
+      "forvo_slug": "สบาย",
+      "rtgs": "sabai"
+    },
+    {
+      "thai": "ชอบ",
+      "example_th": "ฉัน ชอบ ฟังเพลงแจ๊ส",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "mögen; gern haben",
+      "example_de": "Ich höre gern Jazz.",
+      "forvo_slug": "ชอบ",
+      "rtgs": "chop"
+    },
+    {
+      "thai": "ไม่ชอบ",
+      "example_th": "เขา ไม่ชอบ อาหารเผ็ด",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "kurz"
+      ],
+      "gloss_de": "nicht mögen",
+      "example_de": "Er mag kein scharfes Essen.",
+      "forvo_slug": "ไม่ชอบ",
+      "rtgs": "mai chop"
+    },
+    {
+      "thai": "รัก",
+      "example_th": "พ่อแม่ รัก ลูกเสมอ",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "lieben",
+      "example_de": "Eltern lieben ihre Kinder immer.",
+      "forvo_slug": "รัก",
+      "rtgs": "rak"
+    },
+    {
+      "thai": "ชัง",
+      "example_th": "เราไม่ควร ชัง ใคร",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "hassen",
+      "example_de": "Wir sollten niemanden hassen.",
+      "forvo_slug": "ชัง",
+      "rtgs": "chang"
+    },
+    {
+      "thai": "คิด",
+      "example_th": "ฉัน คิด ไอเดียใหม่สำหรับงาน",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "denken",
+      "example_de": "Ich denke mir neue Ideen für die Arbeit aus.",
+      "forvo_slug": "คิด",
+      "rtgs": "khit"
+    },
+    {
+      "thai": "รู้",
+      "example_th": "ฉัน รู้ เรื่องนี้อยู่แล้ว",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "wissen; kennen",
+      "example_de": "Ich weiß das bereits.",
+      "forvo_slug": "รู้",
+      "rtgs": "ru"
+    },
+    {
+      "thai": "เข้าใจ",
+      "example_th": "ตอนนี้ฉัน เข้าใจ คำอธิบายแล้ว",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "verstehen",
+      "example_de": "Jetzt verstehe ich die Erklärung.",
+      "forvo_slug": "เข้าใจ",
+      "rtgs": "khao chai"
+    },
+    {
+      "thai": "ถาม",
+      "example_th": "มีคำถามไหม เชิญ ถาม ได้",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "fragen",
+      "example_de": "Gibt es Fragen? Bitte fragen Sie.",
+      "forvo_slug": "ถาม",
+      "rtgs": "tham"
+    },
+    {
+      "thai": "ตอบ",
+      "example_th": "เธอ ตอบ ได้ชัดเจน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "antworten",
+      "example_de": "Sie antwortete klar.",
+      "forvo_slug": "ตอบ",
+      "rtgs": "top"
+    },
+    {
+      "thai": "บอก",
+      "example_th": "ช่วย บอก เส้นทางหน่อยได้ไหม",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "sagen; mitteilen",
+      "example_de": "Können Sie mir den Weg sagen?",
+      "forvo_slug": "บอก",
+      "rtgs": "bok"
+    },
+    {
+      "thai": "โทร",
+      "example_th": "คืนนี้ฉันจะ โทร หาแม่",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "telefonieren",
+      "example_de": "Heute Abend rufe ich meine Mutter an.",
+      "forvo_slug": "โทร",
+      "rtgs": "tho"
+    },
+    {
+      "thai": "ส่ง",
+      "example_th": "ฉัน ส่ง อีเมลไปแล้ว",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "senden; schicken",
+      "example_de": "Ich habe die E-Mail bereits verschickt.",
+      "forvo_slug": "ส่ง",
+      "rtgs": "song"
+    },
+    {
+      "thai": "รับ",
+      "example_th": "ช่วย รับ พัสดุให้หน่อย",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "annehmen; erhalten",
+      "example_de": "Bitte nimm das Paket für mich an.",
+      "forvo_slug": "รับ",
+      "rtgs": "rap"
+    },
+    {
+      "thai": "เปิดบัญชี",
+      "example_th": "ฉันไปธนาคารเพื่อ เปิดบัญชี ใหม่",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Konto eröffnen",
+      "example_de": "Ich gehe zur Bank, um ein neues Konto zu eröffnen.",
+      "forvo_slug": "เปิดบัญชี",
+      "rtgs": "poet banchi"
+    },
+    {
+      "thai": "ถอนเงิน",
+      "example_th": "เขาไป ถอนเงิน ที่ตู้เอทีเอ็ม",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Geld abheben",
+      "example_de": "Er hebt Geld am Geldautomaten ab.",
+      "forvo_slug": "ถอนเงิน",
+      "rtgs": "thon ngoen"
+    },
+    {
+      "thai": "โอนเงิน",
+      "example_th": "กรุณา โอนเงิน ภายในวันนี้",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "überweisen",
+      "example_de": "Bitte überweisen Sie das Geld noch heute.",
+      "forvo_slug": "โอนเงิน",
+      "rtgs": "on ngoen"
+    },
+    {
+      "thai": "บัญชี",
+      "example_th": "เลขที่ บัญชี อยู่ในอีเมล",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Konto; Buchhaltung",
+      "example_de": "Die Kontonummer steht in der E-Mail.",
+      "forvo_slug": "บัญชี",
+      "rtgs": "banchi"
+    },
+    {
+      "thai": "ธนาคาร",
+      "example_th": "ธนาคาร เปิดทำการถึงสี่โมง",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Bank",
+      "example_de": "Die Bank hat bis 16 Uhr geöffnet.",
+      "forvo_slug": "ธนาคาร",
+      "rtgs": "thanakhan"
+    },
+    {
+      "thai": "ราคาเท่าไหร่",
+      "example_th": "อันนี้ ราคาเท่าไหร่ คะ",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "wieviel kostet",
+      "example_de": "Wie viel kostet das?",
+      "forvo_slug": "ราคาเท่าไหร่",
+      "rtgs": "rakha thao rai"
+    },
+    {
+      "thai": "ลดราคา",
+      "example_th": "มี ลดราคา สำหรับนักเรียนไหม",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Rabatt; reduzieren",
+      "example_de": "Gibt es einen Rabatt für Schüler?",
+      "forvo_slug": "ลดราคา",
+      "rtgs": "lot rakha"
+    },
+    {
+      "thai": "ใบเสร็จรับเงิน",
+      "example_th": "ขอ ใบเสร็จรับเงิน ด้วยครับ",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Kassenbon; Quittung",
+      "example_de": "Bitte geben Sie mir den Kassenbon.",
+      "forvo_slug": "ใบเสร็จรับเงิน",
+      "rtgs": "bai set rap ngoen"
+    },
+    {
+      "thai": "ช่วยด้วย",
+      "example_th": "มีเหตุฉุกเฉิน ช่วยด้วย!",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Hilfe!",
+      "example_de": "Notfall, Hilfe!",
+      "forvo_slug": "ช่วยด้วย",
+      "rtgs": "chuai duai"
+    },
+    {
+      "thai": "ระวัง",
+      "example_th": "ถนนลื่นมาก โปรด ระวัง",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Vorsicht",
+      "example_de": "Die Straße ist sehr rutschig, Vorsicht.",
+      "forvo_slug": "ระวัง",
+      "rtgs": "rawang"
+    },
+    {
+      "thai": "ตำรวจ",
+      "example_th": "โทรหา ตำรวจ เมื่อเกิดเหตุฉุกเฉิน",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Polizei",
+      "example_de": "Ruf die Polizei im Notfall.",
+      "forvo_slug": "ตำรวจ",
+      "rtgs": "tamruat"
+    },
+    {
+      "thai": "โรงเรียน",
+      "example_th": "เด็กๆ ไป โรงเรียน ตอนเจ็ดโมงเช้า",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Schule",
+      "example_de": "Die Kinder gehen um sieben Uhr morgens zur Schule.",
+      "forvo_slug": "โรงเรียน",
+      "rtgs": "rong rian"
+    },
+    {
+      "thai": "มหาวิทยาลัย",
+      "example_th": "เขาศึกษาที่ มหาวิทยาลัย ของรัฐ",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Universität",
+      "example_de": "Er studiert an einer staatlichen Universität.",
+      "forvo_slug": "มหาวิทยาลัย",
+      "rtgs": "maha witthayalai"
+    },
+    {
+      "thai": "ครู",
+      "example_th": "ครู อธิบายบทเรียนอย่างชัดเจน",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Lehrer; Lehrerin",
+      "example_de": "Die Lehrerin erklärt die Lektion klar.",
+      "forvo_slug": "ครู",
+      "rtgs": "khru"
+    },
+    {
+      "thai": "นักเรียน",
+      "example_th": "นักเรียน ทำการบ้านทุกวัน",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Schüler; Schülerin",
+      "example_de": "Die Schüler machen täglich Hausaufgaben.",
+      "forvo_slug": "นักเรียน",
+      "rtgs": "nak rian"
+    },
+    {
+      "thai": "บทเรียน",
+      "example_th": "วันนี้ บทเรียน เรื่องเวลา",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Lektion",
+      "example_de": "Heute ist die Lektion das Thema Zeit.",
+      "forvo_slug": "บทเรียน",
+      "rtgs": "bot rian"
+    },
+    {
+      "thai": "คำถาม",
+      "example_th": "มี คำถาม เชิญยกมือ",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Frage",
+      "example_de": "Bei Fragen bitte Hand heben.",
+      "forvo_slug": "คำถาม",
+      "rtgs": "kham tham"
+    },
+    {
+      "thai": "คำตอบ",
+      "example_th": "คำตอบ อยู่ในย่อหน้าสุดท้าย",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Antwort",
+      "example_de": "Die Antwort steht im letzten Absatz.",
+      "forvo_slug": "คำตอบ",
+      "rtgs": "kham top"
+    },
+    {
+      "thai": "ง่าย",
+      "example_th": "บทนี้ค่อนข้าง ง่าย สำหรับผู้เริ่มต้น",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "einfach",
+      "example_de": "Diese Lektion ist recht einfach für Anfänger.",
+      "forvo_slug": "ง่าย",
+      "rtgs": "ngai"
+    },
+    {
+      "thai": "ยาก",
+      "example_th": "โจทย์ข้อนี้ ยาก มาก",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "schwierig",
+      "example_de": "Diese Aufgabe ist sehr schwierig.",
+      "forvo_slug": "ยาก",
+      "rtgs": "yak"
+    },
+    {
+      "thai": "เร็ว",
+      "example_th": "รถไฟมา เร็ว กว่ากำหนด",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "schnell",
+      "example_de": "Der Zug kam früher als geplant.",
+      "forvo_slug": "เร็ว",
+      "rtgs": "reo"
+    },
+    {
+      "thai": "ช้า",
+      "example_th": "เขาพูด ช้า และชัดเจน",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "langsam",
+      "example_de": "Er spricht langsam und deutlich.",
+      "forvo_slug": "ช้า",
+      "rtgs": "cha"
+    },
+    {
+      "thai": "ใกล้",
+      "example_th": "สถานีอยู่ ใกล้ บ้าน",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "nah",
+      "example_de": "Der Bahnhof ist in der Nähe des Hauses.",
+      "forvo_slug": "ใกล้",
+      "rtgs": "klai"
+    },
+    {
+      "thai": "ไกล",
+      "example_th": "ทะเลอยู่ ไกล จากกรุงเทพฯ",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "weit",
+      "example_de": "Das Meer ist weit von Bangkok entfernt.",
+      "forvo_slug": "ไกล",
+      "rtgs": "klai"
+    },
+    {
+      "thai": "ซ้าย",
+      "example_th": "เลี้ยว ซ้าย ตรงแยกหน้า",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "links",
+      "example_de": "Biegen Sie an der Kreuzung links ab.",
+      "forvo_slug": "ซ้าย",
+      "rtgs": "sai"
+    },
+    {
+      "thai": "ขวา",
+      "example_th": "แล้วเลี้ยว ขวา เข้าถนนใหญ่",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "rechts",
+      "example_de": "Dann rechts in die Hauptstraße abbiegen.",
+      "forvo_slug": "ขวา",
+      "rtgs": "khwa"
+    },
+    {
+      "thai": "ตรง",
+      "example_th": "เดิน ตรง ไปอีกห้าร้อยเมตร",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "geradeaus; direkt",
+      "example_de": "Geh geradeaus weitere 500 Meter.",
+      "forvo_slug": "ตรง",
+      "rtgs": "trong"
+    },
+    {
+      "thai": "แยก",
+      "example_th": "ข้ามถนนที่ แยก นี้อย่างระวัง",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Kreuzung; trennen",
+      "example_de": "Überquere diese Kreuzung vorsichtig.",
+      "forvo_slug": "แยก",
+      "rtgs": "yaek"
+    },
+    {
+      "thai": "มุม",
+      "example_th": "ร้านกาแฟอยู่ที่ มุม ถนน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Ecke; Winkel",
+      "example_de": "Das Café ist an der Straßenecke.",
+      "forvo_slug": "มุม",
+      "rtgs": "mum"
+    },
+    {
+      "thai": "ข้างหน้า",
+      "example_th": "ป้ายรถเมล์อยู่ ข้างหน้า ไม่ไกล",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "vorne",
+      "example_de": "Die Bushaltestelle ist vorne, nicht weit.",
+      "forvo_slug": "ข้างหน้า",
+      "rtgs": "khang na"
+    },
+    {
+      "thai": "ข้างหลัง",
+      "example_th": "สวนอยู่ ข้างหลัง บ้านเรา",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "hinten; hinter",
+      "example_de": "Der Garten ist hinter unserem Haus.",
+      "forvo_slug": "ข้างหลัง",
+      "rtgs": "khang lang"
+    },
+    {
+      "thai": "บน",
+      "example_th": "หนังสืออยู่ บน โต๊ะ",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "auf; oben",
+      "example_de": "Das Buch liegt auf dem Tisch.",
+      "forvo_slug": "บน",
+      "rtgs": "bon"
+    },
+    {
+      "thai": "ล่าง",
+      "example_th": "รองเท้าอยู่ข้าง ล่าง ของตู้",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "unten",
+      "example_de": "Die Schuhe sind unten im Schrank.",
+      "forvo_slug": "ล่าง",
+      "rtgs": "lang"
+    },
+    {
+      "thai": "ใน",
+      "example_th": "กุญแจอยู่ ใน กระเป๋า",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "in; innen",
+      "example_de": "Der Schlüssel ist in der Tasche.",
+      "forvo_slug": "ใน",
+      "rtgs": "nai"
+    },
+    {
+      "thai": "นอก",
+      "example_th": "ฝนตกหนัก อย่าออกไปข้าง นอก",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "außen; außerhalb",
+      "example_de": "Es regnet stark, geh nicht nach draußen.",
+      "forvo_slug": "นอก",
+      "rtgs": "nok"
+    },
+    {
+      "thai": "ใกล้ชิด",
+      "example_th": "โปรดรักษาระยะห่าง ไม่ต้อง ใกล้ชิด เกินไป",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "nah; eng",
+      "example_de": "Bitte halte Abstand, nicht zu nah.",
+      "forvo_slug": "ใกล้ชิด",
+      "rtgs": "klai chit"
+    },
+    {
+      "thai": "ใหม่",
+      "example_th": "ฉันซื้อโทรศัพท์ เครื่อง ใหม่",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "neu",
+      "example_de": "Ich habe ein neues Telefon gekauft.",
+      "forvo_slug": "ใหม่",
+      "rtgs": "mai"
+    },
+    {
+      "thai": "เก่า",
+      "example_th": "รองเท้าคู่นี้ เก่า มากแล้ว",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "alt",
+      "example_de": "Diese Schuhe sind schon sehr alt.",
+      "forvo_slug": "เก่า",
+      "rtgs": "kao"
+    },
+    {
+      "thai": "ใหญ่",
+      "example_th": "บ้านหลังนี้ ใหญ่ และสว่าง",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "groß",
+      "example_de": "Dieses Haus ist groß und hell.",
+      "forvo_slug": "ใหญ่",
+      "rtgs": "yai"
+    },
+    {
+      "thai": "เล็ก",
+      "example_th": "ห้องทำงานค่อนข้าง เล็ก",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "klein",
+      "example_de": "Das Arbeitszimmer ist eher klein.",
+      "forvo_slug": "เล็ก",
+      "rtgs": "lek"
+    },
+    {
+      "thai": "ยาว",
+      "example_th": "ถนนเส้นนี้ ยาว หลายกิโล",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "lang",
+      "example_de": "Diese Straße ist mehrere Kilometer lang.",
+      "forvo_slug": "ยาว",
+      "rtgs": "yao"
+    },
+    {
+      "thai": "สั้น",
+      "example_th": "กระโปรงตัวนี้ สั้น ไปหน่อย",
+      "tone_cheat": [
+        "Hochkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "kurz",
+      "example_de": "Dieser Rock ist etwas zu kurz.",
+      "forvo_slug": "สั้น",
+      "rtgs": "san"
+    },
+    {
+      "thai": "หนัก",
+      "example_th": "กระเป๋าใบนี้ หนัก มาก",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "schwer",
+      "example_de": "Dieser Koffer ist sehr schwer.",
+      "forvo_slug": "หนัก",
+      "rtgs": "nak"
+    },
+    {
+      "thai": "เบา",
+      "example_th": "เสื้อผ้านี้ เบา ใส่สบาย",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "leicht",
+      "example_de": "Diese Kleidung ist leicht und angenehm.",
+      "forvo_slug": "เบา",
+      "rtgs": "bao"
+    },
+    {
+      "thai": "สะดวก",
+      "example_th": "ที่ตั้งร้าน สะดวก ต่อการเดินทาง",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "bequem; praktisch",
+      "example_de": "Die Lage des Ladens ist verkehrsgünstig.",
+      "forvo_slug": "สะดวก",
+      "rtgs": "saduak"
+    },
+    {
+      "thai": "ปลอดภัย",
+      "example_th": "ถนนเส้นนี้ ปลอดภัย ในเวลากลางวัน",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "sicher",
+      "example_de": "Diese Straße ist am Tag sicher.",
+      "forvo_slug": "ปลอดภัย",
+      "rtgs": "plod phai"
+    },
+    {
+      "thai": "อันตราย",
+      "example_th": "น้ำท่วมทำให้เดินทาง อันตราย",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "gefährlich",
+      "example_de": "Das Hochwasser macht das Reisen gefährlich.",
+      "forvo_slug": "อันตราย",
+      "rtgs": "antarai"
+    },
+    {
+      "thai": "ต้นไม้",
+      "example_th": "สวนมี ต้นไม้ เยอะมาก",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Baum; Pflanze",
+      "example_de": "Im Garten gibt es viele Bäume.",
+      "forvo_slug": "ต้นไม้",
+      "rtgs": "ton mai"
+    },
+    {
+      "thai": "ดอกไม้",
+      "example_th": "ดอกไม้ ในแจกันหอมดี",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Blume",
+      "example_de": "Die Blumen in der Vase duften gut.",
+      "forvo_slug": "ดอกไม้",
+      "rtgs": "dok mai"
+    },
+    {
+      "thai": "ภูเขา",
+      "example_th": "เราปีน ภูเขา ตอนเช้า",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Berg",
+      "example_de": "Wir steigen morgens auf den Berg.",
+      "forvo_slug": "ภูเขา",
+      "rtgs": "phu khao"
+    },
+    {
+      "thai": "ทะเล",
+      "example_th": "วันหยุดหน้าไป เที่ยว ทะเล กัน",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Meer",
+      "example_de": "Am nächsten freien Tag fahren wir ans Meer.",
+      "forvo_slug": "ทะเล",
+      "rtgs": "thale"
+    },
+    {
+      "thai": "แม่น้ำ",
+      "example_th": "เมืองนี้มี แม่น้ำ ไหลผ่าน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Fluss",
+      "example_de": "Durch diese Stadt fließt ein Fluss.",
+      "forvo_slug": "แม่น้ำ",
+      "rtgs": "mae nam"
+    },
+    {
+      "thai": "สวน",
+      "example_th": "เย็นนี้ไปเดินเล่นที่ สวน กันไหม",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Garten; Park",
+      "example_de": "Gehen wir heute Abend im Park spazieren?",
+      "forvo_slug": "สวน",
+      "rtgs": "suan"
+    },
+    {
+      "thai": "เมือง",
+      "example_th": "เมือง นี้คึกคักทั้งคืน",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Stadt",
+      "example_de": "Diese Stadt ist die ganze Nacht lebhaft.",
+      "forvo_slug": "เมือง",
+      "rtgs": "mueang"
+    },
+    {
+      "thai": "ประเทศ",
+      "example_th": "ประเทศไทยเป็น ประเทศ ในเอเชียตะวันออกเฉียงใต้",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Land; Staat",
+      "example_de": "Thailand ist ein Land in Südostasien.",
+      "forvo_slug": "ประเทศ",
+      "rtgs": "prathet"
+    },
+    {
+      "thai": "ภาษา",
+      "example_th": "ฉันชอบเรียน ภาษา ใหม่ๆ",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Sprache",
+      "example_de": "Ich lerne gern neue Sprachen.",
+      "forvo_slug": "ภาษา",
+      "rtgs": "phasa"
+    },
+    {
+      "thai": "ไทย",
+      "example_th": "ฉันกำลังเรียน ภาษา ไทย",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "Thai; Thailand",
+      "example_de": "Ich lerne gerade Thai.",
+      "forvo_slug": "ไทย",
+      "rtgs": "thai"
+    },
+    {
+      "thai": "อังกฤษ",
+      "example_th": "เธอพูด ภาษา อังกฤษ ได้ดี",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "Englisch; England",
+      "example_de": "Sie spricht gut Englisch.",
+      "forvo_slug": "อังกฤษ",
+      "rtgs": "angkrit"
+    },
+    {
+      "thai": "เยอรมัน",
+      "example_th": "ฉันแปลจากไทยเป็น เยอรมัน",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "Deutsch; Deutschland",
+      "example_de": "Ich übersetze von Thai ins Deutsche.",
+      "forvo_slug": "เยอรมัน",
+      "rtgs": "yoeraman"
+    },
+    {
+      "thai": "ขาว",
+      "example_th": "กำแพงสี ขาว ทำให้ห้องสว่าง",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "weiß",
+      "example_de": "Weiße Wände machen den Raum hell.",
+      "forvo_slug": "ขาว",
+      "rtgs": "khao"
+    },
+    {
+      "thai": "ดำ",
+      "example_th": "กาแฟ ดำ ไม่ใส่น้ำตาล",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "schwarz",
+      "example_de": "Schwarzer Kaffee ohne Zucker.",
+      "forvo_slug": "ดำ",
+      "rtgs": "dam"
+    },
+    {
+      "thai": "แดง",
+      "example_th": "เสื้อสี แดง สดมาก",
+      "tone_cheat": [
+        "Mittel",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "rot",
+      "example_de": "Das rote Hemd ist sehr kräftig.",
+      "forvo_slug": "แดง",
+      "rtgs": "daeng"
+    },
+    {
+      "thai": "เขียว",
+      "example_th": "ต้นไม้ใบ เขียว สดชื่น",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "grün",
+      "example_de": "Die grünen Blätter wirken frisch.",
+      "forvo_slug": "เขียว",
+      "rtgs": "khiao"
+    },
+    {
+      "thai": "เหลือง",
+      "example_th": "ดอกไม้สี เหลือง บานเต็มสวน",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "gelb",
+      "example_de": "Gelbe Blumen blühen im ganzen Garten.",
+      "forvo_slug": "เหลือง",
+      "rtgs": "lueang"
+    },
+    {
+      "thai": "น้ำเงิน",
+      "example_th": "ท้องฟ้าเป็นสี น้ำเงิน เข้ม",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "lang"
+      ],
+      "gloss_de": "blau",
+      "example_de": "Der Himmel ist dunkelblau.",
+      "forvo_slug": "น้ำเงิน",
+      "rtgs": "nam ngoen"
+    },
+    {
+      "thai": "ชมพู",
+      "example_th": "เธอชอบสี ชมพู อ่อน",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "rosa",
+      "example_de": "Sie mag ein zartes Rosa.",
+      "forvo_slug": "ชมพู",
+      "rtgs": "chomphu"
+    },
+    {
+      "thai": "ส้ม",
+      "example_th": "ผ้าพันคอสี ส้ม สดใส",
+      "tone_cheat": [
+        "Tiefkonsonant",
+        "geschlossen",
+        "kurz"
+      ],
+      "gloss_de": "orange",
+      "example_de": "Der orangefarbene Schal ist lebhaft.",
+      "forvo_slug": "ส้ม",
+      "rtgs": "som"
+    },
+    {
+      "thai": "เทา",
+      "example_th": "กำแพงสี เทา ดูสงบ",
+      "tone_cheat": [
+        "Mittel",
+        "offen",
+        "lang"
+      ],
+      "gloss_de": "grau",
+      "example_de": "Graue Wände wirken ruhig.",
+      "forvo_slug": "เทา",
+      "rtgs": "thao"
+    },
+    {
+      "thai": "ข้างล่าง",
+      "pos": "Nomen/Adverb",
+      "gloss_de": "unten",
+      "syllables": [
+        {
+          "glyph": "ข้างล่าง",
+          "tone_name": "fallend"
+        }
+      ],
+      "tone_rule_hint": "ข้างล่าง → fallend",
+      "example_th": "กระเป๋าอยู่ข้างล่างโต๊ะ",
+      "example_tone_guides": "ข้างล่าง̂",
+      "example_de": "Die Tasche liegt unter dem Tisch.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ข้างล่าง"
+    },
+    {
+      "thai": "แมว",
+      "pos": "Nomen",
+      "gloss_de": "Katze",
+      "syllables": [
+        {
+          "glyph": "แมว",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "แมว → steigend",
+      "example_th": "แมวของฉันน่ารักมาก",
+      "example_tone_guides": "แมว̌",
+      "example_de": "Meine Katze ist sehr süß.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "แมว"
+    },
+    {
+      "thai": "บน",
+      "pos": "Präposition/Konjunktion",
+      "gloss_de": "auf",
+      "syllables": [
+        {
+          "glyph": "บน",
+          "tone_name": "tief"
+        }
+      ],
+      "tone_rule_hint": "บน → tief",
+      "example_th": "วางแก้วบนโต๊ะ",
+      "example_tone_guides": "บน̀",
+      "example_de": "Stell das Glas auf den Tisch.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "บน"
+    },
+    {
+      "thai": "แพทย์",
+      "pos": "Nomen",
+      "gloss_de": "Arzt/Ärztin",
+      "syllables": [
+        {
+          "glyph": "แพทย์",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "แพทย์ → mittel",
+      "example_th": "แพทย์ตรวจคนไข้ตอนเช้า",
+      "example_tone_guides": "แพทย์",
+      "example_de": "Die Ärztin untersucht morgens die Patienten.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "แพทย์"
+    },
+    {
+      "thai": "ซื้อ",
+      "pos": "Verb",
+      "gloss_de": "kaufen",
+      "syllables": [
+        {
+          "glyph": "ซื้อ",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "ซื้อ → mittel",
+      "example_th": "ฉันซื้อกาแฟหนึ่งแก้ว",
+      "example_tone_guides": "ซื้อ",
+      "example_de": "Ich kaufe einen Kaffee.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ซื้อ"
+    },
+    {
+      "thai": "ประตู",
+      "pos": "Nomen",
+      "gloss_de": "Tür",
+      "syllables": [
+        {
+          "glyph": "ประตู",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "ประตู → mittel",
+      "example_th": "ปิดประตูด้วยนะ",
+      "example_tone_guides": "ประตู",
+      "example_de": "Bitte mach die Tür zu.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ประตู"
+    },
+    {
+      "thai": "ข้างหน้า",
+      "pos": "Nomen/Adverb",
+      "gloss_de": "vorne",
+      "syllables": [
+        {
+          "glyph": "ข้างหน้า",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "ข้างหน้า → steigend",
+      "example_th": "ร้านอยู่ข้างหน้าถัดไป",
+      "example_tone_guides": "ข้างหน้า̌",
+      "example_de": "Der Laden ist gleich vorne.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ข้างหน้า"
+    },
+    {
+      "thai": "ร้อน",
+      "pos": "Adjektiv",
+      "gloss_de": "heiß",
+      "syllables": [
+        {
+          "glyph": "ร้อน",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "ร้อน → steigend",
+      "example_th": "วันนี้อากาศร้อนมาก",
+      "example_tone_guides": "ร้อน̌",
+      "example_de": "Heute ist es sehr heiß.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ร้อน"
+    },
+    {
+      "thai": "นัดหมาย",
+      "pos": "Nomen/Verb",
+      "gloss_de": "Termin",
+      "syllables": [
+        {
+          "glyph": "นัดหมาย",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "นัดหมาย → steigend",
+      "example_th": "ฉันมีนัดหมายตอนบ่าย",
+      "example_tone_guides": "นัดหมาย̌",
+      "example_de": "Ich habe am Nachmittag einen Termin.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "นัดหมาย"
+    },
+    {
+      "thai": "เครื่องบิน",
+      "pos": "Nomen",
+      "gloss_de": "Flugzeug",
+      "syllables": [
+        {
+          "glyph": "เครื่องบิน",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "เครื่องบิน → steigend",
+      "example_th": "ฉันขึ้นเครื่องบินพรุ่งนี้เช้า",
+      "example_tone_guides": "เครื่องบิน̌",
+      "example_de": "Ich steige morgen ins Flugzeug.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "เครื่องบิน"
+    },
+    {
+      "thai": "Wi-Fi",
+      "pos": "Nomen/Verb",
+      "gloss_de": "WLAN",
+      "syllables": [],
+      "tone_rule_hint": "",
+      "example_th": "ขอรหัส Wi-Fi หน่อยได้ไหม",
+      "example_tone_guides": "",
+      "example_de": "Haben Sie das WLAN-Passwort?",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "Wi-Fi"
+    },
+    {
+      "thai": "หิว",
+      "pos": "Adjektiv/Verb",
+      "gloss_de": "hungrig",
+      "syllables": [
+        {
+          "glyph": "หิว",
+          "tone_name": "fallend"
+        }
+      ],
+      "tone_rule_hint": "หิว → fallend",
+      "example_th": "ฉันหิวแล้ว ไปกินข้าวกัน",
+      "example_tone_guides": "หิว̂",
+      "example_de": "Ich habe Hunger, lass uns essen.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "หิว"
+    },
+    {
+      "thai": "เปียก",
+      "pos": "Adjektiv",
+      "gloss_de": "nass",
+      "syllables": [
+        {
+          "glyph": "เปียก",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "เปียก → mittel",
+      "example_th": "รองเท้าเปียกหมดเลย",
+      "example_tone_guides": "เปียก",
+      "example_de": "Meine Schuhe sind ganz nass.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "เปียก"
+    },
+    {
+      "thai": "เลย",
+      "pos": "Partikel",
+      "gloss_de": "überhaupt; sofort",
+      "syllables": [
+        {
+          "glyph": "เลย",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "เลย → steigend",
+      "example_th": "อร่อยมากเลย",
+      "example_tone_guides": "เลย̌",
+      "example_de": "Das ist wirklich lecker.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "เลย"
+    },
+    {
+      "thai": "นักดนตรี",
+      "pos": "Nomen",
+      "gloss_de": "Musiker/in",
+      "syllables": [
+        {
+          "glyph": "นักดนตรี",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "นักดนตรี → mittel",
+      "example_th": "เขาเป็นนักดนตรี เล่นกีตาร์",
+      "example_tone_guides": "นักดนตรี",
+      "example_de": "Er ist Musiker und spielt Gitarre.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "นักดนตรี"
+    },
+    {
+      "thai": "ลูกสาว",
+      "pos": "Nomen",
+      "gloss_de": "Tochter",
+      "syllables": [
+        {
+          "glyph": "ลูกสาว",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "ลูกสาว → steigend",
+      "example_th": "ลูกสาวกลับบ้านดึก",
+      "example_tone_guides": "ลูกสาว̌",
+      "example_de": "Meine Tochter kommt spät nach Hause.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ลูกสาว"
+    },
+    {
+      "thai": "สีเขียว",
+      "pos": "Nomen/Adjektiv",
+      "gloss_de": "grün",
+      "syllables": [
+        {
+          "glyph": "สีเขียว",
+          "tone_name": "fallend"
+        }
+      ],
+      "tone_rule_hint": "สีเขียว → fallend",
+      "example_th": "ฉันชอบเสื้อสีเขียว",
+      "example_tone_guides": "สีเขียว̂",
+      "example_de": "Ich mag grüne Kleidung.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "สีเขียว"
+    },
+    {
+      "thai": "ข้าวผัด",
+      "pos": "Nomen",
+      "gloss_de": "gebratener Reis",
+      "syllables": [
+        {
+          "glyph": "ข้าวผัด",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "ข้าวผัด → steigend",
+      "example_th": "ข้าวผัดจานนี้อร่อย",
+      "example_tone_guides": "ข้าวผัด̌",
+      "example_de": "Dieses gebratene Reisgericht ist lecker.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ข้าวผัด"
+    },
+    {
+      "thai": "รองเท้า",
+      "pos": "Nomen",
+      "gloss_de": "Schuhe",
+      "syllables": [
+        {
+          "glyph": "รองเท้า",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "รองเท้า → mittel",
+      "example_th": "รองเท้าใหม่พอดีเท้า",
+      "example_tone_guides": "รองเท้า",
+      "example_de": "Die neuen Schuhe passen gut.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "รองเท้า"
+    },
+    {
+      "thai": "วันอาทิตย์",
+      "pos": "Nomen",
+      "gloss_de": "Sonntag",
+      "syllables": [
+        {
+          "glyph": "วันอาทิตย์",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "วันอาทิตย์ → mittel",
+      "example_th": "วันอาทิตย์เราพักผ่อน",
+      "example_tone_guides": "วันอาทิตย์",
+      "example_de": "Am Sonntag ruhe ich mich aus.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "วันอาทิตย์"
+    },
+    {
+      "thai": "เช็คอิน",
+      "pos": "Nomen/Verb",
+      "gloss_de": "einchecken",
+      "syllables": [
+        {
+          "glyph": "เช็คอิน",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "เช็คอิน → steigend",
+      "example_th": "เช็คอินทางมือถือได้ไหม",
+      "example_tone_guides": "เช็คอิน̌",
+      "example_de": "Kann ich übers Handy einchecken?",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "เช็คอิน"
+    },
+    {
+      "thai": "ปลา",
+      "pos": "Nomen",
+      "gloss_de": "Fisch",
+      "syllables": [
+        {
+          "glyph": "ปลา",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "ปลา → mittel",
+      "example_th": "ปลาสดมากวันนี้",
+      "example_tone_guides": "ปลา",
+      "example_de": "Der Fisch ist heute sehr frisch.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ปลา"
+    },
+    {
+      "thai": "ตรงข้าม",
+      "pos": "Nomen/Adverb",
+      "gloss_de": "gegenüber",
+      "syllables": [
+        {
+          "glyph": "ตรงข้าม",
+          "tone_name": "tief"
+        }
+      ],
+      "tone_rule_hint": "ตรงข้าม → tief",
+      "example_th": "ร้านกาแฟอยู่ตรงข้ามโรงเรียน",
+      "example_tone_guides": "ตรงข้าม̀",
+      "example_de": "Das Café ist gegenüber der Schule.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ตรงข้าม"
+    },
+    {
+      "thai": "กรกฎาคม",
+      "pos": "Nomen",
+      "gloss_de": "Juli",
+      "syllables": [
+        {
+          "glyph": "กรกฎาคม",
+          "tone_name": "tief"
+        }
+      ],
+      "tone_rule_hint": "กรกฎาคม → tief",
+      "example_th": "กรกฎาคมฝนตกบ่อยที่นี่",
+      "example_tone_guides": "กรกฎาคม̀",
+      "example_de": "Im Juli regnet es hier oft.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "กรกฎาคม"
+    },
+    {
+      "thai": "แห้ง",
+      "pos": "Adjektiv",
+      "gloss_de": "trocken",
+      "syllables": [
+        {
+          "glyph": "แห้ง",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "แห้ง → steigend",
+      "example_th": "ผ้าแห้งแล้ว",
+      "example_tone_guides": "แห้ง̌",
+      "example_de": "Die Wäsche ist trocken.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "แห้ง"
+    },
+    {
+      "thai": "กับ",
+      "pos": "Präposition/Konjunktion",
+      "gloss_de": "mit",
+      "syllables": [
+        {
+          "glyph": "กับ",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "กับ → mittel",
+      "example_th": "กินข้าวกับเพื่อน",
+      "example_tone_guides": "กับ",
+      "example_de": "Ich esse mit Freunden.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "กับ"
+    },
+    {
+      "thai": "ปีนเขา",
+      "pos": "Nomen/Verb",
+      "gloss_de": "wandern",
+      "syllables": [
+        {
+          "glyph": "ปีนเขา",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "ปีนเขา → mittel",
+      "example_th": "สุดสัปดาห์นี้ไปปีนเขากัน",
+      "example_tone_guides": "ปีนเขา",
+      "example_de": "Dieses Wochenende gehen wir wandern.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ปีนเขา"
+    },
+    {
+      "thai": "นักเรียน",
+      "pos": "Nomen/Verb",
+      "gloss_de": "Schüler/in",
+      "syllables": [
+        {
+          "glyph": "นักเรียน",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "นักเรียน → steigend",
+      "example_th": "นักเรียนทำการบ้าน",
+      "example_tone_guides": "นักเรียน̌",
+      "example_de": "Die Schülerin macht Hausaufgaben.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "นักเรียน"
+    },
+    {
+      "thai": "ฤดูฝน",
+      "pos": "Nomen",
+      "gloss_de": "Regenzeit",
+      "syllables": [
+        {
+          "glyph": "ฤดูฝน",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "ฤดูฝน → steigend",
+      "example_th": "ช่วงฤดูฝนควรพกร่ม",
+      "example_tone_guides": "ฤดูฝน̌",
+      "example_de": "In der Regenzeit sollte man einen Schirm dabeihaben.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ฤดูฝน"
+    },
+    {
+      "thai": "หิมะ",
+      "pos": "Nomen",
+      "gloss_de": "Schnee",
+      "syllables": [
+        {
+          "glyph": "หิมะ",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "หิมะ → steigend",
+      "example_th": "ที่ภูเขามีหิมะหนา",
+      "example_tone_guides": "หิมะ̌",
+      "example_de": "In den Bergen liegt viel Schnee.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "หิมะ"
+    },
+    {
+      "thai": "แดด",
+      "pos": "Nomen",
+      "gloss_de": "Sonne (stark)",
+      "syllables": [
+        {
+          "glyph": "แดด",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "แดด → mittel",
+      "example_th": "แดดแรงมาก ทาครีมกันแดดนะ",
+      "example_tone_guides": "แดด",
+      "example_de": "Die Sonne brennt, trag Sonnencreme auf.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "แดด"
+    },
+    {
+      "thai": "ใหม่",
+      "pos": "Adjektiv",
+      "gloss_de": "neu",
+      "syllables": [
+        {
+          "glyph": "ใหม่",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "ใหม่ → mittel",
+      "example_th": "ของชิ้นนี้ใหม่มาก",
+      "example_tone_guides": "ใหม่",
+      "example_de": "Das ist ganz neu.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ใหม่"
+    },
+    {
+      "thai": "รหัสผ่าน",
+      "pos": "Nomen",
+      "gloss_de": "Passwort",
+      "syllables": [
+        {
+          "glyph": "รหัสผ่าน",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "รหัสผ่าน → steigend",
+      "example_th": "ลืมรหัสผ่าน ช่วยรีเซ็ตให้หน่อย",
+      "example_tone_guides": "รหัสผ่าน̌",
+      "example_de": "Ich habe das Passwort vergessen, bitte zurücksetzen.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "รหัสผ่าน"
+    },
+    {
+      "thai": "ดินสอ",
+      "pos": "Nomen/Verb",
+      "gloss_de": "Bleistift",
+      "syllables": [
+        {
+          "glyph": "ดินสอ",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "ดินสอ → mittel",
+      "example_th": "ขอยืมดินสอหน่อย",
+      "example_tone_guides": "ดินสอ",
+      "example_de": "Kann ich einen Bleistift leihen?",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ดินสอ"
+    },
+    {
+      "thai": "วันอังคาร",
+      "pos": "Nomen",
+      "gloss_de": "Dienstag",
+      "syllables": [
+        {
+          "glyph": "วันอังคาร",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "วันอังคาร → mittel",
+      "example_th": "วันอังคารมีประชุม",
+      "example_tone_guides": "วันอังคาร",
+      "example_de": "Am Dienstag habe ich eine Besprechung.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "วันอังคาร"
+    },
+    {
+      "thai": "ลูก",
+      "pos": "Nomen",
+      "gloss_de": "Kind",
+      "syllables": [
+        {
+          "glyph": "ลูก",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "ลูก → mittel",
+      "example_th": "ลูกหลับแล้ว",
+      "example_tone_guides": "ลูก",
+      "example_de": "Das Kind schläft.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ลูก"
+    },
+    {
+      "thai": "ธันวาคม",
+      "pos": "Nomen",
+      "gloss_de": "Dezember",
+      "syllables": [
+        {
+          "glyph": "ธันวาคม",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "ธันวาคม → steigend",
+      "example_th": "ธันวาคมอากาศเย็น",
+      "example_tone_guides": "ธันวาคม̌",
+      "example_de": "Im Dezember ist es kalt.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ธันวาคม"
+    },
+    {
+      "thai": "ใช้",
+      "pos": "Verb",
+      "gloss_de": "benutzen",
+      "syllables": [
+        {
+          "glyph": "ใช้",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "ใช้ → mittel",
+      "example_th": "ใช้บัตรได้ไหม",
+      "example_tone_guides": "ใช้",
+      "example_de": "Kann ich die Karte benutzen?",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ใช้"
+    },
+    {
+      "thai": "สีดำ",
+      "pos": "Nomen/Adjektiv",
+      "gloss_de": "schwarz",
+      "syllables": [
+        {
+          "glyph": "สีดำ",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "สีดำ → steigend",
+      "example_th": "กระเป๋าสีดำดูดี",
+      "example_tone_guides": "สีดำ̌",
+      "example_de": "Die schwarze Tasche sieht gut aus.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "สีดำ"
+    },
+    {
+      "thai": "ช่างภาพ",
+      "pos": "Nomen",
+      "gloss_de": "Fotograf/in",
+      "syllables": [
+        {
+          "glyph": "ช่างภาพ",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "ช่างภาพ → mittel",
+      "example_th": "ช่างภาพมาถ่ายรูปงาน",
+      "example_tone_guides": "ช่างภาพ",
+      "example_de": "Der Fotograf ist für das Event da.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ช่างภาพ"
+    },
+    {
+      "thai": "ฝน",
+      "pos": "Nomen",
+      "gloss_de": "Regen",
+      "syllables": [
+        {
+          "glyph": "ฝน",
+          "tone_name": "fallend"
+        }
+      ],
+      "tone_rule_hint": "ฝน → fallend",
+      "example_th": "ฝนตกหนักมาก",
+      "example_tone_guides": "ฝน̂",
+      "example_de": "Es regnet stark.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ฝน"
+    },
+    {
+      "thai": "เท้า",
+      "pos": "Nomen",
+      "gloss_de": "Fuß",
+      "syllables": [
+        {
+          "glyph": "เท้า",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "เท้า → mittel",
+      "example_th": "เดินเยอะเท้าเจ็บ",
+      "example_tone_guides": "เท้า",
+      "example_de": "Vom vielen Laufen tun mir die Füße weh.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "เท้า"
+    },
+    {
+      "thai": "วันพฤหัสบดี",
+      "pos": "Nomen",
+      "gloss_de": "Donnerstag",
+      "syllables": [
+        {
+          "glyph": "วันพฤหัสบดี",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "วันพฤหัสบดี → mittel",
+      "example_th": "วันพฤหัสบดีไปยิม",
+      "example_tone_guides": "วันพฤหัสบดี",
+      "example_de": "Am Donnerstag gehe ich ins Gym.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "วันพฤหัสบดี"
+    },
+    {
+      "thai": "สตรอว์เบอร์รี",
+      "pos": "Nomen",
+      "gloss_de": "Erdbeere",
+      "syllables": [
+        {
+          "glyph": "สตรอว์เบอร์รี",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "สตรอว์เบอร์รี → steigend",
+      "example_th": "สตรอว์เบอร์รีหวานมาก",
+      "example_tone_guides": "สตรอว์เบอร์รี̌",
+      "example_de": "Erdbeeren sind sehr süß.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "สตรอว์เบอร์รี"
+    },
+    {
+      "thai": "พบ",
+      "pos": "Verb",
+      "gloss_de": "treffen",
+      "syllables": [
+        {
+          "glyph": "พบ",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "พบ → mittel",
+      "example_th": "นัดพบเพื่อนที่คาเฟ่",
+      "example_tone_guides": "พบ",
+      "example_de": "Ich treffe Freunde im Café.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "พบ"
+    },
+    {
+      "thai": "หมวก",
+      "pos": "Nomen",
+      "gloss_de": "Hut",
+      "syllables": [
+        {
+          "glyph": "หมวก",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "หมวก → steigend",
+      "example_th": "หมวกใบนี้กันแดดดี",
+      "example_tone_guides": "หมวก̌",
+      "example_de": "Dieser Hut schützt gut vor der Sonne.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "หมวก"
+    },
+    {
+      "thai": "ที่พัก",
+      "pos": "Nomen/Verb",
+      "gloss_de": "Unterkunft",
+      "syllables": [
+        {
+          "glyph": "ที่พัก",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "ที่พัก → mittel",
+      "example_th": "หาที่พักใกล้ทะเล",
+      "example_tone_guides": "ที่พัก",
+      "example_de": "Wir suchen eine Unterkunft am Meer.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ที่พัก"
+    },
+    {
+      "thai": "พายุ",
+      "pos": "Nomen",
+      "gloss_de": "Sturm",
+      "syllables": [
+        {
+          "glyph": "พายุ",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "พายุ → mittel",
+      "example_th": "พายุเข้า ควรอยู่ในบ้าน",
+      "example_tone_guides": "พายุ",
+      "example_de": "Es kommt ein Sturm, besser zuhause bleiben.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "พายุ"
+    },
+    {
+      "thai": "พี่สาว",
+      "pos": "Nomen",
+      "gloss_de": "ältere Schwester",
+      "syllables": [
+        {
+          "glyph": "พี่สาว",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "พี่สาว → steigend",
+      "example_th": "พี่สาวทำงานที่โรงพยาบาล",
+      "example_tone_guides": "พี่สาว̌",
+      "example_de": "Meine ältere Schwester arbeitet im Krankenhaus.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "พี่สาว"
+    },
+    {
+      "thai": "ตำรวจ",
+      "pos": "Nomen",
+      "gloss_de": "Polizist/in",
+      "syllables": [
+        {
+          "glyph": "ตำรวจ",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "ตำรวจ → mittel",
+      "example_th": "ตำรวจช่วยเหลือนักท่องเที่ยว",
+      "example_tone_guides": "ตำรวจ",
+      "example_de": "Die Polizei hilft den Touristen.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ตำรวจ"
+    },
+    {
+      "thai": "กระโปรง",
+      "pos": "Nomen",
+      "gloss_de": "Rock",
+      "syllables": [
+        {
+          "glyph": "กระโปรง",
+          "tone_name": "tief"
+        }
+      ],
+      "tone_rule_hint": "กระโปรง → tief",
+      "example_th": "กระโปรงสีฟ้าสวยจัง",
+      "example_tone_guides": "กระโปรง̀",
+      "example_de": "Der blaue Rock ist schön.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "กระโปรง"
+    },
+    {
+      "thai": "อินเทอร์เน็ต",
+      "pos": "Nomen",
+      "gloss_de": "Internet",
+      "syllables": [
+        {
+          "glyph": "อินเทอร์เน็ต",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "อินเทอร์เน็ต → mittel",
+      "example_th": "อินเทอร์เน็ตช้ามากวันนี้",
+      "example_tone_guides": "อินเทอร์เน็ต",
+      "example_de": "Das Internet ist heute langsam.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "อินเทอร์เน็ต"
+    },
+    {
+      "thai": "มันฝรั่ง",
+      "pos": "Nomen",
+      "gloss_de": "Kartoffel",
+      "syllables": [
+        {
+          "glyph": "มันฝรั่ง",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "มันฝรั่ง → steigend",
+      "example_th": "มันฝรั่งอบกรอบดี",
+      "example_tone_guides": "มันฝรั่ง̌",
+      "example_de": "Die Ofenkartoffeln sind knusprig.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "มันฝรั่ง"
+    },
+    {
+      "thai": "แกงเขียวหวาน",
+      "pos": "Nomen",
+      "gloss_de": "grünes Curry",
+      "syllables": [
+        {
+          "glyph": "แกงเขียวหวาน",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "แกงเขียวหวาน → steigend",
+      "example_th": "แกงเขียวหวานหอมกะทิ",
+      "example_tone_guides": "แกงเขียวหวาน̌",
+      "example_de": "Grünes Curry duftet nach Kokos.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "แกงเขียวหวาน"
+    },
+    {
+      "thai": "มือ",
+      "pos": "Nomen",
+      "gloss_de": "Hand",
+      "syllables": [
+        {
+          "glyph": "มือ",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "มือ → mittel",
+      "example_th": "มือเย็นจัง",
+      "example_tone_guides": "มือ",
+      "example_de": "Meine Hände sind kalt.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "มือ"
+    },
+    {
+      "thai": "คืน",
+      "pos": "Nomen/Verb",
+      "gloss_de": "zurückgeben",
+      "syllables": [
+        {
+          "glyph": "คืน",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "คืน → steigend",
+      "example_th": "ขอคืนสินค้าได้ไหม",
+      "example_tone_guides": "คืน̌",
+      "example_de": "Kann ich den Artikel zurückgeben?",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "คืน"
+    },
+    {
+      "thai": "เก้าอี้",
+      "pos": "Nomen",
+      "gloss_de": "Stuhl",
+      "syllables": [
+        {
+          "glyph": "เก้าอี้",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "เก้าอี้ → mittel",
+      "example_th": "เก้าอี้ตัวนี้นั่งสบาย",
+      "example_tone_guides": "เก้าอี้",
+      "example_de": "Dieser Stuhl ist bequem.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "เก้าอี้"
+    },
+    {
+      "thai": "เจ็บ",
+      "pos": "Adjektiv/Verb",
+      "gloss_de": "weh tun",
+      "syllables": [
+        {
+          "glyph": "เจ็บ",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "เจ็บ → mittel",
+      "example_th": "วิ่งแล้วเจ็บเข่า",
+      "example_tone_guides": "เจ็บ",
+      "example_de": "Nach dem Laufen schmerzt mein Knie.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "เจ็บ"
+    },
+    {
+      "thai": "กะหล่ำปลี",
+      "pos": "Nomen",
+      "gloss_de": "Kohl",
+      "syllables": [
+        {
+          "glyph": "กะหล่ำปลี",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "กะหล่ำปลี → mittel",
+      "example_th": "ผัดกะหล่ำปลีง่ายและอร่อย",
+      "example_tone_guides": "กะหล่ำปลี",
+      "example_de": "Gebratener Kohl ist einfach und lecker.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "กะหล่ำปลี"
+    },
+    {
+      "thai": "ตะวันออก",
+      "pos": "Nomen/Adverb",
+      "gloss_de": "Osten",
+      "syllables": [
+        {
+          "glyph": "ตะวันออก",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "ตะวันออก → mittel",
+      "example_th": "ทางออกอยู่ด้านตะวันออก",
+      "example_tone_guides": "ตะวันออก",
+      "example_de": "Der Ausgang liegt im Osten.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ตะวันออก"
+    },
+    {
+      "thai": "ส่วนลด",
+      "pos": "Nomen/Verb",
+      "gloss_de": "Rabatt",
+      "syllables": [
+        {
+          "glyph": "ส่วนลด",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "ส่วนลด → steigend",
+      "example_th": "ขอส่วนลดหน่อยได้ไหม",
+      "example_tone_guides": "ส่วนลด̌",
+      "example_de": "Gibt es einen Rabatt?",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ส่วนลด"
+    },
+    {
+      "thai": "สิงหาคม",
+      "pos": "Nomen",
+      "gloss_de": "August",
+      "syllables": [
+        {
+          "glyph": "สิงหาคม",
+          "tone_name": "fallend"
+        }
+      ],
+      "tone_rule_hint": "สิงหาคม → fallend",
+      "example_th": "สิงหาคมอากาศร้อน",
+      "example_tone_guides": "สิงหาคม̂",
+      "example_de": "Im August ist es heiß.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "สิงหาคม"
+    },
+    {
+      "thai": "ห้องครัว",
+      "pos": "Nomen",
+      "gloss_de": "Küche",
+      "syllables": [
+        {
+          "glyph": "ห้องครัว",
+          "tone_name": "fallend"
+        }
+      ],
+      "tone_rule_hint": "ห้องครัว → fallend",
+      "example_th": "ห้องครัวสะอาดมาก",
+      "example_tone_guides": "ห้องครัว̂",
+      "example_de": "Die Küche ist sehr sauber.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ห้องครัว"
+    },
+    {
+      "thai": "พ่อ",
+      "pos": "Nomen",
+      "gloss_de": "Vater",
+      "syllables": [
+        {
+          "glyph": "พ่อ",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "พ่อ → mittel",
+      "example_th": "พ่อทำกับข้าวอร่อย",
+      "example_tone_guides": "พ่อ",
+      "example_de": "Mein Vater kocht lecker.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "พ่อ"
+    },
+    {
+      "thai": "รูปภาพ",
+      "pos": "Nomen",
+      "gloss_de": "Bild",
+      "syllables": [
+        {
+          "glyph": "รูปภาพ",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "รูปภาพ → mittel",
+      "example_th": "ขอดูรูปภาพเพิ่มเติม",
+      "example_tone_guides": "รูปภาพ",
+      "example_de": "Kann ich mehr Bilder sehen?",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "รูปภาพ"
+    },
+    {
+      "thai": "ภูเขา",
+      "pos": "Nomen",
+      "gloss_de": "Berg",
+      "syllables": [
+        {
+          "glyph": "ภูเขา",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "ภูเขา → mittel",
+      "example_th": "อยากไปเดินป่าที่ภูเขา",
+      "example_tone_guides": "ภูเขา",
+      "example_de": "Ich möchte in den Bergen wandern.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ภูเขา"
+    },
+    {
+      "thai": "เงินทอน",
+      "pos": "Nomen/Verb",
+      "gloss_de": "Wechselgeld",
+      "syllables": [
+        {
+          "glyph": "เงินทอน",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "เงินทอน → steigend",
+      "example_th": "ลืมเงินทอนหรือเปล่า",
+      "example_tone_guides": "เงินทอน̌",
+      "example_de": "Haben Sie das Wechselgeld vergessen?",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "เงินทอน"
+    },
+    {
+      "thai": "สิ",
+      "pos": "Partikel",
+      "gloss_de": "Aufforderung/Bestärkung",
+      "syllables": [
+        {
+          "glyph": "สิ",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "สิ → steigend",
+      "example_th": "ลองชิมสิ",
+      "example_tone_guides": "สิ̌",
+      "example_de": "Probier mal.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "สิ"
+    },
+    {
+      "thai": "มอเตอร์ไซค์",
+      "pos": "Nomen",
+      "gloss_de": "Motorrad",
+      "syllables": [
+        {
+          "glyph": "มอเตอร์ไซค์",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "มอเตอร์ไซค์ → mittel",
+      "example_th": "ขี่มอเตอร์ไซค์ไปทำงาน",
+      "example_tone_guides": "มอเตอร์ไซค์",
+      "example_de": "Ich fahre mit dem Motorrad zur Arbeit.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "มอเตอร์ไซค์"
+    },
+    {
+      "thai": "ทดลอง",
+      "pos": "Nomen/Verb",
+      "gloss_de": "ausprobieren",
+      "syllables": [
+        {
+          "glyph": "ทดลอง",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "ทดลอง → steigend",
+      "example_th": "ขอทดลองใช้ก่อน",
+      "example_tone_guides": "ทดลอง̌",
+      "example_de": "Kann ich es vorher ausprobieren?",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ทดลอง"
+    },
+    {
+      "thai": "กุญแจ",
+      "pos": "Nomen/Verb",
+      "gloss_de": "Schlüssel",
+      "syllables": [
+        {
+          "glyph": "กุญแจ",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "กุญแจ → mittel",
+      "example_th": "หากุญแจไม่เจอ",
+      "example_tone_guides": "กุญแจ",
+      "example_de": "Ich finde den Schlüssel nicht.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "กุญแจ"
+    },
+    {
+      "thai": "ถาม",
+      "pos": "Verb",
+      "gloss_de": "fragen",
+      "syllables": [
+        {
+          "glyph": "ถาม",
+          "tone_name": "fallend"
+        }
+      ],
+      "tone_rule_hint": "ถาม → fallend",
+      "example_th": "มีอะไรถามได้เลย",
+      "example_tone_guides": "ถาม̂",
+      "example_de": "Wenn du etwas wissen willst, frag ruhig.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ถาม"
+    },
+    {
+      "thai": "วัด",
+      "pos": "Nomen",
+      "gloss_de": "Tempel",
+      "syllables": [
+        {
+          "glyph": "วัด",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "วัด → mittel",
+      "example_th": "ไปไหว้พระที่วัด",
+      "example_tone_guides": "วัด",
+      "example_de": "Wir gehen zum Tempel beten.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "วัด"
+    },
+    {
+      "thai": "ห้างสรรพสินค้า",
+      "pos": "Nomen",
+      "gloss_de": "Kaufhaus",
+      "syllables": [
+        {
+          "glyph": "ห้างสรรพสินค้า",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "ห้างสรรพสินค้า → steigend",
+      "example_th": "ห้างสรรพสินค้ามีทุกอย่าง",
+      "example_tone_guides": "ห้างสรรพสินค้า̌",
+      "example_de": "Im Kaufhaus gibt es alles.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ห้างสรรพสินค้า"
+    },
+    {
+      "thai": "มีนาคม",
+      "pos": "Nomen",
+      "gloss_de": "März",
+      "syllables": [
+        {
+          "glyph": "มีนาคม",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "มีนาคม → steigend",
+      "example_th": "มีนาคมเริ่มอุ่นขึ้น",
+      "example_tone_guides": "มีนาคม̌",
+      "example_de": "Im März wird es wärmer.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "มีนาคม"
+    },
+    {
+      "thai": "หัว",
+      "pos": "Nomen",
+      "gloss_de": "Kopf",
+      "syllables": [
+        {
+          "glyph": "หัว",
+          "tone_name": "fallend"
+        }
+      ],
+      "tone_rule_hint": "หัว → fallend",
+      "example_th": "ปวดหัวนิดหน่อย",
+      "example_tone_guides": "หัว̂",
+      "example_de": "Ich habe ein bisschen Kopfschmerzen.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "หัว"
+    },
+    {
+      "thai": "การบ้าน",
+      "pos": "Nomen/Verb",
+      "gloss_de": "Hausaufgaben",
+      "syllables": [
+        {
+          "glyph": "การบ้าน",
+          "tone_name": "tief"
+        }
+      ],
+      "tone_rule_hint": "การบ้าน → tief",
+      "example_th": "ลืมทำการบ้าน",
+      "example_tone_guides": "การบ้าน̀",
+      "example_de": "Ich habe die Hausaufgaben vergessen.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "การบ้าน"
+    },
+    {
+      "thai": "พฤศจิกายน",
+      "pos": "Nomen",
+      "gloss_de": "November",
+      "syllables": [
+        {
+          "glyph": "พฤศจิกายน",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "พฤศจิกายน → steigend",
+      "example_th": "พฤศจิกายนฝนตกบ่อย",
+      "example_tone_guides": "พฤศจิกายน̌",
+      "example_de": "Im November regnet es oft.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "พฤศจิกายน"
+    },
+    {
+      "thai": "ถ่ายรูป",
+      "pos": "Nomen/Verb",
+      "gloss_de": "fotografieren",
+      "syllables": [
+        {
+          "glyph": "ถ่ายรูป",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "ถ่ายรูป → steigend",
+      "example_th": "ชอบถ่ายรูปตอนเดินทาง",
+      "example_tone_guides": "ถ่ายรูป̌",
+      "example_de": "Ich fotografiere gerne auf Reisen.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ถ่ายรูป"
+    },
+    {
+      "thai": "คู่มือท่องเที่ยว",
+      "pos": "Nomen/Verb",
+      "gloss_de": "Reiseführer",
+      "syllables": [
+        {
+          "glyph": "คู่มือท่องเที่ยว",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "คู่มือท่องเที่ยว → steigend",
+      "example_th": "มีคู่มือท่องเที่ยวภาษาเยอรมันไหม",
+      "example_tone_guides": "คู่มือท่องเที่ยว̌",
+      "example_de": "Gibt es einen Reiseführer auf Deutsch?",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "คู่มือท่องเที่ยว"
+    },
+    {
+      "thai": "ทะเลทราย",
+      "pos": "Nomen",
+      "gloss_de": "Wüste",
+      "syllables": [
+        {
+          "glyph": "ทะเลทราย",
+          "tone_name": "steigend"
+        }
+      ],
+      "tone_rule_hint": "ทะเลทราย → steigend",
+      "example_th": "ทะเลทรายร้อนมากตอนกลางวัน",
+      "example_tone_guides": "ทะเลทราย̌",
+      "example_de": "In der Wüste ist es tagsüber sehr heiß.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "ทะเลทราย"
+    },
+    {
+      "thai": "อา",
+      "pos": "Nomen",
+      "gloss_de": "Onkel/Tante (jünger)",
+      "syllables": [
+        {
+          "glyph": "อา",
+          "tone_name": "mittel"
+        }
+      ],
+      "tone_rule_hint": "อา → mittel",
+      "example_th": "อามาเยี่ยมที่บ้าน",
+      "example_tone_guides": "อา",
+      "example_de": "Meine Tante kommt zu Besuch.",
+      "notes": "Tonregeln vereinfacht.",
+      "forvo_slug": "อา"
+    }
+  ]
+}
