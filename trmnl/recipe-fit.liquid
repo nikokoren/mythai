@@ -1,0 +1,195 @@
+{%- comment -%}
+=============================================================================
+  THAI WORD OF THE DAY - Kopfwort + Beispielsatz, groessenrichtig
+=============================================================================
+  Dieselbe Markup laeuft in allen vier Tabs (full, half_horizontal,
+  half_vertical, quadrant). Die view--* Klasse setzt TRMNL selbst um die
+  Markup herum, und die Hoehenbudgets misst das Skript am Ende zur Laufzeit.
+
+  Warum das noetig ist, steht in trmnl/README.md.
+=============================================================================
+{%- endcomment -%}
+
+{%- comment -%} ----- 1. EINSTELLUNGEN ---------------------------------- {%- endcomment -%}
+{%- assign cf            = trmnl.plugin_settings.custom_fields_values -%}
+{%- assign instance_name = trmnl.plugin_settings.instance_name | default: 'MyThai' -%}
+{%- assign daily_seed    = cf.daily_seed | default: 0 | plus: 0 -%}
+
+{%- comment -%}
+  Nur noch fuer die Notfall-Zahlen unten. Wenn das Skript laeuft, spielt der
+  Wert keine Rolle - dann werden die Budgets gemessen.
+{%- endcomment -%}
+{%- assign view_size = 'quadrant' -%}
+
+
+{%- comment -%} ----- 2. ZEIT ------------------------------------------- {%- endcomment -%}
+{%- assign system_time = trmnl.system.timestamp_utc | default: 0 -%}
+{%- assign user_offset = trmnl.user.utc_offset | default: 0 -%}
+{%- assign local_time  = system_time | plus: user_offset -%}
+{%- assign day_index   = local_time | divided_by: 86400 -%}
+
+
+{%- comment -%} ----- 3. DATEN ------------------------------------------ {%- endcomment -%}
+{%- assign pool = nil -%}
+{%- assign raw_root = thai_words -%}
+
+{%- if raw_root != nil and raw_root != empty -%}
+  {%- assign as_str = raw_root | string -%}
+  {%- if as_str contains "[" or as_str contains "{" -%}
+    {%- assign pool = raw_root | parse_json -%}
+  {%- else -%}
+    {%- assign pool = raw_root -%}
+  {%- endif -%}
+{%- else -%}
+  {%- assign raw_mv = merge_variables.IDX_0 -%}
+  {%- if raw_mv != nil -%}
+    {%- assign mv_parsed = raw_mv -%}
+    {%- assign mv_str    = raw_mv | string -%}
+    {%- if mv_str contains "[" -%}
+      {%- assign mv_parsed = raw_mv | parse_json -%}
+    {%- endif -%}
+    {%- assign pool = mv_parsed.thai_words | default: mv_parsed.entries | default: mv_parsed -%}
+  {%- endif -%}
+{%- endif -%}
+
+
+{%- comment -%} ----- 4. AUSWAHL ---------------------------------------- {%- endcomment -%}
+{%- comment -%}
+  Ein Schritt pro Tag durch das Array. Die Reihenfolge von thai_words wird
+  repo-seitig thematisch verschraenkt (scripts/select.py), damit hier nicht
+  neun Farben am Stueck herauskommen.
+{%- endcomment -%}
+{%- assign pool_size     = pool | size -%}
+{%- assign selected_item = nil -%}
+{%- if pool_size > 0 -%}
+  {%- assign pick_index    = day_index | plus: daily_seed | modulo: pool_size -%}
+  {%- assign selected_item = pool[pick_index] -%}
+{%- endif -%}
+
+
+{%- comment -%} ----- 5. NOTFALL-BUDGETS -------------------------------- {%- endcomment -%}
+{%- comment -%}
+  Diese Zahlen gelten nur, falls das Skript unten nicht laeuft. Sie sind fuer
+  ein 800x480-Geraet gemessen: Layout-Innenhoehe minus gap--small (7px),
+  aufgeteilt in rund 58 % Kopfwort und 42 % Satz.
+{%- endcomment -%}
+{%- case view_size -%}
+  {%- when 'full' -%}
+    {%- assign word_box = 228 -%}{%- assign sent_box = 172 -%}
+  {%- when 'half_vertical' -%}
+    {%- assign word_box = 226 -%}{%- assign sent_box = 170 -%}
+  {%- else -%}
+    {%- comment -%} quadrant und half_horizontal haben dieselbe Hoehe {%- endcomment -%}
+    {%- assign word_box = 94 -%}{%- assign sent_box = 68 -%}
+{%- endcase -%}
+
+
+{%- comment -%}
+=============================================================================
+  ANSICHT
+=============================================================================
+{%- endcomment -%}
+<style>
+  /* font-display: block, nicht swap. TRMNL fotografiert die Seite, und der
+     Groessen-Fitter misst die Schrift, die in diesem Moment gemalt ist. Mit
+     swap kann er gegen die Fallback-Metrik messen und die Thai-Schrift kommt
+     erst danach - dann stimmt die berechnete Groesse nicht mehr. */
+  @font-face {
+    font-family: "ThaiLooped"; font-style: normal; font-weight: 700;
+    src: url("https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-thai-looped@5.0.8/files/noto-sans-thai-looped-thai-700-normal.woff2") format("woff2");
+    font-display: block; unicode-range: U+0E00-0E7F;
+  }
+  @font-face {
+    font-family: "ThaiLooped"; font-style: normal; font-weight: 900;
+    src: url("https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-thai-looped@5.0.8/files/noto-sans-thai-looped-thai-900-normal.woff2") format("woff2");
+    font-display: block; unicode-range: U+0E00-0E7F;
+  }
+
+  .thai {
+    /* display:block ist der Kern. Der Fitter misst getBoundingClientRect()
+       des Elements: bei einem inline-Element ist das die Schriftbox (rund
+       1,1 x Schriftgrad), belegt wird im Layout aber die Zeilenhoehe
+       (1,5 x). Auf die Differenz laeuft das Budget aus dem Ruder. Als Block
+       ist die gemessene Hoehe genau die belegte Hoehe. */
+    display: block;
+    font-family: "ThaiLooped", "Noto Sans Thai", sans-serif;
+
+    /* !important schlaegt die inline-Zeilenhoehe, die der Fitter beim
+       Verkleinern setzt - er geht sonst gegen 1,2 und schneidet Tonzeichen
+       und untere Vokale an. */
+    line-height: 1.5 !important;
+
+    overflow-wrap: anywhere;   /* Thai wird ohne Leerzeichen geschrieben */
+  }
+
+  /* Ceilings, keine Groessen: der Fitter geht von hier nur nach unten.
+     Bewusst hoch, damit in grossen Views das Hoehenbudget bindet und nicht
+     die Klasse. Zu niedrig angesetzt bleibt der Text klein, obwohl Platz da
+     ist - genau das passierte vorher in der Vollansicht. */
+  .thai--headword { font-weight: 900; font-size: var(--value-xxxlarge-font-size); }
+  .thai--sentence { font-weight: 700; font-size: var(--value-xxlarge-font-size);
+                    color: #444; }
+</style>
+
+<div class="layout layout--col layout--center-x layout--center-y gap--small">
+
+  {%- if selected_item == nil -%}
+
+    <div class="title title--small text--center">No Data</div>
+    <div class="description text--center">Check Polling URL or JSON.</div>
+
+  {%- else -%}
+
+    <div class="w--full text--center px--2">
+      <span class="value thai thai--headword"
+            data-fit-word="true"
+            data-value-fit="true"
+            data-value-fit-max-height="{{ word_box }}">{{ selected_item.thai }}</span>
+    </div>
+
+    <div class="w--full text--center px--2">
+      <span class="value thai thai--sentence"
+            data-fit-sentence="true"
+            data-value-fit="true"
+            data-value-fit-max-height="{{ sent_box }}">{{ selected_item.example_th }}</span>
+    </div>
+
+  {%- endif -%}
+
+</div>
+
+<div class="title_bar">
+  <span class="title">{{ instance_name }}</span>
+</div>
+
+{%- comment -%}
+  Misst die echte Innenhoehe des Layouts und verteilt sie auf die beiden
+  Elemente. Damit stimmen die Budgets in jeder View und auf jedem Geraet,
+  ohne dass irgendwo eine Pixelzahl gepflegt werden muss.
+
+  Laeuft beim Parsen, also vor den Framework-Engines (Fit Value ist Engine 4).
+  Wird das Skript entfernt oder blockiert, greifen die Zahlen aus Abschnitt 5.
+{%- endcomment -%}
+<script>
+(function () {
+  function budget() {
+    document.querySelectorAll('.layout').forEach(function (layout) {
+      var word = layout.querySelector('[data-fit-word]');
+      var sent = layout.querySelector('[data-fit-sentence]');
+      if (!word || !sent) return;
+
+      var cs    = getComputedStyle(layout);
+      var inner = layout.clientHeight
+                - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
+      var gap   = parseFloat(cs.rowGap || cs.gap) || 0;
+      if (!(inner > 0)) return;              // Layout noch ohne Hoehe: Zahlen behalten
+
+      var usable = Math.max(0, inner - gap - 2);   // 2px Sicherheitsabstand
+      word.dataset.valueFitMaxHeight = Math.floor(usable * 0.56);
+      sent.dataset.valueFitMaxHeight = Math.floor(usable * 0.44);
+    });
+  }
+  budget();
+  document.addEventListener('DOMContentLoaded', budget);
+})();
+</script>
