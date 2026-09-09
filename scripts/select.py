@@ -1,25 +1,35 @@
 # -*- coding: utf-8 -*-
-"""Deterministische Tagesauswahl.
+"""Reihenfolge des Bestands, damit die Recipe-Auswahl abwechslungsreich wird.
 
-Ziele, in dieser Reihenfolge:
+Die TRMNL-Vorlage waehlt selbst aus, und zwar so:
 
-1. Kein Wort wiederholt sich, bevor alle anderen dran waren
-   (ein "Zyklus" laeuft einmal durch den kompletten Bestand).
-2. Die Woerter eines Tages kommen aus verschiedenen Themen.
-3. Auch ueber aufeinanderfolgende Tage hinweg haeufen sich Themen nicht.
-4. Gleiches Datum -> gleiche Auswahl (idempotent, testbar).
-5. Jeder Zyklus mischt neu.
+    day_index  = local_time / 86400            # Tage seit der Unix-Epoche
+    pick_index = (day_index + seed) modulo N
+    selected   = thai_words[pick_index]
 
-Der Kern ist ein "Deck": eine Permutation des gesamten Bestands, in der jedes
-Thema gleichmaessig ueber die volle Laenge verteilt liegt. Die Tage schneiden
-dieses Deck einfach der Reihe nach in Bloecke.
+Das ist ein Schritt pro Tag durch das Array - die Reihenfolge der Datei *ist*
+die Reihenfolge der Tage. Solange der Bestand nach Lehrplan sortiert war, kamen
+darum neun Farben am Stueck.
+
+Deshalb greift die Loesung hier an der Reihenfolge an und nicht an der Auswahl:
+`build_order` legt den Bestand so, dass die Themen gleichmaessig ineinander
+verschraenkt liegen. Die Vorlage bleibt unveraendert, laeuft weiter auf lokaler
+Zeit (Wechsel um lokal Mitternacht) und zeigt trotzdem jeden Tag ein anderes
+Thema.
 """
 import hashlib
 import random
 from datetime import date
 
-EPOCH = date(2026, 1, 1)
-DEFAULT_COUNT = 5
+UNIX_EPOCH = date(1970, 1, 1)
+# Kein Thema darf sich innerhalb von so vielen aufeinanderfolgenden Tagen
+# wiederholen.
+WINDOW = 5
+
+
+def day_index(day):
+    """Derselbe Tageszaehler, den die Vorlage aus local_time berechnet."""
+    return (day - UNIX_EPOCH).days
 
 
 def _rng(*parts):
@@ -27,78 +37,69 @@ def _rng(*parts):
     return random.Random(int(hashlib.sha256(key).hexdigest()[:16], 16))
 
 
-def build_deck(words, cycle, salt=""):
-    """Permutation aller Indizes, in der jedes Thema gleichmaessig verteilt ist.
+def _topic(word):
+    return word.get("topic") or "ohne Thema"
 
-    Jedes Wort bekommt eine Position (j + 0.5) / n innerhalb seines Themas.
-    Nach dieser Position sortiert liegen die Themen ineinander verschraenkt
-    statt in Bloecken - genau das Gegenteil der bisherigen Lehrplan-Reihenfolge.
+
+def interleave(words, cycle=0, salt=""):
+    """Permutation der Indizes, in der jedes Thema gleichmaessig verteilt liegt.
+
+    Jedes Wort bekommt eine Position (j + versatz) / n innerhalb seines Themas.
+    Danach sortiert liegen die Themen verschraenkt statt in Bloecken.
     """
-    rng = _rng("deck", cycle, salt, len(words))
+    rng = _rng("order", cycle, salt, len(words))
     by_topic = {}
     for i, w in enumerate(words):
-        by_topic.setdefault(w.get("topic") or "ohne Thema", []).append(i)
+        by_topic.setdefault(_topic(w), []).append(i)
 
     keyed = []
     for topic in sorted(by_topic):
         members = by_topic[topic][:]
         rng.shuffle(members)
         n = len(members)
-        # Startversatz pro Thema, damit nicht alle Themen im selben Takt liegen
-        offset = rng.random()
+        offset = rng.random()  # damit nicht alle Themen im selben Takt liegen
         for j, idx in enumerate(members):
-            pos = ((j + offset) % n) / n
-            keyed.append((pos, rng.random(), idx))
+            keyed.append((((j + offset) % n) / n, rng.random(), idx))
     keyed.sort()
     return [idx for _, _, idx in keyed]
 
 
-def _spread_topics(deck, words, count):
-    """Sorgt dafuer, dass innerhalb eines Tagesblocks kein Thema doppelt vorkommt.
+def repair(order, words, window=WINDOW):
+    """Raeumt Themen-Wiederholungen innerhalb eines Fensters weg.
 
-    Kollidiert ein Wort mit einem Thema, das im selben Block schon vertreten
-    ist, wird es mit dem naechsten passenden Wort weiter hinten getauscht.
-    Das Deck bleibt eine Permutation - es wird nur umgestellt, nie ergaenzt.
+    Sitzt ein Wort zu nah an einem gleichen Thema, wird es mit dem naechsten
+    passenden Wort weiter hinten getauscht. Bleibt eine Permutation.
     """
-    deck = deck[:]
-    topic = lambda i: words[i].get("topic")
-    for start in range(0, len(deck), count):
-        block = deck[start:start + count]
-        seen = set()
-        for k in range(len(block)):
-            pos = start + k
-            if topic(deck[pos]) not in seen:
-                seen.add(topic(deck[pos]))
+    order = order[:]
+    n = len(order)
+    for i in range(n):
+        recent = {_topic(words[order[k]]) for k in range(max(0, i - window + 1), i)}
+        if _topic(words[order[i]]) not in recent:
+            continue
+        for j in range(i + 1, n):
+            cand = _topic(words[order[j]])
+            if cand in recent:
                 continue
-            for j in range(start + len(block), len(deck)):
-                if topic(deck[j]) not in seen:
-                    deck[pos], deck[j] = deck[j], deck[pos]
-                    seen.add(topic(deck[pos]))
-                    break
-            else:
-                seen.add(topic(deck[pos]))  # nichts Passendes mehr uebrig
-    return deck
+            # der Tausch darf hinten keine neue Kollision erzeugen
+            after = {_topic(words[order[k]])
+                     for k in range(max(0, j - window + 1), min(n, j + window))
+                     if k != j and k != i}
+            if _topic(words[order[i]]) in after:
+                continue
+            order[i], order[j] = order[j], order[i]
+            break
+    return order
 
 
-def cycle_length(total, count):
-    return max(1, -(-total // count))
+def build_order(words, cycle=0, salt="", window=WINDOW):
+    return repair(interleave(words, cycle, salt), words, window)
 
 
-def selection_for(words, day, count=DEFAULT_COUNT, salt=""):
-    """Auswahl fuer ein Datum. Gibt (indices, meta) zurueck."""
-    if not words:
-        return [], {"cycle": 0, "day_in_cycle": 0, "cycle_days": 0}
-    count = max(1, min(count, len(words)))
-    days = cycle_length(len(words), count)
-    day_index = (day - EPOCH).days
-    cycle, day_in_cycle = divmod(day_index, days)
+def cycle_for(day, total):
+    """Welcher Durchlauf durch den Bestand - passend zum modulo der Vorlage."""
+    return day_index(day) // total if total else 0
 
-    deck = _spread_topics(build_deck(words, cycle, salt), words, count)
-    start = day_in_cycle * count
-    picks = deck[start:start + count]
-    return picks, {
-        "cycle": cycle,
-        "day_in_cycle": day_in_cycle,
-        "cycle_days": days,
-        "day_index": day_index,
-    }
+
+def pick_index(day, total, seed=0):
+    """Der Index, den die Vorlage fuer diesen Tag zieht."""
+    return (day_index(day) + seed) % total if total else 0

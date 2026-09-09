@@ -1,0 +1,252 @@
+{%- comment %}
+  ===========================================
+  LOGIC LAYER
+  ===========================================
+{%- endcomment %}
+
+{%- comment %} 1. CONFIGURATION & DEFAULTS {% endcomment %}
+{%- assign cf = trmnl.plugin_settings.custom_fields_values -%}
+{%- assign instance_name = trmnl.plugin_settings.instance_name | default: 'MyThai' -%}
+{%- assign daily_seed    = cf.daily_seed | default: 0 | plus: 0 -%}
+{%- assign show_qr       = cf.show_qr | default: 'yes' -%}
+{%- assign thai_font     = cf.thai_font | default: 'NotoThaiLoopedLocal' -%}
+
+{%- comment %} 2. TIME & DATE CALCULATIONS (No JS needed!) {% endcomment %}
+{%- assign system_time = trmnl.system.timestamp_utc | default: 0 -%}
+{%- assign user_offset = trmnl.user.utc_offset | default: 0 -%}
+{%- assign local_time  = system_time | plus: user_offset -%}
+
+{%- comment %} Calculate Day of Year for rotation (Unix Time / 86400 seconds) {% endcomment %}
+{%- assign day_index   = local_time | divided_by: 86400 -%}
+
+{%- comment %}
+  Hour by arithmetic instead of the date filter. The date filter formats in
+  the render server's timezone, and local_time is already offset-shifted,
+  so that combination only works if the server happens to be on UTC.
+  Seconds since local midnight, divided by 3600, has no such dependency.
+{% endcomment %}
+{%- assign current_hour = local_time | modulo: 86400 | divided_by: 3600 -%}
+
+{%- comment %} Logic: Show German only in the afternoon (12:00+) {% endcomment %}
+{%- assign show_german = false -%}
+{%- if current_hour >= 12 -%}
+  {%- assign show_german = true -%}
+{%- endif -%}
+
+{%- comment %} 3. DATA PARSING {% endcomment %}
+{%- assign pool = nil -%}
+{%- assign raw_root = thai_words -%}
+
+{%- if raw_root != nil and raw_root != empty -%}
+  {%- assign as_str = raw_root | string -%}
+  {%- if as_str contains "[" or as_str contains "{" -%}
+    {%- assign pool = raw_root | parse_json -%}
+  {%- else -%}
+    {%- assign pool = raw_root -%}
+  {%- endif -%}
+{%- else -%}
+  {%- comment %} Fallback to Merge Variables {% endcomment %}
+  {%- assign raw_mv = merge_variables.IDX_0 -%}
+  {%- if raw_mv != nil -%}
+     {%- assign mv_parsed = raw_mv -%}
+     {%- assign mv_str = raw_mv | string -%}
+     {%- if mv_str contains "[" -%}
+       {%- assign mv_parsed = raw_mv | parse_json -%}
+     {%- endif -%}
+     {%- assign pool = mv_parsed.thai_words | default: mv_parsed.entries | default: mv_parsed -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment %}
+  4. ITEM SELECTION
+
+  Ein Schritt pro Tag durch das Array. Die Reihenfolge von thai_words ist
+  damit die Reihenfolge der Tage - deshalb wird sie repo-seitig thematisch
+  verschraenkt (scripts/select.py), statt hier eine Auswahl zu bauen.
+{% endcomment %}
+{%- assign pool_size = pool | size -%}
+{%- assign selected_item = nil -%}
+
+{%- if pool_size > 0 -%}
+  {%- assign pick_index = day_index | plus: daily_seed | modulo: pool_size -%}
+  {%- assign selected_item = pool[pick_index] -%}
+{%- endif -%}
+
+{%- comment %}
+  5. SIZE CEILINGS AND HEIGHT BUDGETS
+
+  Font sizes below are ceilings, not fixed sizes. Each text element carries
+  data-value-fit, so the framework measures the rendered text and shrinks it
+  until it fits. Without this, ห้างสรรพสินค้า at 90px runs about 770px wide
+  on an 800px screen.
+
+  Two sets of numbers because the layout changes at noon: the German block
+  needs vertical space that the morning layout can spend on the Thai.
+  Tuned for an 800x480 TRMNL. On a 1024x758 device raise them by a third.
+{% endcomment %}
+{%- if show_german -%}
+  {%- assign title_px  = 80 -%}
+  {%- assign sent_box  = 120 -%}
+{%- else -%}
+  {%- assign title_px  = 90 -%}
+  {%- assign sent_box  = 165 -%}
+{%- endif -%}
+{%- assign gloss_box = 32 -%}
+{%- assign de_box    = 56 -%}
+
+{%- comment %} 6. QR CODE GENERATION (Server Side) {% endcomment %}
+{%- comment %}
+  Requested at exactly the size it is displayed. Asking for 150 and drawing
+  at 80 makes the browser downscale, then TRMNL flattens to 1 bit, which
+  lands module edges on fractional pixels and dithers them into mush.
+  qzone=1 adds the quiet zone margin that scanners need. 100px is on the
+  small side for this many modules, so scan it off the real panel once
+  before trusting it.
+{% endcomment %}
+{%- assign qr_px = 100 -%}
+
+{%- comment %}
+  Accepts whatever the custom field returns. A checkbox gives a boolean, a
+  text field gives a string, and the old 'yes' comparison silently failed on
+  the former.
+{% endcomment %}
+{%- assign qr_enabled = false -%}
+{%- if show_qr == 'yes' or show_qr == 'true' or show_qr == true or show_qr == 1 or show_qr == '1' -%}
+  {%- assign qr_enabled = true -%}
+{%- endif -%}
+
+{%- assign qr_url = "" -%}
+{%- if selected_item and qr_enabled -%}
+  {%- assign term = selected_item.forvo_slug | default: selected_item.thai -%}
+  {%- assign target_url = "https://forvo.com/word/" | append: term | append: "/#th" | url_encode -%}
+  {%- assign qr_url = "https://api.qrserver.com/v1/create-qr-code/?size=" | append: qr_px | append: "x" | append: qr_px | append: "&qzone=1&bgcolor=ffffff&data=" | append: target_url -%}
+{%- endif -%}
+
+{%- comment %}
+  ===========================================
+  VIEW LAYER (TRMNL Framework V2)
+  ===========================================
+{%- endcomment %}
+<style>
+  /* Custom Font Imports */
+  @font-face {
+    font-family: "NotoThaiLoopedLocal"; font-style: normal; font-weight: 900;
+    src: url("https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-thai-looped@5.0.8/files/noto-sans-thai-looped-thai-900-normal.woff2") format("woff2");
+    font-display: swap; unicode-range: U+0E00-0E7F;
+  }
+  @font-face {
+    font-family: "NotoThaiLoopedLocal"; font-style: normal; font-weight: 700;
+    src: url("https://cdn.jsdelivr.net/npm/@fontsource/noto-sans-thai-looped@5.0.8/files/noto-sans-thai-looped-thai-700-normal.woff2") format("woff2");
+    font-display: swap; unicode-range: U+0E00-0E7F;
+  }
+  /* The old "noto-sans-all-700-normal.woff2" does not exist in that
+     package, so this family was falling back to a system sans. Real
+     filenames are per subset, and a 400 face is declared because the
+     example sentence asks for one. */
+  @font-face {
+    font-family: "NotoSansLatinLocal"; font-style: normal; font-weight: 400;
+    src: url("https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@5.0.8/files/noto-sans-latin-400-normal.woff2") format("woff2");
+    font-display: swap; unicode-range: U+0000-00FF;
+  }
+  @font-face {
+    font-family: "NotoSansLatinLocal"; font-style: normal; font-weight: 700;
+    src: url("https://cdn.jsdelivr.net/npm/@fontsource/noto-sans@5.0.8/files/noto-sans-latin-700-normal.woff2") format("woff2");
+    font-display: swap; unicode-range: U+0000-00FF;
+  }
+
+  /* The framework has no position utilities, so the old "relative" class
+     did nothing and the QR was positioning itself against whatever
+     ancestor happened to be positioned. This anchors it to the layout. */
+  .thai-layout { position: relative; }
+
+  /* Utility Classes for Fonts */
+  .font-thai-title {
+    font-family: "{{ thai_font }}", "Noto Sans Thai", sans-serif;
+    font-weight: 900;
+    font-size: {{ title_px }}px; /* ceiling, the fitter shrinks from here */
+    line-height: 1.5;
+  }
+
+  .font-thai-sent {
+    font-family: "{{ thai_font }}", "Noto Sans Thai", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.35; /* was 1.2, which clips tone marks and lower vowels */
+    color: #444;
+  }
+
+  /* Ceilings deliberately well under the Thai sentence ceiling of 40px.
+     The fitter only ever shrinks from these numbers, never grows past
+     them, so German can never out-size the Thai. */
+  .font-de {
+    font-family: "NotoSansLatinLocal", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #000;
+  }
+
+  .font-de--regular {
+    font-weight: 400;
+    font-size: 20px;
+  }
+
+  /* QR Positioning */
+  .qr-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    padding: 2px;
+    border-radius: 4px;
+  }
+</style>
+
+<div class="layout layout--col layout--center-x layout--center-y p--4 thai-layout">
+
+  {%- if selected_item == nil -%}
+    <div class="title text--center">No Data Found</div>
+    <div class="description text--center">Check Polling URL or JSON format.</div>
+
+  {%- else -%}
+
+    {%- if qr_url != "" -%}
+      <div class="qr-container">
+        <img src="{{ qr_url | replace: '&', '&amp;' }}" width="{{ qr_px }}" height="{{ qr_px }}" alt="QR">
+      </div>
+    {%- endif -%}
+
+    <div class="flex flex--col flex--center-y gap--medium w--full text--center">
+
+      <div class="w--full">
+        <span class="value font-thai-title" data-value-fit="true">{{ selected_item.thai }}</span>
+      </div>
+
+      <div class="w--full px--6">
+        <span class="value font-thai-sent"
+              data-value-fit="true"
+              data-value-fit-max-height="{{ sent_box }}">{{ selected_item.example_th }}</span>
+      </div>
+
+      {%- if show_german and selected_item.gloss_de -%}
+        <div class="flex flex--col gap--xsmall mt--2 w--full px--6">
+          <span class="value font-de"
+                data-value-fit="true"
+                data-value-fit-max-height="{{ gloss_box }}">{{ selected_item.gloss_de }}</span>
+          {%- if selected_item.example_de -%}
+            <span class="value font-de font-de--regular"
+                  data-value-fit="true"
+                  data-value-fit-max-height="{{ de_box }}">{{ selected_item.example_de }}</span>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+
+    </div>
+
+  {%- endif -%}
+
+</div>
+
+<div class="title_bar">
+  <span class="title">{{ instance_name }}</span>
+</div>

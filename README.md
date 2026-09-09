@@ -1,19 +1,20 @@
 # mythai
 
 Thai-Vokabeln fuer ein TRMNL-Display. `words.json` wird von der Plugin-Vorlage
-abgeholt; ein GitHub-Workflow schreibt einmal taeglich die Auswahl des Tages
-hinein.
+abgeholt, die sich daraus jeden Tag ein Wort zieht. Ein GitHub-Workflow haelt
+die Datei taeglich aktuell.
 
 ## Aufbau
 
 ```
 words.json          das einzige Artefakt, das TRMNL liest
-scripts/select.py   die Auswahllogik
+scripts/select.py   die Reihenfolge (der eigentliche Hebel)
 scripts/refresh.py  taeglicher Lauf (schreibt words.json)
 scripts/thai.py     Konsonantenklasse und Silbenanalyse
 scripts/audit.py    Qualitaetsbericht
 scripts/migrate.py  einmalige Bereinigung des Altbestands
 scripts/test_selection.py   Tests
+trmnl/              die TRMNL-Vorlage und was sie erwartet
 ```
 
 ## words.json
@@ -21,13 +22,13 @@ scripts/test_selection.py   Tests
 ```jsonc
 {
   "thai_words": [ /* der komplette Bestand */ ],
-  "daily": {
-    "date": "2026-09-09",
-    "cycle": 3,            // wievielter Durchlauf durch den Bestand
-    "day_in_cycle": 20,
-    "cycle_days": 77,      // Tage, bis der Bestand einmal durch ist
-    "words": [ /* die Woerter des Tages, vollstaendig eingebettet */ ]
+  "daily": {              // informativ; die Vorlage rechnet selbst
+    "date": "2026-09-10",
+    "day_index": 20706,   // Tage seit der Unix-Epoche
+    "index": 24,          // day_index modulo word_count
+    "word": { /* der Eintrag von heute */ }
   },
+  "cycle": 54,            // wievielter Durchlauf durch den Bestand
   "word_count": 383,
   "last_updated": 1788940540.13
 }
@@ -62,10 +63,12 @@ Ein Eintrag:
 `tone.source` ist dann `"unvollstaendig"` - diese Eintraege brauchen eine
 Woerterbuchquelle, geraten wird nichts.
 
-### Umstellung der TRMNL-Vorlage
+### Was sich fuer die TRMNL-Vorlage aendert
 
-Die Vorlage sollte jetzt `daily.words` rendern statt selbst im Bestand zu
-suchen. Alte Felder und ihr Ersatz:
+Nichts, was sie liest. `thai`, `example_th`, `gloss_de`, `example_de` und
+`forvo_slug` heissen unveraendert; die Vorlage rendert die vier alten
+Tonfelder ohnehin nicht. Wer sie doch anzeigen will, findet in
+`trmnl/README.md` einen Baustein. Zuordnung alt zu neu:
 
 | alt                     | neu                                  |
 | ----------------------- | ------------------------------------ |
@@ -84,37 +87,56 @@ angehaengten Diakritikum (81 von 82 Faellen).
 
 ## Die Auswahl
 
-Frueher stand in `words.json` nur ein Zeitstempel; die Auswahl passierte in der
-Liquid-Vorlage, praktisch nur ueber `last_updated mod N`. Das hatte zwei
-Folgen:
+Die Auswahl passiert in der TRMNL-Vorlage, nicht hier:
 
-* Der Bestand lag in Lehrplan-Reihenfolge (alle Wochentage hintereinander, alle
-  Farben hintereinander). Ein fortlaufender Ausschnitt zeigte darum immer einen
-  ganzen Themenblock auf einmal.
-* Die Schrittweite war konstant: `86400 mod 315 = 90`, und `ggT(90, 315) = 45`.
-  Bei exakt taeglichem Lauf waren nur 7 verschiedene Startindizes erreichbar -
-  35 von 315 Woertern, im Wochentakt wiederholt.
+```liquid
+day_index  = local_time / 86400          # Tage seit der Unix-Epoche
+pick_index = (day_index + daily_seed) modulo N
+selected   = thai_words[pick_index]
+```
 
-Jetzt entscheidet `scripts/select.py`, und zwar nur anhand des Datums:
+Das ist **ein Schritt pro Tag durch das Array**. Die Reihenfolge der Datei ist
+damit die Reihenfolge der Tage. Solange `thai_words` nach Lehrplan sortiert war
+(alle Wochentage hintereinander, alle Farben hintereinander), kam genau das auf
+dem Display an - Anfang September neun Tage lang eine Farbe nach der anderen:
 
-1. Pro Zyklus wird ein **Deck** gebaut - eine Permutation des gesamten
-   Bestands, in der jedes Thema gleichmaessig ueber die volle Laenge verteilt
-   liegt statt in Bloecken.
-2. Jeder Tag schneidet den naechsten Block von fuenf Woertern heraus.
-3. Ein Nachlauf tauscht Themen-Dubletten innerhalb eines Tages weg.
+```
+2026-09-03  Index 224  ขาว      weiss
+2026-09-04  Index 225  ดำ       schwarz
+2026-09-05  Index 226  แดง      rot
+...
+2026-09-09  Index 230  ชมพู     rosa
+```
 
-Damit gilt: kein Wort wiederholt sich vor Ablauf eines Zyklus (77 Tage), die
-fuenf Woerter eines Tages kommen aus fuenf verschiedenen Themen, aufeinander
-folgende Tage ueberschneiden sich nicht, und jeder Zyklus mischt neu.
-`scripts/test_selection.py` prueft genau diese Zusagen.
+Der Hebel ist also die **Reihenfolge**, nicht die Auswahl. `scripts/select.py`
+legt den Bestand so, dass die Themen gleichmaessig ineinander verschraenkt
+liegen:
 
-Weil die Auswahl nur vom Datum abhaengt, ist ein zweiter Lauf am selben Tag
-folgenlos - der Workflow committet dann nichts.
+1. Jedes Wort bekommt eine Position innerhalb seines Themas, gleichmaessig
+   ueber die volle Laenge verteilt; danach sortiert liegen die Themen
+   verschraenkt statt in Bloecken.
+2. Ein Nachlauf tauscht uebrig gebliebene Naehe weg: innerhalb von fuenf
+   aufeinanderfolgenden Positionen kommt kein Thema zweimal vor.
+
+Das Ergebnis ist eine Permutation - es geht nichts verloren und nichts kommt
+doppelt. Ueber einen Zyklus (383 Tage) erscheint jedes Wort genau einmal, und
+jeder neue Zyklus mischt neu. `scripts/refresh.py` mischt nur am Zyklusende
+neu; an allen anderen Tagen schreibt es lediglich `daily`.
+
+**Die Vorlage muss dafuer nicht angepasst werden.** Sie rechnet ihren Index
+weiter selbst aus lokaler Zeit aus und wechselt darum um lokal Mitternacht -
+nicht um 00:05 UTC, wenn der Workflow laeuft. Siehe `trmnl/README.md`.
+
+Der Workflow lief vorher stuendlich (`'0 * * * *'`, trotz des Kommentars
+"Midnight UTC") und schrieb dabei ausser `last_updated` nichts. Da die Vorlage
+`last_updated` gar nicht liest, waren das 24 wirkungslose Commits pro Tag.
+Jetzt: `'5 0 * * *'`, ein Commit.
 
 ## Lokal
 
 ```sh
-python3 scripts/refresh.py --date 2026-09-09   # Auswahl fuer ein Datum zeigen
+python3 scripts/refresh.py --date 2026-09-09 --preview 14   # zwei Wochen vorschauen
+python3 scripts/refresh.py --reorder           # Reihenfolge neu mischen
 python3 scripts/audit.py                       # Qualitaetsbericht
 python3 scripts/test_selection.py              # Tests
 ```

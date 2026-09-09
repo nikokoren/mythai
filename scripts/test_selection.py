@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Tests fuer die Auswahl und fuer die Datenqualitaet von words.json."""
+"""Tests fuer die Reihenfolge und fuer die Datenqualitaet von words.json."""
 import json
 import sys
 import unittest
@@ -9,76 +9,103 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from scripts.select import DEFAULT_COUNT, cycle_length, selection_for
-from scripts.thai import analyze_monosyllable, consonant_class, CLASS_DE
+from scripts.select import (WINDOW, build_order, cycle_for, day_index,
+                            interleave, pick_index)
+from scripts.thai import CLASS_DE, analyze_monosyllable, consonant_class
 
 ROOT = Path(__file__).resolve().parent.parent
-WORDS = json.loads((ROOT / "words.json").read_text(encoding="utf-8"))["thai_words"]
-START = date(2026, 1, 1)
+DATA = json.loads((ROOT / "words.json").read_text(encoding="utf-8"))
+WORDS = DATA["thai_words"]
+N = len(WORDS)
 
 
-def picks(day, count=DEFAULT_COUNT):
-    idx, _ = selection_for(WORDS, day, count)
-    return idx
+def topics_of(seq):
+    return [WORDS[i]["topic"] for i in seq]
 
 
-class TestSelection(unittest.TestCase):
+class TestReihenfolge(unittest.TestCase):
+    """Die Vorlage laeuft mit einem Schritt pro Tag durch thai_words.
+
+    Was hier ueber die Reihenfolge gilt, gilt damit direkt ueber die Tage.
+    """
+
+    def test_ist_eine_permutation(self):
+        order = build_order(WORDS, cycle=0)
+        self.assertEqual(sorted(order), list(range(N)),
+                         "es darf nichts verloren gehen und nichts doppelt sein")
+
     def test_deterministisch(self):
-        day = date(2026, 5, 17)
-        self.assertEqual(picks(day), picks(day))
-
-    def test_richtige_anzahl(self):
-        for i in range(0, 200, 7):
-            self.assertEqual(len(picks(START + timedelta(days=i))), DEFAULT_COUNT)
-
-    def test_keine_dublette_am_selben_tag(self):
-        for i in range(200):
-            p = picks(START + timedelta(days=i))
-            self.assertEqual(len(set(p)), len(p))
-
-    def test_ein_zyklus_deckt_den_ganzen_bestand_ab(self):
-        days = cycle_length(len(WORDS), DEFAULT_COUNT)
-        seen = Counter()
-        for i in range(days):
-            seen.update(picks(START + timedelta(days=i)))
-        self.assertEqual(set(seen), set(range(len(WORDS))),
-                         "jedes Wort muss genau einmal pro Zyklus vorkommen")
-        self.assertEqual(max(seen.values()), 1, "kein Wort doppelt im Zyklus")
-
-    def test_themen_innerhalb_eines_tages_verschieden(self):
-        topics = {w["topic"] for w in WORDS}
-        self.assertGreaterEqual(len(topics), DEFAULT_COUNT)
-        for i in range(300):
-            day = START + timedelta(days=i)
-            t = [WORDS[j]["topic"] for j in picks(day)]
-            self.assertEqual(len(set(t)), len(t), f"Thema doppelt am {day}: {t}")
-
-    def test_keine_ueberschneidung_an_folgetagen(self):
-        for i in range(200):
-            a = set(picks(START + timedelta(days=i)))
-            b = set(picks(START + timedelta(days=i + 1)))
-            self.assertFalse(a & b)
+        self.assertEqual(build_order(WORDS, 7), build_order(WORDS, 7))
 
     def test_zyklen_mischen_neu(self):
-        days = cycle_length(len(WORDS), DEFAULT_COUNT)
-        a = picks(START)
-        b = picks(START + timedelta(days=days))
-        self.assertNotEqual(a, b, "ein neuer Zyklus muss anders mischen")
+        self.assertNotEqual(build_order(WORDS, 7), build_order(WORDS, 8))
 
-    def test_keine_lehrplan_naehe(self):
-        """Der eigentliche Fehler von vorher: benachbarte Indizes am selben Tag.
+    def test_kein_thema_zweimal_im_fenster(self):
+        """Der eigentliche Fehler von vorher: neun Farben hintereinander."""
+        for cycle in (0, 1, 54):
+            order = build_order(WORDS, cycle)
+            t = topics_of(order)
+            for i in range(len(t) - WINDOW + 1):
+                fenster = t[i:i + WINDOW]
+                self.assertEqual(len(set(fenster)), len(fenster),
+                                 f"Zyklus {cycle}, Position {i}: {fenster}")
 
-        Bei fortlaufender Indexauswahl liegen die gezogenen Indizes dicht
-        beieinander. Hier muessen sie weit gestreut sein.
-        """
-        n = len(WORDS)
-        spans = []
-        for i in range(150):
-            p = sorted(picks(START + timedelta(days=i)))
-            spans.append(p[-1] - p[0])
-        durchschnitt = sum(spans) / len(spans)
-        self.assertGreater(durchschnitt, n * 0.5,
-                           f"Auswahl liegt zu dicht beieinander: {durchschnitt:.0f} von {n}")
+    def test_gelieferte_datei_haelt_das_ein(self):
+        """Nicht nur die Funktion - auch das, was tatsaechlich ausgeliefert wird."""
+        t = [w["topic"] for w in WORDS]
+        for i in range(len(t) - WINDOW + 1):
+            fenster = t[i:i + WINDOW]
+            self.assertEqual(len(set(fenster)), len(fenster),
+                             f"words.json, Position {i}: {fenster}")
+
+    def test_themen_liegen_weit_auseinander(self):
+        """Ueber das harte Fenster hinaus: mittlerer Abstand gleicher Themen."""
+        letzte, abstaende = {}, []
+        for i, w in enumerate(WORDS):
+            if w["topic"] in letzte:
+                abstaende.append(i - letzte[w["topic"]])
+            letzte[w["topic"]] = i
+        self.assertGreater(sum(abstaende) / len(abstaende), 10)
+
+    def test_interleave_allein_reicht_fast(self):
+        """Die Reparatur soll Feinschliff sein, nicht das eigentliche Mischen."""
+        t = topics_of(interleave(WORDS, 0))
+        kollisionen = sum(1 for i in range(len(t) - 1) if t[i] == t[i + 1])
+        self.assertLess(kollisionen, N * 0.02)
+
+
+class TestTagesauswahl(unittest.TestCase):
+    """Die Arithmetik der Vorlage, hier nachgebaut."""
+
+    def test_ein_schritt_pro_tag(self):
+        d = date(2026, 9, 9)
+        self.assertEqual(pick_index(d + timedelta(days=1), N),
+                         (pick_index(d, N) + 1) % N)
+
+    def test_ein_zyklus_zeigt_jedes_wort_genau_einmal(self):
+        start = date(2026, 9, 9)
+        gesehen = Counter(pick_index(start + timedelta(days=k), N) for k in range(N))
+        self.assertEqual(set(gesehen), set(range(N)))
+        self.assertEqual(max(gesehen.values()), 1)
+
+    def test_aufeinanderfolgende_tage_andere_themen(self):
+        start = date(2026, 9, 9)
+        for k in range(400):
+            d = start + timedelta(days=k)
+            a = WORDS[pick_index(d, N)]["topic"]
+            b = WORDS[pick_index(d + timedelta(days=1), N)]["topic"]
+            self.assertNotEqual(a, b, f"{d} und Folgetag beide {a}")
+
+    def test_daily_passt_zum_index(self):
+        d = DATA["daily"]
+        self.assertEqual(d["word"]["thai"], WORDS[d["index"]]["thai"])
+        self.assertEqual(d["index"], pick_index(date.fromisoformat(d["date"]), N))
+        self.assertEqual(d["day_index"], day_index(date.fromisoformat(d["date"])))
+
+    def test_zyklus_im_kopf_passt(self):
+        self.assertEqual(DATA["cycle"],
+                         cycle_for(date.fromisoformat(DATA["daily"]["date"]), N))
+        self.assertEqual(DATA["word_count"], N)
 
 
 class TestDaten(unittest.TestCase):
@@ -111,7 +138,7 @@ class TestDaten(unittest.TestCase):
         for w in WORDS:
             if w["thai"] == "Wi-Fi":
                 continue
-            self.assertEqual(w["tone"]["initial_class"],
+            self.assertEqual((w.get("tone") or {}).get("initial_class"),
                              CLASS_DE[consonant_class(w["thai"])], w["thai"])
 
 
