@@ -1,23 +1,35 @@
 name: Daily TRMNL Refresh
+
 on:
   schedule:
-    - cron: '0 * * * *' # Midnight UTC
-  workflow_dispatch: # Allows manual testing button
+    # 00:05 UTC, einmal pro Tag. (Vorher: '0 * * * *' - das war stuendlich,
+    # trotz des Kommentars "Midnight UTC". Die 5 Minuten Versatz umgehen den
+    # Andrang zur vollen Stunde, bei dem GitHub Actions Laeufe verzoegert.)
+    - cron: '5 0 * * *'
+  workflow_dispatch:
 
 jobs:
-  update-timestamp:
+  refresh:
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Update Timestamp
-        run: |
-          python3 -c "import json, time; f=open('words.json','r+', encoding='utf-8'); d=json.load(f); d['last_updated']=time.time(); f.seek(0); json.dump(d, f, indent=2, ensure_ascii=False); f.write('\n'); f.truncate()"
-      - name: Commit and Push
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Tests
+        run: python3 scripts/test_selection.py
+
+      - name: Auswahl des Tages schreiben
+        run: python3 scripts/refresh.py
+
+      - name: Commit und Push
         run: |
           git config user.name "TRMNL Bot"
           git config user.email "actions@github.com"
           git add words.json
-          # Only commit if changed
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Daily refresh" && git push)
+          git diff --staged --quiet && echo "keine Aenderung" || \
+            (git commit -m "Tagesauswahl $(date -u +%F)" && git push)
