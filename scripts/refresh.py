@@ -1,7 +1,8 @@
 # -*- coding: utf-8 -*-
 """Taeglicher Lauf.
 
-Zwei Aufgaben:
+Laeuft kurz nach lokaler Mitternacht (siehe TRMNL_TZ und den Cron im
+Workflow). Zwei Aufgaben:
 
 1. Die Reihenfolge von `thai_words` neu mischen, wenn ein Zyklus durch ist
    (oder sich der Bestand geaendert hat). Die Vorlage laeuft mit
@@ -13,10 +14,12 @@ Zwei Aufgaben:
 """
 import argparse
 import json
+import os
 import sys
 import time
 from datetime import date, datetime, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -25,11 +28,21 @@ from scripts.select import build_order, cycle_for, day_index, pick_index
 ROOT = Path(__file__).resolve().parent.parent
 WORDS = ROOT / "words.json"
 
+# Zeitzone, in der "heute" bestimmt wird. Der Workflow laeuft kurz nach lokaler
+# Mitternacht; nur mit derselben Zone traegt daily.date dann auch das lokale
+# Datum. Ueber TRMNL_TZ setzbar, damit die Sommerzeit nicht von Hand
+# nachgepflegt werden muss.
+TZ = os.environ.get("TRMNL_TZ", "UTC")
+
+
+def today(tz=None):
+    return datetime.now(ZoneInfo(tz or TZ)).date()
+
 
 def refresh(path=WORDS, day=None, force_reorder=False):
     data = json.loads(path.read_text(encoding="utf-8"))
     words = data["thai_words"]
-    day = day or datetime.now(timezone.utc).date()
+    day = day or today()
     total = len(words)
     cycle = cycle_for(day, total)
 
@@ -63,12 +76,13 @@ def refresh(path=WORDS, day=None, force_reorder=False):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--date", help="ISO-Datum statt heute")
+    ap.add_argument("--tz", help=f"Zeitzone fuer 'heute' (Standard: {TZ})")
     ap.add_argument("--reorder", action="store_true",
                     help="Reihenfolge neu mischen, auch mitten im Zyklus")
     ap.add_argument("--preview", type=int, default=0,
                     help="so viele Folgetage zusaetzlich anzeigen")
     args = ap.parse_args()
-    day = date.fromisoformat(args.date) if args.date else None
+    day = date.fromisoformat(args.date) if args.date else today(args.tz)
     data, changed, reordered = refresh(day=day, force_reorder=args.reorder)
 
     d = data["daily"]

@@ -55,15 +55,29 @@
 
 {%- comment -%} ----- 4. AUSWAHL ---------------------------------------- {%- endcomment -%}
 {%- comment -%}
-  Ein Schritt pro Tag durch das Array. Die Reihenfolge von thai_words wird
-  repo-seitig thematisch verschraenkt (scripts/select.py), damit hier nicht
-  neun Farben am Stueck herauskommen.
+  Das Wort des Tages steht fertig in der Datei. Frueher rechnete die Vorlage
+  hier selbst `day_index modulo N`. Das sah nach lokaler Zeit aus, entschied
+  aber nichts: TRMNL erzeugt einen Screen nur dann neu, wenn sich die
+  Nutzdaten geaendert haben ("skips generating screens if the merge variables
+  are the same between requests"). Der Wechsel haengt also daran, wann der
+  Workflow die Datei schreibt - zwei Uhren, von denen nur eine zaehlt.
+
+  Der Workflow laeuft jetzt kurz nach lokaler Mitternacht (Cron 5 23 UTC,
+  TRMNL_TZ in refresh.yml), und hier wird nur gelesen, was dort entschieden
+  wurde. Der modulo-Zweig bleibt als Rueckfall, falls einmal eine Datei ohne
+  daily-Block ausgeliefert wird.
 {%- endcomment -%}
-{%- assign pool_size     = pool | size -%}
-{%- assign selected_item = nil -%}
-{%- if pool_size > 0 -%}
-  {%- assign pick_index    = day_index | plus: daily_seed | modulo: pool_size -%}
-  {%- assign selected_item = pool[pick_index] -%}
+{%- assign selected_item = daily.word -%}
+
+{%- if selected_item == nil and merge_variables.IDX_0.daily.word != nil -%}
+  {%- assign selected_item = merge_variables.IDX_0.daily.word -%}
+{%- endif -%}
+
+{%- assign pool_size = pool | size | default: 0 -%}
+{%- if selected_item == nil and pool_size > 0 -%}
+  {%- assign day_index      = local_time | divided_by: 86400 -%}
+  {%- assign pick_index     = day_index | plus: daily_seed | modulo: pool_size -%}
+  {%- assign selected_item  = pool[pick_index] -%}
 {%- endif -%}
 
 

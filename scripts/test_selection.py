@@ -96,6 +96,28 @@ class TestTagesauswahl(unittest.TestCase):
             b = WORDS[pick_index(d + timedelta(days=1), N)]["topic"]
             self.assertNotEqual(a, b, f"{d} und Folgetag beide {a}")
 
+    def test_daily_ist_das_was_die_vorlage_rendert(self):
+        """Die Vorlage liest daily.word direkt - der Block muss stimmen."""
+        d = DATA["daily"]
+        self.assertIn("word", d)
+        for feld in ("thai", "rtgs", "gloss_de", "example_th", "example_de"):
+            self.assertTrue(d["word"].get(feld), f"daily.word.{feld} fehlt")
+
+    def test_last_updated_ist_gesetzt(self):
+        """TRMNL erzeugt nur bei geaenderten Nutzdaten einen neuen Screen.
+
+        Der daily-Block aendert sich taeglich und traegt das allein; der
+        Zeitstempel bleibt als ausdrueckliches Signal daneben stehen.
+        """
+        self.assertIsInstance(DATA.get("last_updated"), float)
+        self.assertGreater(DATA["last_updated"], 1_700_000_000)
+
+    def test_taeglicher_lauf_aendert_die_nutzdaten(self):
+        """Zwei aufeinanderfolgende Tage muessen verschiedene Nutzdaten ergeben."""
+        a, b = date(2026, 3, 1), date(2026, 3, 2)
+        self.assertNotEqual(pick_index(a, N), pick_index(b, N))
+        self.assertNotEqual(WORDS[pick_index(a, N)], WORDS[pick_index(b, N)])
+
     def test_daily_passt_zum_index(self):
         d = DATA["daily"]
         self.assertEqual(d["word"]["thai"], WORDS[d["index"]]["thai"])

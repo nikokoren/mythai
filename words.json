@@ -7770,26 +7770,34 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1788951142.217268,
+  "last_updated": 1789023956.724365,
   "daily": {
-    "date": "2026-09-10",
-    "day_index": 20706,
-    "index": 24,
+    "date": "2026-09-11",
+    "day_index": 20707,
+    "index": 25,
     "word": {
-      "thai": "มอเตอร์ไซค์",
-      "rtgs": "motoesai",
-      "pos": "Nomen",
-      "gloss_de": "Motorrad",
-      "topic": "Reisen & Verkehr",
-      "example_th": "ขี่มอเตอร์ไซค์ไปทำงาน",
-      "example_de": "Ich fahre mit dem Motorrad zur Arbeit.",
+      "thai": "ไหม",
+      "rtgs": "mai",
+      "pos": "Partikel",
+      "gloss_de": "Fragepartikel (ja/nein)",
+      "topic": "Grammatik & Partikeln",
+      "example_th": "คุณหิวไหม",
+      "example_de": "Hast du Hunger?",
       "tone": {
-        "syllables": null,
-        "initial_class": "Tiefkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "ไหม",
+            "class": "Hochkonsonant",
+            "syllable": "offen",
+            "length": "kurz",
+            "tone": "steigend"
+          }
+        ],
+        "initial_class": "Hochkonsonant",
+        "rule_hint": "Hochkonsonant + offene Silbe + kurzer Vokal -> steigend",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "มอเตอร์ไซค์"
+      "forvo_slug": "ไหม"
     }
   },
   "word_count": 383,

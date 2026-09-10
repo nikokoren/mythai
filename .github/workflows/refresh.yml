@@ -2,10 +2,12 @@ name: Daily TRMNL Refresh
 
 on:
   schedule:
-    # 00:05 UTC, einmal pro Tag. (Vorher: '0 * * * *' - das war stuendlich,
-    # trotz des Kommentars "Midnight UTC". Die 5 Minuten Versatz umgehen den
-    # Andrang zur vollen Stunde, bei dem GitHub Actions Laeufe verzoegert.)
-    - cron: '5 0 * * *'
+    # 23:05 UTC = 00:05 MEZ im Winter, 01:05 MESZ im Sommer. Damit laeuft der
+    # Lauf ganzjaehrig kurz NACH lokaler Mitternacht und traegt schon das neue
+    # lokale Datum. Das ist der Zeitpunkt, zu dem das Display wechselt: TRMNL
+    # erzeugt einen Screen nur neu, wenn sich die Nutzdaten geaendert haben.
+    # (Vorher '0 * * * *' - stuendlich, trotz des Kommentars "Midnight UTC".)
+    - cron: '5 23 * * *'
   workflow_dispatch:
 
 jobs:
@@ -24,6 +26,10 @@ jobs:
         run: python3 scripts/test_selection.py
 
       - name: Auswahl des Tages schreiben
+        # Dieselbe Zone wie der Cron oben, sonst traegt daily.date das
+        # UTC-Datum statt des lokalen.
+        env:
+          TRMNL_TZ: Europe/Vienna
         run: python3 scripts/refresh.py
 
       - name: Commit und Push

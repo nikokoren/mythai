@@ -123,9 +123,29 @@ doppelt. Ueber einen Zyklus (383 Tage) erscheint jedes Wort genau einmal, und
 jeder neue Zyklus mischt neu. `scripts/refresh.py` mischt nur am Zyklusende
 neu; an allen anderen Tagen schreibt es lediglich `daily`.
 
-**Die Vorlage muss dafuer nicht angepasst werden.** Sie rechnet ihren Index
-weiter selbst aus lokaler Zeit aus und wechselt darum um lokal Mitternacht -
-nicht um 00:05 UTC, wenn der Workflow laeuft. Siehe `trmnl/README.md`.
+### Wann das Display wechselt
+
+TRMNL erzeugt einen Screen **nur dann neu, wenn sich die Nutzdaten geaendert
+haben** ("skips generating screens if the merge variables are the same between
+requests"). Der Wechsel haengt also nicht an einer Rechnung in der Vorlage,
+sondern daran, wann dieser Workflow `words.json` schreibt.
+
+Darum:
+
+* Die Vorlage rechnet nichts mehr selbst, sie liest `daily.word`. Vorher stand
+  dort `day_index modulo N` aus lokaler Zeit - das sah nach lokalem Mitternacht
+  aus, entschied aber nichts, weil der Screen ohnehin erst beim naechsten
+  Datei-Wechsel neu erzeugt wurde. Zwei Uhren, von denen nur eine zaehlt.
+* Der Cron laeuft um **23:05 UTC**: 00:05 MEZ im Winter, 01:05 MESZ im Sommer,
+  also ganzjaehrig kurz nach lokaler Mitternacht. `TRMNL_TZ` (Europe/Vienna)
+  sorgt dafuer, dass `daily.date` dabei das lokale Datum traegt und nicht das
+  von UTC.
+* `last_updated` bleibt. Der `daily`-Block aendert sich taeglich und traegt den
+  Wechsel schon allein, aber der Zeitstempel steht als ausdrueckliches Signal
+  daneben - genau dafuer war er urspruenglich da.
+
+Nicht wieder auf stuendlich stellen: das aendert die Nutzdaten 24-mal fuer ein
+einziges neues Wort und loest damit auch 24 Screen-Renderings aus.
 
 Der Workflow lief vorher stuendlich (`'0 * * * *'`, trotz des Kommentars
 "Midnight UTC") und schrieb dabei ausser `last_updated` nichts. Da die Vorlage
