@@ -9,7 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from scripts.refresh import today
+from scripts.refresh import PAYLOAD_MAX, payload_for, today
 from scripts.select import (WINDOW, build_order, cycle_for, day_index,
                             interleave, pick_index)
 from scripts.thai import CLASS_DE, analyze_monosyllable, consonant_class
@@ -18,6 +18,9 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA = json.loads((ROOT / "words.json").read_text(encoding="utf-8"))
 WORDS = DATA["thai_words"]
 N = len(WORDS)
+
+
+PAYLOAD_PATH = ROOT / "trmnl.json"
 
 
 def topics_of(seq):
@@ -174,6 +177,42 @@ class TestDaten(unittest.TestCase):
                 continue
             self.assertEqual((w.get("tone") or {}).get("initial_class"),
                              CLASS_DE[consonant_class(w["thai"])], w["thai"])
+
+
+class TestNutzdaten(unittest.TestCase):
+    """trmnl.json ist, was das Display abholt.
+
+    words.json ist mit 383 Eintraegen ueber 240 KB gross - TRMNL lehnt ueber
+    100 KB ab und setzt das Plugin auf "degraded". Die Vorlage liest seit dem
+    daily-Block nur noch den Eintrag des Tages, also geht auch nur der raus.
+    """
+
+    def setUp(self):
+        self.assertTrue(PAYLOAD_PATH.exists(),
+                        "trmnl.json fehlt - refresh.py laufen lassen")
+        self.text = PAYLOAD_PATH.read_text(encoding="utf-8")
+        self.payload = json.loads(self.text)
+
+    def test_bleibt_klein(self):
+        size = len(self.text.encode("utf-8"))
+        self.assertLessEqual(size, PAYLOAD_MAX,
+                             f"{size} Bytes - da geht wohl der Bestand mit")
+
+    def test_ohne_bestand(self):
+        self.assertNotIn("thai_words", self.payload)
+
+    def test_deckt_sich_mit_words_json(self):
+        """Sonst zeigt das Display etwas anderes als der Bestand hergibt."""
+        self.assertEqual(self.payload, payload_for(DATA))
+
+    def test_traegt_was_die_vorlage_liest(self):
+        w = self.payload["daily"]["word"]
+        for feld in ("thai", "example_th", "gloss_de", "example_de"):
+            self.assertTrue(str(w.get(feld, "")).strip(), feld)
+
+    def test_zeitstempel_ist_dabei(self):
+        """Die einzige Aenderung, an der TRMNL einen neuen Screen erkennt."""
+        self.assertIsInstance(self.payload.get("last_updated"), (int, float))
 
 
 if __name__ == "__main__":

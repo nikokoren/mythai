@@ -8,9 +8,11 @@ Workflow). Zwei Aufgaben:
    (oder sich der Bestand geaendert hat). Die Vorlage laeuft mit
    `day_index modulo N` genau dieser Reihenfolge entlang - sie muss dafuer
    nicht angepasst werden.
-2. `daily` schreiben: was heute drankommt. Rein informativ - die Vorlage
-   rechnet ihren Index selbst aus lokaler Zeit aus und wechselt darum um
-   lokal Mitternacht, nicht um 00:05 UTC.
+2. `daily` schreiben: was heute drankommt.
+3. `trmnl.json` schreiben - die kleine Datei, die das Display abholt. Sie
+   enthaelt nur den Eintrag des Tages. `words.json` ist mit 383 Eintraegen
+   ueber 240 KB gross und reisst TRMNLs 100-KB-Grenze; die Vorlage liest
+   daraus seit dem daily-Block ohnehin nur noch `daily.word`.
 """
 import argparse
 import json
@@ -28,6 +30,15 @@ from scripts.select import build_order, cycle_for, day_index, pick_index
 
 ROOT = Path(__file__).resolve().parent.parent
 WORDS = ROOT / "words.json"
+
+# Was das Display abholt. words.json bleibt der Bestand und die Quelle der
+# Wahrheit, wird aber nicht mehr ausgeliefert.
+PAYLOAD = ROOT / "trmnl.json"
+
+# TRMNL lehnt ueber 100 KB ab und setzt das Plugin auf "degraded". Der Riegel
+# liegt bewusst weit darunter: die Nutzdaten sind ein einzelner Eintrag, alles
+# darueber hiesse, dass versehentlich wieder der Bestand mitgeht.
+PAYLOAD_MAX = 8 * 1024
 
 # Zeitzone, in der "heute" bestimmt wird. Der Workflow laeuft kurz nach lokaler
 # Mitternacht; nur mit derselben Zone traegt daily.date dann auch das lokale
@@ -50,7 +61,40 @@ class ZukunftsDatum(Exception):
     """
 
 
-def refresh(path=WORDS, day=None, force_reorder=False, allow_future=False):
+def payload_for(data):
+    """Die Nutzdaten fuers Display: ein Eintrag, kein Bestand.
+
+    Dieselben Schluessel wie in words.json, damit die Vorlage unveraendert
+    `daily.word` liest. `last_updated` muss mit: es ist die Aenderung, an der
+    TRMNL erkennt, dass ein neuer Screen faellig ist.
+    """
+    return {
+        "daily": data["daily"],
+        "last_updated": data["last_updated"],
+        "word_count": data["word_count"],
+        "cycle": data["cycle"],
+    }
+
+
+def write_payload(data, path=PAYLOAD):
+    text = json.dumps(payload_for(data), indent=2, ensure_ascii=False) + "\n"
+    size = len(text.encode("utf-8"))
+    if size > PAYLOAD_MAX:
+        raise PayloadZuGross(
+            f"{path.name} waere {size} Bytes gross, erlaubt sind {PAYLOAD_MAX}. "
+            f"Geht da der ganze Bestand mit?")
+    if not path.exists() or path.read_text(encoding="utf-8") != text:
+        path.write_text(text, encoding="utf-8")
+        return True
+    return False
+
+
+class PayloadZuGross(Exception):
+    """Die Datei fuers Display ist ueber das Budget gewachsen."""
+
+
+def refresh(path=WORDS, day=None, force_reorder=False, allow_future=False,
+            payload_path=PAYLOAD):
     data = json.loads(path.read_text(encoding="utf-8"))
     words = data["thai_words"]
     day = day or today()
@@ -77,6 +121,10 @@ def refresh(path=WORDS, day=None, force_reorder=False, allow_future=False):
 
     changed = reordered or data.get("daily") != daily or data.get("cycle") != cycle
     if not changed:
+        # Auch dann nachziehen: fehlt trmnl.json oder ist sie aus dem Tritt,
+        # muss sie geschrieben werden, sonst holt das Display einen alten Stand.
+        if payload_path is not None and write_payload(data, payload_path):
+            return data, True, reordered
         return data, False, reordered
 
     data["daily"] = daily
@@ -85,6 +133,8 @@ def refresh(path=WORDS, day=None, force_reorder=False, allow_future=False):
     data["last_updated"] = time.time()
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n",
                     encoding="utf-8")
+    if payload_path is not None:
+        write_payload(data, payload_path)
     return data, True, reordered
 
 
@@ -107,11 +157,12 @@ def main():
         tmp.write_bytes(WORDS.read_bytes())
         data, changed, reordered = refresh(path=tmp, day=day,
                                            force_reorder=args.reorder,
-                                           allow_future=True)
+                                           allow_future=True,
+                                           payload_path=tmp.with_name("trmnl.json"))
     else:
         try:
             data, changed, reordered = refresh(day=day, force_reorder=args.reorder)
-        except ZukunftsDatum as e:
+        except (ZukunftsDatum, PayloadZuGross) as e:
             print(f"Abgebrochen: {e}", file=sys.stderr)
             return 1
 
@@ -122,6 +173,9 @@ def main():
         status += ", nur Probe"
     print(f"{d['date']}  Index {d['index']}/{data['word_count']}  Zyklus {data['cycle']}  ({status})")
     print(f"  {w['thai']}  {w['rtgs']}  -  {w['gloss_de']}  [{w['topic']}]")
+    if not args.dry_run:
+        print(f"  {PAYLOAD.name}: {PAYLOAD.stat().st_size} Bytes "
+              f"(Grenze bei TRMNL: 100 KB)")
 
     if args.preview:
         from datetime import timedelta

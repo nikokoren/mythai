@@ -1,0 +1,26 @@
+{
+  "daily": {
+    "date": "2026-09-12",
+    "day_index": 20708,
+    "index": 26,
+    "word": {
+      "thai": "โอนเงิน",
+      "rtgs": "on ngoen",
+      "pos": "Verbphrase",
+      "gloss_de": "überweisen",
+      "topic": "Einkaufen & Geld",
+      "example_th": "กรุณา โอนเงิน ภายในวันนี้",
+      "example_de": "Bitte überweisen Sie das Geld noch heute.",
+      "tone": {
+        "syllables": null,
+        "initial_class": "Mittelkonsonant",
+        "rule_hint": null,
+        "source": "unvollstaendig"
+      },
+      "forvo_slug": "โอนเงิน"
+    }
+  },
+  "last_updated": 1789174840.0919867,
+  "word_count": 383,
+  "cycle": 54
+}

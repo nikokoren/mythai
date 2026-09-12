@@ -1,21 +1,51 @@
 # mythai
 
-Thai-Vokabeln fuer ein TRMNL-Display. `words.json` wird von der Plugin-Vorlage
-abgeholt, die sich daraus jeden Tag ein Wort zieht. Ein GitHub-Workflow haelt
-die Datei taeglich aktuell.
+Thai-Vokabeln fuer ein TRMNL-Display. `words.json` ist der Bestand,
+`trmnl.json` das Wort des Tages - die kleine Datei, die das Display abholt.
+Ein GitHub-Workflow schreibt beide taeglich.
 
 ## Aufbau
 
 ```
-words.json          das einzige Artefakt, das TRMNL liest
+words.json          der Bestand (Quelle der Wahrheit, wird nicht ausgeliefert)
+trmnl.json          das Wort des Tages - das holt TRMNL ab
 scripts/select.py   die Reihenfolge (der eigentliche Hebel)
-scripts/refresh.py  taeglicher Lauf (schreibt words.json)
+scripts/refresh.py  taeglicher Lauf (schreibt beide Dateien)
 scripts/thai.py     Konsonantenklasse und Silbenanalyse
 scripts/audit.py    Qualitaetsbericht
 scripts/migrate.py  einmalige Bereinigung des Altbestands
 scripts/test_selection.py   Tests
 trmnl/              die TRMNL-Vorlage und was sie erwartet
 ```
+
+## Warum zwei Dateien
+
+TRMNL lehnt Nutzdaten ueber 100 KB ab und setzt das Plugin dann auf
+"degraded" - es holt gar nichts mehr, bis man die Gesundheit von Hand
+zuruecksetzt. `words.json` ist mit 383 Eintraegen ueber 240 KB gross; allein
+die Tonanalysen machen 78 KB aus.
+
+Die Vorlage braucht davon nichts. Seit sie `daily.word` liest, ist der Bestand
+im Payload totes Gewicht:
+
+```
+words.json   247 KB   Bestand, Tonanalysen, Beispielsaetze - alles
+trmnl.json   ~0,7 KB  ein Eintrag, ein Zeitstempel
+```
+
+Ein Test haelt `trmnl.json` unter 8 KB. Reisst der, ist versehentlich wieder
+der Bestand mitgegangen.
+
+**Die Polling-URL des Plugins zeigt auf `trmnl.json`:**
+
+```
+https://raw.githubusercontent.com/nikokoren/mythai/main/trmnl.json
+```
+
+Die Reihenfolge beim Umstellen zaehlt: erst die Markup einspielen, die
+`daily.word` liest, dann die URL umhaengen. Andersherum steht kurz "No Data"
+auf dem Display, weil die alte Markup in `trmnl.json` kein `thai_words`
+findet.
 
 ## words.json
 
