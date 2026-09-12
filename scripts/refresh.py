@@ -16,6 +16,7 @@ import argparse
 import json
 import os
 import sys
+import tempfile
 import time
 from datetime import date, datetime, timezone
 from pathlib import Path
@@ -39,10 +40,24 @@ def today(tz=None):
     return datetime.now(ZoneInfo(tz or TZ)).date()
 
 
-def refresh(path=WORDS, day=None, force_reorder=False):
+class ZukunftsDatum(Exception):
+    """Ein Stand fuer morgen wuerde den Lauf von morgen stilllegen.
+
+    Der Lauf schreibt nur, wenn sich etwas aendert - das ist der Ausloeser
+    fuer TRMNL. Steht das Datum von morgen schon in der Datei, findet der
+    Lauf morgen nichts zu tun, die Nutzdaten bleiben gleich, und das Display
+    behaelt das Wort von heute. Genau so ist der 11.09.2026 ausgefallen.
+    """
+
+
+def refresh(path=WORDS, day=None, force_reorder=False, allow_future=False):
     data = json.loads(path.read_text(encoding="utf-8"))
     words = data["thai_words"]
     day = day or today()
+    if not allow_future and day > today():
+        raise ZukunftsDatum(
+            f"{day} liegt in der Zukunft - das wuerde den Lauf an diesem Tag "
+            f"stilllegen. Zum Probieren --dry-run nehmen.")
     total = len(words)
     cycle = cycle_for(day, total)
 
@@ -75,7 +90,9 @@ def refresh(path=WORDS, day=None, force_reorder=False):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--date", help="ISO-Datum statt heute")
+    ap.add_argument("--date", help="ISO-Datum statt heute (Zukunft nur mit --dry-run)")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="nur rechnen und anzeigen, nichts schreiben")
     ap.add_argument("--tz", help=f"Zeitzone fuer 'heute' (Standard: {TZ})")
     ap.add_argument("--reorder", action="store_true",
                     help="Reihenfolge neu mischen, auch mitten im Zyklus")
@@ -83,11 +100,26 @@ def main():
                     help="so viele Folgetage zusaetzlich anzeigen")
     args = ap.parse_args()
     day = date.fromisoformat(args.date) if args.date else today(args.tz)
-    data, changed, reordered = refresh(day=day, force_reorder=args.reorder)
+
+    if args.dry_run:
+        # ueber eine Kopie, damit die echte Datei garantiert unberuehrt bleibt
+        tmp = Path(tempfile.mkdtemp()) / WORDS.name
+        tmp.write_bytes(WORDS.read_bytes())
+        data, changed, reordered = refresh(path=tmp, day=day,
+                                           force_reorder=args.reorder,
+                                           allow_future=True)
+    else:
+        try:
+            data, changed, reordered = refresh(day=day, force_reorder=args.reorder)
+        except ZukunftsDatum as e:
+            print(f"Abgebrochen: {e}", file=sys.stderr)
+            return 1
 
     d = data["daily"]
     w = d["word"]
     status = "neu gemischt" if reordered else ("geschrieben" if changed else "unveraendert")
+    if args.dry_run:
+        status += ", nur Probe"
     print(f"{d['date']}  Index {d['index']}/{data['word_count']}  Zyklus {data['cycle']}  ({status})")
     print(f"  {w['thai']}  {w['rtgs']}  -  {w['gloss_de']}  [{w['topic']}]")
 
@@ -101,6 +133,8 @@ def main():
             n = words[i]
             print(f"    {nxt}  {n['thai']:<16} {n['gloss_de']:<26} [{n['topic']}]")
 
+    return 0
+
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

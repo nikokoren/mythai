@@ -150,13 +150,32 @@ einziges neues Wort und loest damit auch 24 Screen-Renderings aus.
 Der Workflow lief vorher stuendlich (`'0 * * * *'`, trotz des Kommentars
 "Midnight UTC") und schrieb dabei ausser `last_updated` nichts. Da die Vorlage
 `last_updated` gar nicht liest, waren das 24 wirkungslose Commits pro Tag.
-Jetzt: `'5 0 * * *'`, ein Commit.
+Jetzt: `'5 23 * * *'`, ein Commit. 23:05 UTC ist 00:05 MEZ im Winter und
+01:05 MESZ im Sommer - ganzjaehrig kurz nach lokaler Mitternacht. Eine feste
+UTC-Zeit kann wegen der Sommerzeit nicht in beiden Halbjahren Mitternacht
+treffen.
+
+### Kein Stand aus der Zukunft in words.json
+
+Weil der Lauf nur schreibt, wenn sich etwas aendert, legt ein vorausgeschriebenes
+`daily` genau den Tag stumm, auf den es lautet: der Lauf findet nichts zu tun,
+die Nutzdaten bleiben gleich, das Display behaelt das Wort vom Vortag. So ist
+der 11.09.2026 ausgefallen - ein Probelauf mit `--date` war versehentlich mit
+eingecheckt worden.
+
+Zwei Riegel dagegen: `refresh.py` bricht bei einem Datum in der Zukunft ab, und
+`test_selection.py` faellt durch, wenn `daily.date` in der Zukunft liegt. Der
+Workflow laesst die Tests vor dem Schreiben laufen, faellt in dem Fall also
+sichtbar aus, statt still nichts zu tun.
 
 ## Lokal
 
 ```sh
-python3 scripts/refresh.py --date 2026-09-09 --preview 14   # zwei Wochen vorschauen
+python3 scripts/refresh.py --date 2026-09-20 --dry-run --preview 14   # vorschauen
 python3 scripts/refresh.py --reorder           # Reihenfolge neu mischen
 python3 scripts/audit.py                       # Qualitaetsbericht
 python3 scripts/test_selection.py              # Tests
 ```
+
+`--dry-run` rechnet ueber eine Kopie und laesst `words.json` in Ruhe. Fuer alles,
+was in der Zukunft liegt, ist es Pflicht - ohne bricht der Lauf ab.

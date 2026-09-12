@@ -9,6 +9,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
+from scripts.refresh import today
 from scripts.select import (WINDOW, build_order, cycle_for, day_index,
                             interleave, pick_index)
 from scripts.thai import CLASS_DE, analyze_monosyllable, consonant_class
@@ -123,6 +124,17 @@ class TestTagesauswahl(unittest.TestCase):
         self.assertEqual(d["word"]["thai"], WORDS[d["index"]]["thai"])
         self.assertEqual(d["index"], pick_index(date.fromisoformat(d["date"]), N))
         self.assertEqual(d["day_index"], day_index(date.fromisoformat(d["date"])))
+
+    def test_daily_liegt_nicht_in_der_zukunft(self):
+        """Ein Datum aus der Zukunft in words.json legt einen Tag still.
+
+        Passiert beim Testen mit --date: wird so ein Stand committet, findet
+        der Lauf am naechsten Tag nichts zu aendern, die Nutzdaten bleiben
+        gleich - und TRMNL erzeugt keinen neuen Screen. Genau das ist am
+        11.09.2026 passiert.
+        """
+        d = date.fromisoformat(DATA["daily"]["date"])
+        self.assertLessEqual(d, today(), "daily.date liegt in der Zukunft")
 
     def test_zyklus_im_kopf_passt(self):
         self.assertEqual(DATA["cycle"],
