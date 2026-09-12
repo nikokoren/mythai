@@ -7770,34 +7770,26 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1789023956.724365,
+  "last_updated": 1789174840.0919867,
   "daily": {
-    "date": "2026-09-11",
-    "day_index": 20707,
-    "index": 25,
+    "date": "2026-09-12",
+    "day_index": 20708,
+    "index": 26,
     "word": {
-      "thai": "ไหม",
-      "rtgs": "mai",
-      "pos": "Partikel",
-      "gloss_de": "Fragepartikel (ja/nein)",
-      "topic": "Grammatik & Partikeln",
-      "example_th": "คุณหิวไหม",
-      "example_de": "Hast du Hunger?",
+      "thai": "โอนเงิน",
+      "rtgs": "on ngoen",
+      "pos": "Verbphrase",
+      "gloss_de": "überweisen",
+      "topic": "Einkaufen & Geld",
+      "example_th": "กรุณา โอนเงิน ภายในวันนี้",
+      "example_de": "Bitte überweisen Sie das Geld noch heute.",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "ไหม",
-            "class": "Hochkonsonant",
-            "syllable": "offen",
-            "length": "kurz",
-            "tone": "steigend"
-          }
-        ],
-        "initial_class": "Hochkonsonant",
-        "rule_hint": "Hochkonsonant + offene Silbe + kurzer Vokal -> steigend",
-        "source": "regelbasiert berechnet"
+        "syllables": null,
+        "initial_class": "Mittelkonsonant",
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "ไหม"
+      "forvo_slug": "โอนเงิน"
     }
   },
   "word_count": 383,
