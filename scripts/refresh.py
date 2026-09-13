@@ -47,8 +47,32 @@ PAYLOAD_MAX = 8 * 1024
 TZ = os.environ.get("TRMNL_TZ", "UTC")
 
 
+def now(tz=None):
+    return datetime.now(ZoneInfo(tz or TZ))
+
+
 def today(tz=None):
-    return datetime.now(ZoneInfo(tz or TZ)).date()
+    return now(tz).date()
+
+
+# Ab wann die Vollansicht Deutsch dazunimmt (lokale Stunde).
+REVEAL_HOUR = 12
+
+
+def phase_at(moment):
+    """Vormittag oder Nachmittag - danach richtet sich die Vollansicht.
+
+    Die Entscheidung faellt hier und nicht in der Vorlage, weil nur der
+    Dateischreibzeitpunkt zaehlt: TRMNL zeichnet einen Screen erst neu, wenn
+    sich die Nutzdaten geaendert haben. Die Vorlage kann die Stunde ausrechnen
+    so oft sie will - gezeigt wird, was beim letzten Schreiben galt.
+
+    Ein Wort und keine Wahrheitswert: in Liquid sind `false` und `nil` in
+    Vergleichen nicht auseinanderzuhalten, ein `false` im Payload waere von
+    "Feld fehlt" nicht zu unterscheiden und wuerde jeden Vormittag still in
+    den Rueckfallzweig laufen.
+    """
+    return "nachmittag" if moment.hour >= REVEAL_HOUR else "vormittag"
 
 
 class ZukunftsDatum(Exception):
@@ -70,6 +94,7 @@ def payload_for(data):
     """
     return {
         "daily": data["daily"],
+        "phase": data["phase"],
         "last_updated": data["last_updated"],
         "word_count": data["word_count"],
         "cycle": data["cycle"],
@@ -93,11 +118,12 @@ class PayloadZuGross(Exception):
     """Die Datei fuers Display ist ueber das Budget gewachsen."""
 
 
-def refresh(path=WORDS, day=None, force_reorder=False, allow_future=False,
+def refresh(path=WORDS, moment=None, force_reorder=False, allow_future=False,
             payload_path=PAYLOAD):
     data = json.loads(path.read_text(encoding="utf-8"))
     words = data["thai_words"]
-    day = day or today()
+    moment = moment or now()
+    day = moment.date()
     if not allow_future and day > today():
         raise ZukunftsDatum(
             f"{day} liegt in der Zukunft - das wuerde den Lauf an diesem Tag "
@@ -111,6 +137,7 @@ def refresh(path=WORDS, day=None, force_reorder=False, allow_future=False,
         data["thai_words"] = words
         reordered = True
 
+    phase = phase_at(moment)
     idx = pick_index(day, total)
     daily = {
         "date": day.isoformat(),
@@ -119,7 +146,9 @@ def refresh(path=WORDS, day=None, force_reorder=False, allow_future=False,
         "word": words[idx],
     }
 
-    changed = reordered or data.get("daily") != daily or data.get("cycle") != cycle
+    changed = (reordered or data.get("daily") != daily
+               or data.get("cycle") != cycle
+               or data.get("phase") != phase)
     if not changed:
         # Auch dann nachziehen: fehlt trmnl.json oder ist sie aus dem Tritt,
         # muss sie geschrieben werden, sonst holt das Display einen alten Stand.
@@ -128,6 +157,7 @@ def refresh(path=WORDS, day=None, force_reorder=False, allow_future=False,
         return data, False, reordered
 
     data["daily"] = daily
+    data["phase"] = phase
     data["cycle"] = cycle
     data["word_count"] = total
     data["last_updated"] = time.time()
@@ -140,7 +170,10 @@ def refresh(path=WORDS, day=None, force_reorder=False, allow_future=False,
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--date", help="ISO-Datum statt heute (Zukunft nur mit --dry-run)")
+    ap.add_argument("--date",
+                    help="ISO-Datum oder -Zeitpunkt statt jetzt, z.B. 2026-09-13 "
+                         "oder 2026-09-13T14:00 (Zukunft nur mit --dry-run). "
+                         "Ohne Uhrzeit gilt 00:00, also vormittags.")
     ap.add_argument("--dry-run", action="store_true",
                     help="nur rechnen und anzeigen, nichts schreiben")
     ap.add_argument("--tz", help=f"Zeitzone fuer 'heute' (Standard: {TZ})")
@@ -149,19 +182,25 @@ def main():
     ap.add_argument("--preview", type=int, default=0,
                     help="so viele Folgetage zusaetzlich anzeigen")
     args = ap.parse_args()
-    day = date.fromisoformat(args.date) if args.date else today(args.tz)
+    if args.date:
+        moment = datetime.fromisoformat(args.date)
+        if moment.tzinfo is None:
+            moment = moment.replace(tzinfo=ZoneInfo(args.tz or TZ))
+    else:
+        moment = now(args.tz)
 
     if args.dry_run:
         # ueber eine Kopie, damit die echte Datei garantiert unberuehrt bleibt
         tmp = Path(tempfile.mkdtemp()) / WORDS.name
         tmp.write_bytes(WORDS.read_bytes())
-        data, changed, reordered = refresh(path=tmp, day=day,
+        data, changed, reordered = refresh(path=tmp, moment=moment,
                                            force_reorder=args.reorder,
                                            allow_future=True,
                                            payload_path=tmp.with_name("trmnl.json"))
     else:
         try:
-            data, changed, reordered = refresh(day=day, force_reorder=args.reorder)
+            data, changed, reordered = refresh(moment=moment,
+                                               force_reorder=args.reorder)
         except (ZukunftsDatum, PayloadZuGross) as e:
             print(f"Abgebrochen: {e}", file=sys.stderr)
             return 1
@@ -173,6 +212,8 @@ def main():
         status += ", nur Probe"
     print(f"{d['date']}  Index {d['index']}/{data['word_count']}  Zyklus {data['cycle']}  ({status})")
     print(f"  {w['thai']}  {w['rtgs']}  -  {w['gloss_de']}  [{w['topic']}]")
+    print(f"  {moment:%H:%M} lokal = {data['phase']} -> Vollansicht "
+          f"{'mit Deutsch' if data['phase'] == 'nachmittag' else 'nur Thai'}")
     if not args.dry_run:
         print(f"  {PAYLOAD.name}: {PAYLOAD.stat().st_size} Bytes "
               f"(Grenze bei TRMNL: 100 KB)")

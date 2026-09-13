@@ -27,10 +27,26 @@
 {% endcomment %}
 {%- assign current_hour = local_time | modulo: 86400 | divided_by: 3600 -%}
 
-{%- comment %} Logic: Show German only in the afternoon (12:00+) {% endcomment %}
+{%- comment %}
+  Ab 12 Uhr lokal kommt Deutsch dazu. Entschieden wird das im Workflow, nicht
+  hier: TRMNL zeichnet einen Screen nur neu, wenn sich die Nutzdaten geaendert
+  haben. Diese Vorlage kann die Stunde ausrechnen so oft sie will - zu sehen
+  ist, was beim letzten Schreiben der Datei galt. Der Lauf um 12:05 lokal
+  setzt phase auf "nachmittag" und loest damit erst das Neuzeichnen aus.
+
+  Der Stundenzweig darunter bleibt als Rueckfall, falls einmal eine Datei ohne
+  das Feld ausgeliefert wird. Er ist dann wieder so ungenau wie vorher.
+{% endcomment %}
+{%- assign phase_value = phase | default: merge_variables.IDX_0.phase -%}
+
 {%- assign show_german = false -%}
-{%- if current_hour >= 12 -%}
+{%- if phase_value == 'nachmittag' -%}
   {%- assign show_german = true -%}
+{%- elsif phase_value == nil or phase_value == '' -%}
+  {%- comment %} Rueckfall: Datei ohne phase. Dann wieder nach eigener Uhr. {% endcomment %}
+  {%- if current_hour >= 12 -%}
+    {%- assign show_german = true -%}
+  {%- endif -%}
 {%- endif -%}
 
 {%- comment %} 3. DATA PARSING {% endcomment %}

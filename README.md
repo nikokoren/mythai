@@ -52,7 +52,8 @@ findet.
 ```jsonc
 {
   "thai_words": [ /* der komplette Bestand */ ],
-  "daily": {              // informativ; die Vorlage rechnet selbst
+  "phase": "vormittag",   // ab 12 Uhr lokal "nachmittag" (nur Vollansicht)
+  "daily": {              // was heute drankommt
     "date": "2026-09-10",
     "day_index": 20706,   // Tage seit der Unix-Epoche
     "index": 24,          // day_index modulo word_count
@@ -174,16 +175,50 @@ Darum:
   Wechsel schon allein, aber der Zeitstempel steht als ausdrueckliches Signal
   daneben - genau dafuer war er urspruenglich da.
 
-Nicht wieder auf stuendlich stellen: das aendert die Nutzdaten 24-mal fuer ein
-einziges neues Wort und loest damit auch 24 Screen-Renderings aus.
+### Zweimal am Tag, nicht einmal und nicht 24-mal
 
-Der Workflow lief vorher stuendlich (`'0 * * * *'`, trotz des Kommentars
-"Midnight UTC") und schrieb dabei ausser `last_updated` nichts. Da die Vorlage
-`last_updated` gar nicht liest, waren das 24 wirkungslose Commits pro Tag.
-Jetzt: `'5 23 * * *'`, ein Commit. 23:05 UTC ist 00:05 MEZ im Winter und
-01:05 MESZ im Sommer - ganzjaehrig kurz nach lokaler Mitternacht. Eine feste
-UTC-Zeit kann wegen der Sommerzeit nicht in beiden Halbjahren Mitternacht
-treffen.
+Die Vollansicht zeigt bis 12 Uhr nur Thai und nimmt danach die deutsche
+Bedeutung und den deutschen Satz dazu. Das ist eine zweite Aenderung der
+Nutzdaten und braucht darum einen zweiten Lauf.
+
+Der Workflow lief urspruenglich stuendlich (`'0 * * * *'`, trotz des Kommentars
+"Midnight UTC"). Ich hatte das auf einen Lauf gekuerzt und die 23 anderen fuer
+wirkungslos gehalten - sie waren es nicht: einer davon hat jeden Tag die
+Mittagsumschaltung ausgeloest. Mit nur einem Lauf wird der Screen kurz nach
+Mitternacht gezeichnet und danach nicht mehr, und Deutsch erscheint nie.
+
+Jetzt drei Cron-Eintraege, aber **zwei Renderings pro Tag**:
+
+| Cron (UTC)    | im Winter   | im Sommer   | was passiert                |
+| ------------- | ----------- | ----------- | --------------------------- |
+| `5 23 * * *`  | 00:05 MEZ   | 01:05 MESZ  | neues Wort, Phase vormittag |
+| `5 10 * * *`  | 11:05 MEZ   | 12:05 MESZ  | im Sommer die Umschaltung   |
+| `5 11 * * *`  | 12:05 MEZ   | 13:05 MESZ  | im Winter die Umschaltung   |
+
+Zwei Mittags-Eintraege, weil keine feste UTC-Stunde in beiden Halbjahren 12 Uhr
+trifft. Der jeweils falsche laeuft ins Leere: `refresh.py` rechnet `phase` aus
+der echten lokalen Zeit, findet nichts geaendert, schreibt nicht und committet
+nicht - also auch kein Rendering. Im Winter rechnet der 10:05-Lauf noch
+"vormittag", im Sommer findet der 11:05-Lauf "nachmittag" schon gesetzt vor.
+So steht die Umschaltung ganzjaehrig auf 12:05 lokal.
+
+Verzoegert GitHub einen Lauf um ein, zwei Stunden - das kommt regelmaessig vor -
+wird die Umschaltung spaeter, nie frueher: entschieden wird nach der Uhr zum
+Zeitpunkt des Laufs, nicht nach der geplanten Zeit.
+
+### phase ist ein Wort, kein Wahrheitswert
+
+Im Payload steht `"phase": "vormittag"` bzw. `"nachmittag"`, nicht `true`/`false`.
+In Liquid sind `false` und `nil` in Vergleichen nicht auseinanderzuhalten; ein
+`false` im Payload waere von "Feld fehlt" nicht zu unterscheiden und wuerde die
+Vorlage jeden Vormittag still in den Rueckfallzweig laufen lassen.
+
+Die Umschaltung faellt aus demselben Grund im Workflow und nicht in der Vorlage:
+die Vorlage kann die Stunde ausrechnen so oft sie will, zu sehen ist, was beim
+letzten Schreiben der Datei galt.
+
+**Nur die Vollansicht.** Die Quadranten-Vorlage zeigt Thai-Wort und Thai-Satz,
+zu jeder Tageszeit, und liest `phase` gar nicht.
 
 ### Kein Stand aus der Zukunft in words.json
 

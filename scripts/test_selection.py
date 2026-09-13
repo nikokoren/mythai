@@ -4,12 +4,15 @@ import json
 import sys
 import unittest
 from collections import Counter
-from datetime import date, timedelta
+import re
+from datetime import date, datetime, timedelta, timezone
+from zoneinfo import ZoneInfo
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from scripts.refresh import PAYLOAD_MAX, payload_for, today
+from scripts.refresh import (PAYLOAD_MAX, REVEAL_HOUR, payload_for,
+                            phase_at, today)
 from scripts.select import (WINDOW, build_order, cycle_for, day_index,
                             interleave, pick_index)
 from scripts.thai import CLASS_DE, analyze_monosyllable, consonant_class
@@ -210,9 +213,72 @@ class TestNutzdaten(unittest.TestCase):
         for feld in ("thai", "example_th", "gloss_de", "example_de"):
             self.assertTrue(str(w.get(feld, "")).strip(), feld)
 
+    def test_phase_ist_dabei(self):
+        """Ohne das Feld faellt die Vollansicht auf ihre eigene Uhr zurueck."""
+        self.assertIn(self.payload.get("phase"), ("vormittag", "nachmittag"))
+
+    def test_phase_ist_ein_wort_kein_wahrheitswert(self):
+        """In Liquid sind false und nil in Vergleichen nicht zu trennen.
+
+        Ein `false` im Payload waere von "Feld fehlt" nicht zu unterscheiden
+        und wuerde jeden Vormittag still in den Rueckfallzweig laufen.
+        """
+        self.assertIsInstance(self.payload["phase"], str)
+
     def test_zeitstempel_ist_dabei(self):
         """Die einzige Aenderung, an der TRMNL einen neuen Screen erkennt."""
         self.assertIsInstance(self.payload.get("last_updated"), (int, float))
+
+
+class TestPhase(unittest.TestCase):
+    """Die Vollansicht nimmt ab 12 Uhr lokal Deutsch dazu."""
+
+    def test_umschlagpunkt(self):
+        tz = ZoneInfo("Europe/Vienna")
+        for h, erwartet in [(0, "vormittag"), (11, "vormittag"),
+                            (12, "nachmittag"), (23, "nachmittag")]:
+            with self.subTest(stunde=h):
+                m = datetime(2026, 9, 13, h, 30, tzinfo=tz)
+                self.assertEqual(phase_at(m), erwartet)
+
+    def test_genau_auf_zwoelf(self):
+        tz = ZoneInfo("Europe/Vienna")
+        self.assertEqual(phase_at(datetime(2026, 9, 13, 11, 59, tzinfo=tz)),
+                         "vormittag")
+        self.assertEqual(phase_at(datetime(2026, 9, 13, 12, 0, tzinfo=tz)),
+                         "nachmittag")
+
+    def test_cron_trifft_zwoelf_in_beiden_halbjahren(self):
+        """Keine feste UTC-Stunde trifft ganzjaehrig 12 Uhr lokal.
+
+        Darum zwei Eintraege im Workflow. Umgeschaltet wird beim ersten Lauf,
+        der "nachmittag" rechnet; ein spaeterer findet die Phase schon gesetzt,
+        aendert nichts und committet nicht. Zu pruefen ist also: der frueheste
+        Treffer liegt in beiden Halbjahren auf 12:0x lokal, und kein Lauf
+        rechnet "nachmittag", bevor es 12 ist.
+        """
+        wf = (ROOT / ".github/workflows/refresh.yml").read_text(encoding="utf-8")
+        crons = re.findall(r"cron: '([^']+)'", wf)
+        self.assertIn("5 10 * * *", crons)
+        self.assertIn("5 11 * * *", crons)
+
+        tz = ZoneInfo("Europe/Vienna")
+        for tag, kennung in [(datetime(2026, 1, 15), "Winter"),
+                             (datetime(2026, 7, 15), "Sommer")]:
+            treffer = []
+            for stunde in (10, 11):
+                utc = tag.replace(hour=stunde, minute=5, tzinfo=timezone.utc)
+                lokal = utc.astimezone(tz)
+                if phase_at(lokal) == "nachmittag":
+                    treffer.append(lokal)
+            with self.subTest(kennung):
+                self.assertTrue(treffer, f"{kennung}: kein Lauf schaltet um")
+                erster = min(treffer)
+                self.assertEqual(erster.hour, REVEAL_HOUR,
+                                 f"{kennung}: schaltet um {erster:%H:%M} lokal, "
+                                 f"nicht um 12:0x")
+                for t in treffer:
+                    self.assertGreaterEqual(t.hour, REVEAL_HOUR, kennung)
 
 
 if __name__ == "__main__":

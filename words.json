@@ -7770,7 +7770,7 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1789260441.3549407,
+  "last_updated": 1789326681.1759892,
   "daily": {
     "date": "2026-09-13",
     "day_index": 20709,
@@ -7801,5 +7801,6 @@
     }
   },
   "word_count": 383,
-  "cycle": 54
+  "cycle": 54,
+  "phase": "nachmittag"
 }

@@ -8,6 +8,19 @@ on:
     # erzeugt einen Screen nur neu, wenn sich die Nutzdaten geaendert haben.
     # (Vorher '0 * * * *' - stuendlich, trotz des Kommentars "Midnight UTC".)
     - cron: '5 23 * * *'
+
+    # Und einmal kurz nach lokal 12 Uhr: da nimmt die Vollansicht Deutsch dazu.
+    # Auch das ist eine Aenderung der Nutzdaten und braucht darum einen Lauf -
+    # die Vorlage kann die Stunde ausrechnen so oft sie will, gezeichnet wird
+    # nur, wenn sich die Datei geaendert hat.
+    #
+    # Zwei Eintraege, weil keine feste UTC-Stunde in beiden Halbjahren 12 Uhr
+    # trifft: 10:05 UTC ist 12:05 MESZ, aber erst 11:05 MEZ. Den falschen
+    # laesst refresh.py auflaufen - es rechnet show_german aus der echten
+    # lokalen Zeit, findet nichts geaendert und committet nicht. So steht die
+    # Umschaltung ganzjaehrig auf 12:05 lokal, bei einem Rendering pro Haelfte.
+    - cron: '5 10 * * *'
+    - cron: '5 11 * * *'
   workflow_dispatch:
 
 jobs:
