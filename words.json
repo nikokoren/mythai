@@ -7770,26 +7770,34 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1789174840.0919867,
+  "last_updated": 1789260441.3549407,
   "daily": {
-    "date": "2026-09-12",
-    "day_index": 20708,
-    "index": 26,
+    "date": "2026-09-13",
+    "day_index": 20709,
+    "index": 27,
     "word": {
-      "thai": "โอนเงิน",
-      "rtgs": "on ngoen",
-      "pos": "Verbphrase",
-      "gloss_de": "überweisen",
-      "topic": "Einkaufen & Geld",
-      "example_th": "กรุณา โอนเงิน ภายในวันนี้",
-      "example_de": "Bitte überweisen Sie das Geld noch heute.",
+      "thai": "สาม",
+      "rtgs": "sam",
+      "pos": "Numerale",
+      "gloss_de": "drei",
+      "topic": "Zahlen",
+      "example_th": "เขารอสามชั่วโมง",
+      "example_de": "Er hat drei Stunden gewartet.",
       "tone": {
-        "syllables": null,
-        "initial_class": "Mittelkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "สาม",
+            "class": "Hochkonsonant",
+            "syllable": "geschlossen",
+            "length": "lang",
+            "tone": "steigend"
+          }
+        ],
+        "initial_class": "Hochkonsonant",
+        "rule_hint": "Hochkonsonant + geschlossene Silbe + langer Vokal -> steigend",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "โอนเงิน"
+      "forvo_slug": "สาม"
     }
   },
   "word_count": 383,
