@@ -1,35 +1,27 @@
 {
   "daily": {
-    "date": "2026-09-13",
-    "day_index": 20709,
-    "index": 27,
+    "date": "2026-09-14",
+    "day_index": 20710,
+    "index": 28,
     "word": {
-      "thai": "สาม",
-      "rtgs": "sam",
-      "pos": "Numerale",
-      "gloss_de": "drei",
-      "topic": "Zahlen",
-      "example_th": "เขารอสามชั่วโมง",
-      "example_de": "Er hat drei Stunden gewartet.",
+      "thai": "แล้วเจอกัน",
+      "rtgs": "laeo choe kan",
+      "pos": "Phrase",
+      "gloss_de": "bis spaeter",
+      "topic": "Begruessung & Hoeflichkeit",
+      "example_th": "แล้วเจอกันพรุ่งนี้",
+      "example_de": "Bis morgen.",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "สาม",
-            "class": "Hochkonsonant",
-            "syllable": "geschlossen",
-            "length": "lang",
-            "tone": "steigend"
-          }
-        ],
-        "initial_class": "Hochkonsonant",
-        "rule_hint": "Hochkonsonant + geschlossene Silbe + langer Vokal -> steigend",
-        "source": "regelbasiert berechnet"
+        "syllables": null,
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "สาม"
+      "forvo_slug": "แล้วเจอกัน"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1789326681.1759892,
+  "phase": "vormittag",
+  "last_updated": 1789347236.2388148,
   "word_count": 383,
   "cycle": 54
 }
