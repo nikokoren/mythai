@@ -7770,29 +7770,37 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1789402502.437773,
+  "last_updated": 1789435223.8826025,
   "daily": {
-    "date": "2026-09-14",
-    "day_index": 20710,
-    "index": 28,
+    "date": "2026-09-15",
+    "day_index": 20711,
+    "index": 29,
     "word": {
-      "thai": "แล้วเจอกัน",
-      "rtgs": "laeo choe kan",
-      "pos": "Phrase",
-      "gloss_de": "bis spaeter",
-      "topic": "Begruessung & Hoeflichkeit",
-      "example_th": "แล้วเจอกันพรุ่งนี้",
-      "example_de": "Bis morgen.",
+      "thai": "เผ็ด",
+      "rtgs": "phet",
+      "pos": "Adjektiv",
+      "gloss_de": "scharf",
+      "topic": "Essen & Trinken",
+      "example_th": "ฉันกิน เผ็ด ได้นิดหน่อย",
+      "example_de": "Ich kann ein bisschen scharf essen.",
       "tone": {
-        "syllables": null,
-        "initial_class": "Tiefkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "เผ็ด",
+            "class": "Hochkonsonant",
+            "syllable": "geschlossen",
+            "length": "kurz",
+            "tone": "tief"
+          }
+        ],
+        "initial_class": "Hochkonsonant",
+        "rule_hint": "Hochkonsonant + geschlossene Silbe + kurzer Vokal -> tief",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "แล้วเจอกัน"
+      "forvo_slug": "เผ็ด"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
