@@ -1,35 +1,27 @@
 {
   "daily": {
-    "date": "2026-09-15",
-    "day_index": 20711,
-    "index": 29,
+    "date": "2026-09-16",
+    "day_index": 20712,
+    "index": 30,
     "word": {
-      "thai": "เผ็ด",
-      "rtgs": "phet",
-      "pos": "Adjektiv",
-      "gloss_de": "scharf",
-      "topic": "Essen & Trinken",
-      "example_th": "ฉันกิน เผ็ด ได้นิดหน่อย",
-      "example_de": "Ich kann ein bisschen scharf essen.",
+      "thai": "ทำไม",
+      "rtgs": "tham mai",
+      "pos": "Fragewort",
+      "gloss_de": "warum",
+      "topic": "Fragewoerter",
+      "example_th": "ทำไมคุณมาสาย",
+      "example_de": "Warum kommst du zu spaet?",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "เผ็ด",
-            "class": "Hochkonsonant",
-            "syllable": "geschlossen",
-            "length": "kurz",
-            "tone": "tief"
-          }
-        ],
-        "initial_class": "Hochkonsonant",
-        "rule_hint": "Hochkonsonant + geschlossene Silbe + kurzer Vokal -> tief",
-        "source": "regelbasiert berechnet"
+        "syllables": null,
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "เผ็ด"
+      "forvo_slug": "ทำไม"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1789483557.2648664,
+  "phase": "vormittag",
+  "last_updated": 1789521380.3887753,
   "word_count": 383,
   "cycle": 54
 }
