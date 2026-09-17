@@ -1,27 +1,35 @@
 {
   "daily": {
-    "date": "2026-09-16",
-    "day_index": 20712,
-    "index": 30,
+    "date": "2026-09-17",
+    "day_index": 20713,
+    "index": 31,
     "word": {
-      "thai": "ทำไม",
-      "rtgs": "tham mai",
-      "pos": "Fragewort",
-      "gloss_de": "warum",
-      "topic": "Fragewoerter",
-      "example_th": "ทำไมคุณมาสาย",
-      "example_de": "Warum kommst du zu spaet?",
+      "thai": "ยุง",
+      "rtgs": "yung",
+      "pos": "Nomen",
+      "gloss_de": "Muecke",
+      "topic": "Tiere",
+      "example_th": "ตอนเย็นมียุงเยอะ",
+      "example_de": "Am Abend gibt es viele Muecken.",
       "tone": {
-        "syllables": null,
+        "syllables": [
+          {
+            "glyph": "ยุง",
+            "class": "Tiefkonsonant",
+            "syllable": "geschlossen",
+            "length": "kurz",
+            "tone": "mittel"
+          }
+        ],
         "initial_class": "Tiefkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "rule_hint": "Tiefkonsonant + geschlossene Silbe + kurzer Vokal -> mittel",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ทำไม"
+      "forvo_slug": "ยุง"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1789569850.871996,
+  "phase": "vormittag",
+  "last_updated": 1789607786.4996526,
   "word_count": 383,
   "cycle": 54
 }
