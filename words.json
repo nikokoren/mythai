@@ -7770,37 +7770,37 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1789656452.4768286,
+  "last_updated": 1789693897.6270945,
   "daily": {
-    "date": "2026-09-17",
-    "day_index": 20713,
-    "index": 31,
+    "date": "2026-09-18",
+    "day_index": 20714,
+    "index": 32,
     "word": {
-      "thai": "ยุง",
-      "rtgs": "yung",
-      "pos": "Nomen",
-      "gloss_de": "Muecke",
-      "topic": "Tiere",
-      "example_th": "ตอนเย็นมียุงเยอะ",
-      "example_de": "Am Abend gibt es viele Muecken.",
+      "thai": "พบ",
+      "rtgs": "phop",
+      "pos": "Verb",
+      "gloss_de": "treffen",
+      "topic": "Alltagsverben",
+      "example_th": "นัดพบเพื่อนที่คาเฟ่",
+      "example_de": "Ich treffe Freunde im Café.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ยุง",
+            "glyph": "พบ",
             "class": "Tiefkonsonant",
             "syllable": "geschlossen",
             "length": "kurz",
-            "tone": "mittel"
+            "tone": "hoch"
           }
         ],
         "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + geschlossene Silbe + kurzer Vokal -> mittel",
+        "rule_hint": "Tiefkonsonant + geschlossene Silbe + kurzer Vokal -> hoch",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ยุง"
+      "forvo_slug": "พบ"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
