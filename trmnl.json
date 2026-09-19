@@ -1,35 +1,27 @@
 {
   "daily": {
-    "date": "2026-09-18",
-    "day_index": 20714,
-    "index": 32,
+    "date": "2026-09-19",
+    "day_index": 20715,
+    "index": 33,
     "word": {
-      "thai": "พบ",
-      "rtgs": "phop",
-      "pos": "Verb",
-      "gloss_de": "treffen",
-      "topic": "Alltagsverben",
-      "example_th": "นัดพบเพื่อนที่คาเฟ่",
-      "example_de": "Ich treffe Freunde im Café.",
+      "thai": "วันเสาร์",
+      "rtgs": "wan sao",
+      "pos": "Nomen",
+      "gloss_de": "Samstag",
+      "topic": "Zeit & Kalender",
+      "example_th": "วันเสาร์ ฉันไปเที่ยวภูเขา",
+      "example_de": "Am Samstag fahre ich in die Berge.",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "พบ",
-            "class": "Tiefkonsonant",
-            "syllable": "geschlossen",
-            "length": "kurz",
-            "tone": "hoch"
-          }
-        ],
+        "syllables": null,
         "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + geschlossene Silbe + kurzer Vokal -> hoch",
-        "source": "regelbasiert berechnet"
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "พบ"
+      "forvo_slug": "วันเสาร์"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1789740916.3452814,
+  "phase": "vormittag",
+  "last_updated": 1789779946.1503186,
   "word_count": 383,
   "cycle": 54
 }
