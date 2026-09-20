@@ -1,27 +1,27 @@
 {
   "daily": {
-    "date": "2026-09-19",
-    "day_index": 20715,
-    "index": 33,
+    "date": "2026-09-20",
+    "day_index": 20716,
+    "index": 34,
     "word": {
-      "thai": "วันเสาร์",
-      "rtgs": "wan sao",
+      "thai": "ห้องนั่งเล่น",
+      "rtgs": "hong nang len",
       "pos": "Nomen",
-      "gloss_de": "Samstag",
-      "topic": "Zeit & Kalender",
-      "example_th": "วันเสาร์ ฉันไปเที่ยวภูเขา",
-      "example_de": "Am Samstag fahre ich in die Berge.",
+      "gloss_de": "Wohnzimmer",
+      "topic": "Wohnen & Haushalt",
+      "example_th": "ครอบครัวนั่งคุยกันใน ห้องนั่งเล่น",
+      "example_de": "Die Familie sitzt im Wohnzimmer und plaudert.",
       "tone": {
         "syllables": null,
-        "initial_class": "Tiefkonsonant",
+        "initial_class": "Hochkonsonant",
         "rule_hint": null,
         "source": "unvollstaendig"
       },
-      "forvo_slug": "วันเสาร์"
+      "forvo_slug": "ห้องนั่งเล่น"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1789825676.0089624,
+  "phase": "vormittag",
+  "last_updated": 1789865768.1222584,
   "word_count": 383,
   "cycle": 54
 }
