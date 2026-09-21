@@ -7770,29 +7770,37 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1789912926.4378235,
+  "last_updated": 1789952304.6779377,
   "daily": {
-    "date": "2026-09-20",
-    "day_index": 20716,
-    "index": 34,
+    "date": "2026-09-21",
+    "day_index": 20717,
+    "index": 35,
     "word": {
-      "thai": "ห้องนั่งเล่น",
-      "rtgs": "hong nang len",
-      "pos": "Nomen",
-      "gloss_de": "Wohnzimmer",
-      "topic": "Wohnen & Haushalt",
-      "example_th": "ครอบครัวนั่งคุยกันใน ห้องนั่งเล่น",
-      "example_de": "Die Familie sitzt im Wohnzimmer und plaudert.",
+      "thai": "ยาก",
+      "rtgs": "yak",
+      "pos": "Adjektiv",
+      "gloss_de": "schwierig",
+      "topic": "Eigenschaften",
+      "example_th": "โจทย์ข้อนี้ ยาก มาก",
+      "example_de": "Diese Aufgabe ist sehr schwierig.",
       "tone": {
-        "syllables": null,
-        "initial_class": "Hochkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "ยาก",
+            "class": "Tiefkonsonant",
+            "syllable": "geschlossen",
+            "length": "lang",
+            "tone": "fallend"
+          }
+        ],
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": "Tiefkonsonant + geschlossene Silbe + langer Vokal -> fallend",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ห้องนั่งเล่น"
+      "forvo_slug": "ยาก"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
