@@ -7770,23 +7770,23 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1790007653.5460248,
+  "last_updated": 1790040768.284084,
   "daily": {
-    "date": "2026-09-21",
-    "day_index": 20717,
-    "index": 35,
+    "date": "2026-09-22",
+    "day_index": 20718,
+    "index": 36,
     "word": {
-      "thai": "ยาก",
-      "rtgs": "yak",
-      "pos": "Adjektiv",
-      "gloss_de": "schwierig",
-      "topic": "Eigenschaften",
-      "example_th": "โจทย์ข้อนี้ ยาก มาก",
-      "example_de": "Diese Aufgabe ist sehr schwierig.",
+      "thai": "แยก",
+      "rtgs": "yaek",
+      "pos": "Nomen/Verb",
+      "gloss_de": "Kreuzung; trennen",
+      "topic": "Richtung & Ort",
+      "example_th": "ข้ามถนนที่ แยก นี้อย่างระวัง",
+      "example_de": "Überquere diese Kreuzung vorsichtig.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ยาก",
+            "glyph": "แยก",
             "class": "Tiefkonsonant",
             "syllable": "geschlossen",
             "length": "lang",
@@ -7797,10 +7797,10 @@
         "rule_hint": "Tiefkonsonant + geschlossene Silbe + langer Vokal -> fallend",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ยาก"
+      "forvo_slug": "แยก"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
