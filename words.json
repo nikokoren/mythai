@@ -7770,37 +7770,29 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1790087560.4876285,
+  "last_updated": 1790126574.6732368,
   "daily": {
-    "date": "2026-09-22",
-    "day_index": 20718,
-    "index": 36,
+    "date": "2026-09-23",
+    "day_index": 20719,
+    "index": 37,
     "word": {
-      "thai": "แยก",
-      "rtgs": "yaek",
-      "pos": "Nomen/Verb",
-      "gloss_de": "Kreuzung; trennen",
-      "topic": "Richtung & Ort",
-      "example_th": "ข้ามถนนที่ แยก นี้อย่างระวัง",
-      "example_de": "Überquere diese Kreuzung vorsichtig.",
+      "thai": "พายุ",
+      "rtgs": "phayu",
+      "pos": "Nomen",
+      "gloss_de": "Sturm",
+      "topic": "Wetter & Jahreszeiten",
+      "example_th": "พายุเข้า ควรอยู่ในบ้าน",
+      "example_de": "Es kommt ein Sturm, besser zuhause bleiben.",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "แยก",
-            "class": "Tiefkonsonant",
-            "syllable": "geschlossen",
-            "length": "lang",
-            "tone": "fallend"
-          }
-        ],
+        "syllables": null,
         "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + geschlossene Silbe + langer Vokal -> fallend",
-        "source": "regelbasiert berechnet"
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "แยก"
+      "forvo_slug": "พายุ"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
