@@ -1,27 +1,35 @@
 {
   "daily": {
-    "date": "2026-09-23",
-    "day_index": 20719,
-    "index": 37,
+    "date": "2026-09-24",
+    "day_index": 20720,
+    "index": 38,
     "word": {
-      "thai": "พายุ",
-      "rtgs": "phayu",
-      "pos": "Nomen",
-      "gloss_de": "Sturm",
-      "topic": "Wetter & Jahreszeiten",
-      "example_th": "พายุเข้า ควรอยู่ในบ้าน",
-      "example_de": "Es kommt ein Sturm, besser zuhause bleiben.",
+      "thai": "ป่วย",
+      "rtgs": "puai",
+      "pos": "Adjektiv",
+      "gloss_de": "krank",
+      "topic": "Gesundheit & Koerper",
+      "example_th": "เขา ป่วย เลยไม่ได้มางาน",
+      "example_de": "Er ist krank und konnte daher nicht kommen.",
       "tone": {
-        "syllables": null,
-        "initial_class": "Tiefkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "ป่วย",
+            "class": "Mittelkonsonant",
+            "syllable": "geschlossen",
+            "length": "kurz",
+            "tone": "tief"
+          }
+        ],
+        "initial_class": "Mittelkonsonant",
+        "rule_hint": "Mittelkonsonant + geschlossene Silbe + kurzer Vokal + Tonzeichen ่ -> tief",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "พายุ"
+      "forvo_slug": "ป่วย"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1790174946.962391,
+  "phase": "vormittag",
+  "last_updated": 1790212622.779386,
   "word_count": 383,
   "cycle": 54
 }
