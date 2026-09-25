@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-09-24",
-    "day_index": 20720,
-    "index": 38,
+    "date": "2026-09-25",
+    "day_index": 20721,
+    "index": 39,
     "word": {
-      "thai": "ป่วย",
-      "rtgs": "puai",
+      "thai": "ดำ",
+      "rtgs": "dam",
       "pos": "Adjektiv",
-      "gloss_de": "krank",
-      "topic": "Gesundheit & Koerper",
-      "example_th": "เขา ป่วย เลยไม่ได้มางาน",
-      "example_de": "Er ist krank und konnte daher nicht kommen.",
+      "gloss_de": "schwarz",
+      "topic": "Farben",
+      "example_th": "กาแฟ ดำ ไม่ใส่น้ำตาล",
+      "example_de": "Schwarzer Kaffee ohne Zucker.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ป่วย",
+            "glyph": "ดำ",
             "class": "Mittelkonsonant",
-            "syllable": "geschlossen",
+            "syllable": "offen",
             "length": "kurz",
-            "tone": "tief"
+            "tone": "mittel"
           }
         ],
         "initial_class": "Mittelkonsonant",
-        "rule_hint": "Mittelkonsonant + geschlossene Silbe + kurzer Vokal + Tonzeichen ่ -> tief",
+        "rule_hint": "Mittelkonsonant + offene Silbe + kurzer Vokal -> mittel",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ป่วย"
+      "forvo_slug": "ดำ"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1790261207.4934855,
+  "phase": "vormittag",
+  "last_updated": 1790299304.5087256,
   "word_count": 383,
   "cycle": 54
 }
