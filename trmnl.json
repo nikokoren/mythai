@@ -1,35 +1,27 @@
 {
   "daily": {
-    "date": "2026-09-25",
-    "day_index": 20721,
-    "index": 39,
+    "date": "2026-09-26",
+    "day_index": 20722,
+    "index": 40,
     "word": {
-      "thai": "ดำ",
-      "rtgs": "dam",
-      "pos": "Adjektiv",
-      "gloss_de": "schwarz",
-      "topic": "Farben",
-      "example_th": "กาแฟ ดำ ไม่ใส่น้ำตาล",
-      "example_de": "Schwarzer Kaffee ohne Zucker.",
+      "thai": "กาแฟ",
+      "rtgs": "kafe",
+      "pos": "Nomen",
+      "gloss_de": "Kaffee",
+      "topic": "Essen & Trinken",
+      "example_th": "เขาชอบ กาแฟ ดำไม่ใส่น้ำตาล",
+      "example_de": "Er mag schwarzen Kaffee ohne Zucker.",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "ดำ",
-            "class": "Mittelkonsonant",
-            "syllable": "offen",
-            "length": "kurz",
-            "tone": "mittel"
-          }
-        ],
+        "syllables": null,
         "initial_class": "Mittelkonsonant",
-        "rule_hint": "Mittelkonsonant + offene Silbe + kurzer Vokal -> mittel",
-        "source": "regelbasiert berechnet"
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "ดำ"
+      "forvo_slug": "กาแฟ"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1790348707.9606621,
+  "phase": "vormittag",
+  "last_updated": 1790385897.7587378,
   "word_count": 383,
   "cycle": 54
 }
