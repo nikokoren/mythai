@@ -1,27 +1,27 @@
 {
   "daily": {
-    "date": "2026-09-27",
-    "day_index": 20723,
-    "index": 41,
+    "date": "2026-09-28",
+    "day_index": 20724,
+    "index": 42,
     "word": {
-      "thai": "บทเรียน",
-      "rtgs": "bot rian",
+      "thai": "ช่างภาพ",
+      "rtgs": "chang phap",
       "pos": "Nomen",
-      "gloss_de": "Lektion",
-      "topic": "Schule & Lernen",
-      "example_th": "วันนี้ บทเรียน เรื่องเวลา",
-      "example_de": "Heute ist die Lektion das Thema Zeit.",
+      "gloss_de": "Fotograf/in",
+      "topic": "Arbeit & Beruf",
+      "example_th": "ช่างภาพมาถ่ายรูปงาน",
+      "example_de": "Der Fotograf ist für das Event da.",
       "tone": {
         "syllables": null,
-        "initial_class": "Mittelkonsonant",
+        "initial_class": "Tiefkonsonant",
         "rule_hint": null,
         "source": "unvollstaendig"
       },
-      "forvo_slug": "บทเรียน"
+      "forvo_slug": "ช่างภาพ"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1790521374.9514155,
+  "phase": "vormittag",
+  "last_updated": 1790559074.3766363,
   "word_count": 383,
   "cycle": 54
 }
