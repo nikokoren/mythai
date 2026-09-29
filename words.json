@@ -7770,29 +7770,29 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1790618498.671446,
+  "last_updated": 1790649162.9369497,
   "daily": {
-    "date": "2026-09-28",
-    "day_index": 20724,
-    "index": 42,
+    "date": "2026-09-29",
+    "day_index": 20725,
+    "index": 43,
     "word": {
-      "thai": "ช่างภาพ",
-      "rtgs": "chang phap",
+      "thai": "ภรรยา",
+      "rtgs": "phanraya",
       "pos": "Nomen",
-      "gloss_de": "Fotograf/in",
-      "topic": "Arbeit & Beruf",
-      "example_th": "ช่างภาพมาถ่ายรูปงาน",
-      "example_de": "Der Fotograf ist für das Event da.",
+      "gloss_de": "Ehefrau",
+      "topic": "Familie & Menschen",
+      "example_th": "ภรรยา ทำงานใกล้บ้าน",
+      "example_de": "Die Ehefrau arbeitet in der Nähe des Hauses.",
       "tone": {
         "syllables": null,
         "initial_class": "Tiefkonsonant",
         "rule_hint": null,
         "source": "unvollstaendig"
       },
-      "forvo_slug": "ช่างภาพ"
+      "forvo_slug": "ภรรยา"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
