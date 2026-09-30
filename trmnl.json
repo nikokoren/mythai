@@ -1,27 +1,27 @@
 {
   "daily": {
-    "date": "2026-09-29",
-    "day_index": 20725,
-    "index": 43,
+    "date": "2026-09-30",
+    "day_index": 20726,
+    "index": 44,
     "word": {
-      "thai": "ภรรยา",
-      "rtgs": "phanraya",
+      "thai": "ใบเสร็จ",
+      "rtgs": "bai set",
       "pos": "Nomen",
-      "gloss_de": "Ehefrau",
-      "topic": "Familie & Menschen",
-      "example_th": "ภรรยา ทำงานใกล้บ้าน",
-      "example_de": "Die Ehefrau arbeitet in der Nähe des Hauses.",
+      "gloss_de": "Quittung",
+      "topic": "Einkaufen & Geld",
+      "example_th": "ขอ ใบเสร็จ ด้วยค่ะ",
+      "example_de": "Bitte geben Sie mir eine Quittung.",
       "tone": {
         "syllables": null,
-        "initial_class": "Tiefkonsonant",
+        "initial_class": "Mittelkonsonant",
         "rule_hint": null,
         "source": "unvollstaendig"
       },
-      "forvo_slug": "ภรรยา"
+      "forvo_slug": "ใบเสร็จ"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1790699096.2060382,
+  "phase": "vormittag",
+  "last_updated": 1790733500.7891476,
   "word_count": 383,
   "cycle": 54
 }
