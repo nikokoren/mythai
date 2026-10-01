@@ -1,27 +1,35 @@
 {
   "daily": {
-    "date": "2026-09-30",
-    "day_index": 20726,
-    "index": 44,
+    "date": "2026-10-01",
+    "day_index": 20727,
+    "index": 45,
     "word": {
-      "thai": "ใบเสร็จ",
-      "rtgs": "bai set",
-      "pos": "Nomen",
-      "gloss_de": "Quittung",
-      "topic": "Einkaufen & Geld",
-      "example_th": "ขอ ใบเสร็จ ด้วยค่ะ",
-      "example_de": "Bitte geben Sie mir eine Quittung.",
+      "thai": "ถาม",
+      "rtgs": "tham",
+      "pos": "Verb",
+      "gloss_de": "fragen",
+      "topic": "Gefuehle & Kommunikation",
+      "example_th": "มีคำถามไหม เชิญ ถาม ได้",
+      "example_de": "Gibt es Fragen? Bitte fragen Sie.",
       "tone": {
-        "syllables": null,
-        "initial_class": "Mittelkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "ถาม",
+            "class": "Hochkonsonant",
+            "syllable": "geschlossen",
+            "length": "lang",
+            "tone": "steigend"
+          }
+        ],
+        "initial_class": "Hochkonsonant",
+        "rule_hint": "Hochkonsonant + geschlossene Silbe + langer Vokal -> steigend",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ใบเสร็จ"
+      "forvo_slug": "ถาม"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1790785192.0125268,
+  "phase": "vormittag",
+  "last_updated": 1790819878.9489665,
   "word_count": 383,
   "cycle": 54
 }
