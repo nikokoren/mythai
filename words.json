@@ -7770,37 +7770,29 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1790873822.190042,
+  "last_updated": 1790906780.1250987,
   "daily": {
-    "date": "2026-10-01",
-    "day_index": 20727,
-    "index": 45,
+    "date": "2026-10-02",
+    "day_index": 20728,
+    "index": 46,
     "word": {
-      "thai": "ถาม",
-      "rtgs": "tham",
-      "pos": "Verb",
-      "gloss_de": "fragen",
-      "topic": "Gefuehle & Kommunikation",
-      "example_th": "มีคำถามไหม เชิญ ถาม ได้",
-      "example_de": "Gibt es Fragen? Bitte fragen Sie.",
+      "thai": "นาที",
+      "rtgs": "nathi",
+      "pos": "Nomen",
+      "gloss_de": "Minute",
+      "topic": "Zeit & Kalender",
+      "example_th": "โปรดรอห้า นาที",
+      "example_de": "Bitte warte fünf Minuten.",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "ถาม",
-            "class": "Hochkonsonant",
-            "syllable": "geschlossen",
-            "length": "lang",
-            "tone": "steigend"
-          }
-        ],
-        "initial_class": "Hochkonsonant",
-        "rule_hint": "Hochkonsonant + geschlossene Silbe + langer Vokal -> steigend",
-        "source": "regelbasiert berechnet"
+        "syllables": null,
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "ถาม"
+      "forvo_slug": "นาที"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
