@@ -1,27 +1,27 @@
 {
   "daily": {
-    "date": "2026-10-02",
-    "day_index": 20728,
-    "index": 46,
+    "date": "2026-10-03",
+    "day_index": 20729,
+    "index": 47,
     "word": {
-      "thai": "นาที",
-      "rtgs": "nathi",
-      "pos": "Nomen",
-      "gloss_de": "Minute",
-      "topic": "Zeit & Kalender",
-      "example_th": "โปรดรอห้า นาที",
-      "example_de": "Bitte warte fünf Minuten.",
+      "thai": "คู่มือท่องเที่ยว",
+      "rtgs": "khumue thongthiao",
+      "pos": "Nomen/Verb",
+      "gloss_de": "Reiseführer",
+      "topic": "Reisen & Verkehr",
+      "example_th": "มีคู่มือท่องเที่ยวภาษาเยอรมันไหม",
+      "example_de": "Gibt es einen Reiseführer auf Deutsch?",
       "tone": {
         "syllables": null,
         "initial_class": "Tiefkonsonant",
         "rule_hint": null,
         "source": "unvollstaendig"
       },
-      "forvo_slug": "นาที"
+      "forvo_slug": "คู่มือท่องเที่ยว"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1790957403.0376008,
+  "phase": "vormittag",
+  "last_updated": 1790992270.314353,
   "word_count": 383,
   "cycle": 54
 }
