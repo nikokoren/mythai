@@ -1,27 +1,35 @@
 {
   "daily": {
-    "date": "2026-10-03",
-    "day_index": 20729,
-    "index": 47,
+    "date": "2026-10-04",
+    "day_index": 20730,
+    "index": 48,
     "word": {
-      "thai": "คู่มือท่องเที่ยว",
-      "rtgs": "khumue thongthiao",
-      "pos": "Nomen/Verb",
-      "gloss_de": "Reiseführer",
-      "topic": "Reisen & Verkehr",
-      "example_th": "มีคู่มือท่องเที่ยวภาษาเยอรมันไหม",
-      "example_de": "Gibt es einen Reiseführer auf Deutsch?",
+      "thai": "หนัง",
+      "rtgs": "nang",
+      "pos": "Nomen",
+      "gloss_de": "Film; Leder",
+      "topic": "Freizeit & Medien",
+      "example_th": "คืนนี้ดู หนัง ที่โรงภาพยนตร์",
+      "example_de": "Heute Nacht schauen wir im Kino einen Film.",
       "tone": {
-        "syllables": null,
-        "initial_class": "Tiefkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "หนัง",
+            "class": "Hochkonsonant",
+            "syllable": "geschlossen",
+            "length": "kurz",
+            "tone": "steigend"
+          }
+        ],
+        "initial_class": "Hochkonsonant",
+        "rule_hint": "Hochkonsonant + geschlossene Silbe + kurzer Vokal -> steigend",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "คู่มือท่องเที่ยว"
+      "forvo_slug": "หนัง"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1791038233.55491,
+  "phase": "vormittag",
+  "last_updated": 1791081041.6096058,
   "word_count": 383,
   "cycle": 54
 }
