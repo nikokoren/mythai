@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-10-04",
-    "day_index": 20730,
-    "index": 48,
+    "date": "2026-10-05",
+    "day_index": 20731,
+    "index": 49,
     "word": {
-      "thai": "หนัง",
-      "rtgs": "nang",
+      "thai": "ชา",
+      "rtgs": "cha",
       "pos": "Nomen",
-      "gloss_de": "Film; Leder",
-      "topic": "Freizeit & Medien",
-      "example_th": "คืนนี้ดู หนัง ที่โรงภาพยนตร์",
-      "example_de": "Heute Nacht schauen wir im Kino einen Film.",
+      "gloss_de": "Tee",
+      "topic": "Essen & Trinken",
+      "example_th": "ฉันดื่ม ชา ตอนบ่าย",
+      "example_de": "Ich trinke nachmittags Tee.",
       "tone": {
         "syllables": [
           {
-            "glyph": "หนัง",
-            "class": "Hochkonsonant",
-            "syllable": "geschlossen",
-            "length": "kurz",
-            "tone": "steigend"
+            "glyph": "ชา",
+            "class": "Tiefkonsonant",
+            "syllable": "offen",
+            "length": "lang",
+            "tone": "mittel"
           }
         ],
-        "initial_class": "Hochkonsonant",
-        "rule_hint": "Hochkonsonant + geschlossene Silbe + kurzer Vokal -> steigend",
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": "Tiefkonsonant + offene Silbe + langer Vokal -> mittel",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "หนัง"
+      "forvo_slug": "ชา"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1791126731.3096476,
+  "phase": "vormittag",
+  "last_updated": 1791164831.270439,
   "word_count": 383,
   "cycle": 54
 }
