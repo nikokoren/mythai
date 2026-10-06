@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-10-05",
-    "day_index": 20731,
-    "index": 49,
+    "date": "2026-10-06",
+    "day_index": 20732,
+    "index": 50,
     "word": {
-      "thai": "ชา",
-      "rtgs": "cha",
-      "pos": "Nomen",
-      "gloss_de": "Tee",
-      "topic": "Essen & Trinken",
-      "example_th": "ฉันดื่ม ชา ตอนบ่าย",
-      "example_de": "Ich trinke nachmittags Tee.",
+      "thai": "ฟัง",
+      "rtgs": "fang",
+      "pos": "Verb",
+      "gloss_de": "hoeren; zuhoeren",
+      "topic": "Alltagsverben",
+      "example_th": "ผมฟังเพลงไทยทุกวัน",
+      "example_de": "Ich hoere jeden Tag thailaendische Musik.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ชา",
+            "glyph": "ฟัง",
             "class": "Tiefkonsonant",
-            "syllable": "offen",
-            "length": "lang",
+            "syllable": "geschlossen",
+            "length": "kurz",
             "tone": "mittel"
           }
         ],
         "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + offene Silbe + langer Vokal -> mittel",
+        "rule_hint": "Tiefkonsonant + geschlossene Silbe + kurzer Vokal -> mittel",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ชา"
+      "forvo_slug": "ฟัง"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1791227360.305289,
+  "phase": "vormittag",
+  "last_updated": 1791255061.538953,
   "word_count": 383,
   "cycle": 54
 }
