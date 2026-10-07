@@ -1,35 +1,27 @@
 {
   "daily": {
-    "date": "2026-10-06",
-    "day_index": 20732,
-    "index": 50,
+    "date": "2026-10-07",
+    "day_index": 20733,
+    "index": 51,
     "word": {
-      "thai": "ฟัง",
-      "rtgs": "fang",
-      "pos": "Verb",
-      "gloss_de": "hoeren; zuhoeren",
-      "topic": "Alltagsverben",
-      "example_th": "ผมฟังเพลงไทยทุกวัน",
-      "example_de": "Ich hoere jeden Tag thailaendische Musik.",
+      "thai": "ทะเล",
+      "rtgs": "thale",
+      "pos": "Nomen",
+      "gloss_de": "Meer",
+      "topic": "Natur & Orte",
+      "example_th": "วันหยุดหน้าไป เที่ยว ทะเล กัน",
+      "example_de": "Am nächsten freien Tag fahren wir ans Meer.",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "ฟัง",
-            "class": "Tiefkonsonant",
-            "syllable": "geschlossen",
-            "length": "kurz",
-            "tone": "mittel"
-          }
-        ],
+        "syllables": null,
         "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + geschlossene Silbe + kurzer Vokal -> mittel",
-        "source": "regelbasiert berechnet"
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "ฟัง"
+      "forvo_slug": "ทะเล"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1791304590.7644463,
+  "phase": "vormittag",
+  "last_updated": 1791339162.1269665,
   "word_count": 383,
   "cycle": 54
 }
