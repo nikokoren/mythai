@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-10-08",
-    "day_index": 20734,
-    "index": 52,
+    "date": "2026-10-09",
+    "day_index": 20735,
+    "index": 53,
     "word": {
-      "thai": "บ้าน",
-      "rtgs": "ban",
+      "thai": "หมอ",
+      "rtgs": "mo",
       "pos": "Nomen",
-      "gloss_de": "Haus; Zuhause",
-      "topic": "Wohnen & Haushalt",
-      "example_th": "เย็นนี้กลับ บ้าน ดึกหน่อย",
-      "example_de": "Heute Abend komme ich etwas spät nach Hause.",
+      "gloss_de": "Arzt; Ärztin",
+      "topic": "Gesundheit & Koerper",
+      "example_th": "พรุ่งนี้ไปพบ หมอ ตอนสิบโมง",
+      "example_de": "Morgen gehe ich um zehn Uhr zum Arzt.",
       "tone": {
         "syllables": [
           {
-            "glyph": "บ้าน",
-            "class": "Mittelkonsonant",
-            "syllable": "geschlossen",
+            "glyph": "หมอ",
+            "class": "Hochkonsonant",
+            "syllable": "offen",
             "length": "lang",
-            "tone": "fallend"
+            "tone": "steigend"
           }
         ],
-        "initial_class": "Mittelkonsonant",
-        "rule_hint": "Mittelkonsonant + geschlossene Silbe + langer Vokal + Tonzeichen ้ -> fallend",
+        "initial_class": "Hochkonsonant",
+        "rule_hint": "Hochkonsonant + offene Silbe + langer Vokal -> steigend",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "บ้าน"
+      "forvo_slug": "หมอ"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1791479873.1284435,
+  "phase": "vormittag",
+  "last_updated": 1791514384.3447826,
   "word_count": 383,
   "cycle": 54
 }
