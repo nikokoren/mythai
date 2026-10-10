@@ -1,35 +1,27 @@
 {
   "daily": {
-    "date": "2026-10-09",
-    "day_index": 20735,
-    "index": 53,
+    "date": "2026-10-10",
+    "day_index": 20736,
+    "index": 54,
     "word": {
-      "thai": "หมอ",
-      "rtgs": "mo",
-      "pos": "Nomen",
-      "gloss_de": "Arzt; Ärztin",
-      "topic": "Gesundheit & Koerper",
-      "example_th": "พรุ่งนี้ไปพบ หมอ ตอนสิบโมง",
-      "example_de": "Morgen gehe ich um zehn Uhr zum Arzt.",
+      "thai": "กรุณา",
+      "rtgs": "karuna",
+      "pos": "Adverb/Verb",
+      "gloss_de": "bitte; freundlich",
+      "topic": "Begruessung & Hoeflichkeit",
+      "example_th": "กรุณา รอที่นี่สักครู่",
+      "example_de": "Bitte warten Sie hier einen Moment.",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "หมอ",
-            "class": "Hochkonsonant",
-            "syllable": "offen",
-            "length": "lang",
-            "tone": "steigend"
-          }
-        ],
-        "initial_class": "Hochkonsonant",
-        "rule_hint": "Hochkonsonant + offene Silbe + langer Vokal -> steigend",
-        "source": "regelbasiert berechnet"
+        "syllables": null,
+        "initial_class": "Mittelkonsonant",
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "หมอ"
+      "forvo_slug": "กรุณา"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1791564820.1753116,
+  "phase": "vormittag",
+  "last_updated": 1791598439.8025508,
   "word_count": 383,
   "cycle": 54
 }
