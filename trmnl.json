@@ -1,27 +1,27 @@
 {
   "daily": {
-    "date": "2026-10-10",
-    "day_index": 20736,
-    "index": 54,
+    "date": "2026-10-11",
+    "day_index": 20737,
+    "index": 55,
     "word": {
-      "thai": "กรุณา",
-      "rtgs": "karuna",
-      "pos": "Adverb/Verb",
-      "gloss_de": "bitte; freundlich",
-      "topic": "Begruessung & Hoeflichkeit",
-      "example_th": "กรุณา รอที่นี่สักครู่",
-      "example_de": "Bitte warten Sie hier einen Moment.",
+      "thai": "ชั่วโมง",
+      "rtgs": "chua mong",
+      "pos": "Nomen",
+      "gloss_de": "Stunde",
+      "topic": "Zeit & Kalender",
+      "example_th": "เราเรียนสอง ชั่วโมง ต่อวัน",
+      "example_de": "Wir lernen zwei Stunden pro Tag.",
       "tone": {
         "syllables": null,
-        "initial_class": "Mittelkonsonant",
+        "initial_class": "Tiefkonsonant",
         "rule_hint": null,
         "source": "unvollstaendig"
       },
-      "forvo_slug": "กรุณา"
+      "forvo_slug": "ชั่วโมง"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1791647247.4955943,
+  "phase": "vormittag",
+  "last_updated": 1791683157.596668,
   "word_count": 383,
   "cycle": 54
 }
