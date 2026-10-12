@@ -1,27 +1,35 @@
 {
   "daily": {
-    "date": "2026-10-11",
-    "day_index": 20737,
-    "index": 55,
+    "date": "2026-10-12",
+    "day_index": 20738,
+    "index": 56,
     "word": {
-      "thai": "ชั่วโมง",
-      "rtgs": "chua mong",
-      "pos": "Nomen",
-      "gloss_de": "Stunde",
-      "topic": "Zeit & Kalender",
-      "example_th": "เราเรียนสอง ชั่วโมง ต่อวัน",
-      "example_de": "Wir lernen zwei Stunden pro Tag.",
+      "thai": "ห้า",
+      "rtgs": "ha",
+      "pos": "Numerale",
+      "gloss_de": "fuenf",
+      "topic": "Zahlen",
+      "example_th": "รถไฟออกห้าโมงเย็น",
+      "example_de": "Der Zug faehrt um fuenf Uhr nachmittags.",
       "tone": {
-        "syllables": null,
-        "initial_class": "Tiefkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "ห้า",
+            "class": "Hochkonsonant",
+            "syllable": "offen",
+            "length": "lang",
+            "tone": "fallend"
+          }
+        ],
+        "initial_class": "Hochkonsonant",
+        "rule_hint": "Hochkonsonant + offene Silbe + langer Vokal + Tonzeichen ้ -> fallend",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ชั่วโมง"
+      "forvo_slug": "ห้า"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1791735124.0832052,
+  "phase": "vormittag",
+  "last_updated": 1791771215.9154713,
   "word_count": 383,
   "cycle": 54
 }
