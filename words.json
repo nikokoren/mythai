@@ -7770,37 +7770,37 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1791912425.103771,
+  "last_updated": 1791942385.3143332,
   "daily": {
-    "date": "2026-10-13",
-    "day_index": 20739,
-    "index": 57,
+    "date": "2026-10-14",
+    "day_index": 20740,
+    "index": 58,
     "word": {
-      "thai": "ไกล",
-      "rtgs": "klai",
-      "pos": "Adjektiv",
-      "gloss_de": "weit",
-      "topic": "Eigenschaften",
-      "example_th": "ทะเลอยู่ ไกล จากกรุงเทพฯ",
-      "example_de": "Das Meer ist weit von Bangkok entfernt.",
+      "thai": "ขวด",
+      "rtgs": "khuat",
+      "pos": "Klassifikator",
+      "gloss_de": "Flasche (Klassifikator)",
+      "topic": "Klassifikatoren",
+      "example_th": "ขอน้ำหนึ่งขวด",
+      "example_de": "Eine Flasche Wasser, bitte.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ไกล",
-            "class": "Mittelkonsonant",
+            "glyph": "ขวด",
+            "class": "Hochkonsonant",
             "syllable": "geschlossen",
             "length": "kurz",
-            "tone": "mittel"
+            "tone": "tief"
           }
         ],
-        "initial_class": "Mittelkonsonant",
-        "rule_hint": "Mittelkonsonant + geschlossene Silbe + kurzer Vokal -> mittel",
+        "initial_class": "Hochkonsonant",
+        "rule_hint": "Hochkonsonant + geschlossene Silbe + kurzer Vokal -> tief",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ไกล"
+      "forvo_slug": "ขวด"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
