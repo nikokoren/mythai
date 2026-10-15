@@ -7770,37 +7770,29 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1791989840.5829606,
+  "last_updated": 1792027323.9271944,
   "daily": {
-    "date": "2026-10-14",
-    "day_index": 20740,
-    "index": 58,
+    "date": "2026-10-15",
+    "day_index": 20741,
+    "index": 59,
     "word": {
-      "thai": "ขวด",
-      "rtgs": "khuat",
-      "pos": "Klassifikator",
-      "gloss_de": "Flasche (Klassifikator)",
-      "topic": "Klassifikatoren",
-      "example_th": "ขอน้ำหนึ่งขวด",
-      "example_de": "Eine Flasche Wasser, bitte.",
+      "thai": "ราคา",
+      "rtgs": "rakha",
+      "pos": "Nomen",
+      "gloss_de": "Preis",
+      "topic": "Einkaufen & Geld",
+      "example_th": "ราคา นี้ต่อรองได้ไหม",
+      "example_de": "Ist dieser Preis verhandelbar?",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "ขวด",
-            "class": "Hochkonsonant",
-            "syllable": "geschlossen",
-            "length": "kurz",
-            "tone": "tief"
-          }
-        ],
-        "initial_class": "Hochkonsonant",
-        "rule_hint": "Hochkonsonant + geschlossene Silbe + kurzer Vokal -> tief",
-        "source": "regelbasiert berechnet"
+        "syllables": null,
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "ขวด"
+      "forvo_slug": "ราคา"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
