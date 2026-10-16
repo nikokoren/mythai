@@ -7770,29 +7770,37 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1792075615.1058266,
+  "last_updated": 1792112908.3311362,
   "daily": {
-    "date": "2026-10-15",
-    "day_index": 20741,
-    "index": 59,
+    "date": "2026-10-16",
+    "day_index": 20742,
+    "index": 60,
     "word": {
-      "thai": "ราคา",
-      "rtgs": "rakha",
-      "pos": "Nomen",
-      "gloss_de": "Preis",
-      "topic": "Einkaufen & Geld",
-      "example_th": "ราคา นี้ต่อรองได้ไหม",
-      "example_de": "Ist dieser Preis verhandelbar?",
+      "thai": "กับ",
+      "rtgs": "kap",
+      "pos": "Präposition/Konjunktion",
+      "gloss_de": "mit",
+      "topic": "Grammatik & Partikeln",
+      "example_th": "กินข้าวกับเพื่อน",
+      "example_de": "Ich esse mit Freunden.",
       "tone": {
-        "syllables": null,
-        "initial_class": "Tiefkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "กับ",
+            "class": "Mittelkonsonant",
+            "syllable": "geschlossen",
+            "length": "kurz",
+            "tone": "tief"
+          }
+        ],
+        "initial_class": "Mittelkonsonant",
+        "rule_hint": "Mittelkonsonant + geschlossene Silbe + kurzer Vokal -> tief",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ราคา"
+      "forvo_slug": "กับ"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
