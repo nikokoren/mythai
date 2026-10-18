@@ -1,35 +1,27 @@
 {
   "daily": {
-    "date": "2026-10-17",
-    "day_index": 20743,
-    "index": 61,
+    "date": "2026-10-18",
+    "day_index": 20744,
+    "index": 62,
     "word": {
-      "thai": "ผัก",
-      "rtgs": "phak",
-      "pos": "Nomen",
-      "gloss_de": "Gemuese",
-      "topic": "Essen & Trinken",
-      "example_th": "เด็กไม่ชอบกินผัก",
-      "example_de": "Kinder essen nicht gern Gemuese.",
+      "thai": "ช่วยด้วย",
+      "rtgs": "chuai duai",
+      "pos": "Interjektion",
+      "gloss_de": "Hilfe!",
+      "topic": "Notfall & Sicherheit",
+      "example_th": "มีเหตุฉุกเฉิน ช่วยด้วย!",
+      "example_de": "Notfall, Hilfe!",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "ผัก",
-            "class": "Hochkonsonant",
-            "syllable": "geschlossen",
-            "length": "kurz",
-            "tone": "tief"
-          }
-        ],
-        "initial_class": "Hochkonsonant",
-        "rule_hint": "Hochkonsonant + geschlossene Silbe + kurzer Vokal -> tief",
-        "source": "regelbasiert berechnet"
+        "syllables": null,
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "ผัก"
+      "forvo_slug": "ช่วยด้วย"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1792243938.7664816,
+  "phase": "vormittag",
+  "last_updated": 1792284537.943082,
   "word_count": 383,
   "cycle": 54
 }
