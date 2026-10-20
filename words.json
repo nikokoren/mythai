@@ -7770,37 +7770,37 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1792428741.201124,
+  "last_updated": 1792460417.6787431,
   "daily": {
-    "date": "2026-10-19",
-    "day_index": 20745,
-    "index": 63,
+    "date": "2026-10-20",
+    "day_index": 20746,
+    "index": 64,
     "word": {
-      "thai": "ตรง",
-      "rtgs": "trong",
-      "pos": "Adverb/Verb",
-      "gloss_de": "geradeaus; direkt",
-      "topic": "Richtung & Ort",
-      "example_th": "เดิน ตรง ไปอีกห้าร้อยเมตร",
-      "example_de": "Geh geradeaus weitere 500 Meter.",
+      "thai": "พี่",
+      "rtgs": "phi",
+      "pos": "Nomen",
+      "gloss_de": "älteres Geschwister",
+      "topic": "Familie & Menschen",
+      "example_th": "พี่ สอนการบ้านให้ฉัน",
+      "example_de": "Mein älteres Geschwister hilft mir bei den Hausaufgaben.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ตรง",
-            "class": "Mittelkonsonant",
-            "syllable": "geschlossen",
-            "length": "kurz",
-            "tone": "mittel"
+            "glyph": "พี่",
+            "class": "Tiefkonsonant",
+            "syllable": "offen",
+            "length": "lang",
+            "tone": "fallend"
           }
         ],
-        "initial_class": "Mittelkonsonant",
-        "rule_hint": "Mittelkonsonant + geschlossene Silbe + kurzer Vokal -> mittel",
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": "Tiefkonsonant + offene Silbe + langer Vokal + Tonzeichen ่ -> fallend",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ตรง"
+      "forvo_slug": "พี่"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
