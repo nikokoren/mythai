@@ -1,27 +1,35 @@
 {
   "daily": {
-    "date": "2026-10-21",
-    "day_index": 20747,
-    "index": 65,
+    "date": "2026-10-22",
+    "day_index": 20748,
+    "index": 66,
     "word": {
-      "thai": "ดินสอ",
-      "rtgs": "dinso",
-      "pos": "Nomen/Verb",
-      "gloss_de": "Bleistift",
-      "topic": "Schule & Lernen",
-      "example_th": "ขอยืมดินสอหน่อย",
-      "example_de": "Kann ich einen Bleistift leihen?",
+      "thai": "เช้า",
+      "rtgs": "chao",
+      "pos": "Nomen/Adjektiv",
+      "gloss_de": "Morgen; früh",
+      "topic": "Zeit & Kalender",
+      "example_th": "ฉันตื่นแต่ เช้า เพื่อออกกำลังกาย",
+      "example_de": "Ich stehe früh auf, um Sport zu machen.",
       "tone": {
-        "syllables": null,
-        "initial_class": "Mittelkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "เช้า",
+            "class": "Tiefkonsonant",
+            "syllable": "offen",
+            "length": "kurz",
+            "tone": "hoch"
+          }
+        ],
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": "Tiefkonsonant + offene Silbe + kurzer Vokal + Tonzeichen ้ -> hoch",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ดินสอ"
+      "forvo_slug": "เช้า"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1792594723.06936,
+  "phase": "vormittag",
+  "last_updated": 1792632276.9878695,
   "word_count": 383,
   "cycle": 54
 }
