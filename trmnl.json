@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-10-22",
-    "day_index": 20748,
-    "index": 66,
+    "date": "2026-10-23",
+    "day_index": 20749,
+    "index": 67,
     "word": {
-      "thai": "เช้า",
-      "rtgs": "chao",
-      "pos": "Nomen/Adjektiv",
-      "gloss_de": "Morgen; früh",
-      "topic": "Zeit & Kalender",
-      "example_th": "ฉันตื่นแต่ เช้า เพื่อออกกำลังกาย",
-      "example_de": "Ich stehe früh auf, um Sport zu machen.",
+      "thai": "ส่ง",
+      "rtgs": "song",
+      "pos": "Verb",
+      "gloss_de": "senden; schicken",
+      "topic": "Gefuehle & Kommunikation",
+      "example_th": "ฉัน ส่ง อีเมลไปแล้ว",
+      "example_de": "Ich habe die E-Mail bereits verschickt.",
       "tone": {
         "syllables": [
           {
-            "glyph": "เช้า",
-            "class": "Tiefkonsonant",
-            "syllable": "offen",
+            "glyph": "ส่ง",
+            "class": "Hochkonsonant",
+            "syllable": "geschlossen",
             "length": "kurz",
-            "tone": "hoch"
+            "tone": "tief"
           }
         ],
-        "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + offene Silbe + kurzer Vokal + Tonzeichen ้ -> hoch",
+        "initial_class": "Hochkonsonant",
+        "rule_hint": "Hochkonsonant + geschlossene Silbe + kurzer Vokal + Tonzeichen ่ -> tief",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "เช้า"
+      "forvo_slug": "ส่ง"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1792681111.455327,
+  "phase": "vormittag",
+  "last_updated": 1792718558.6163065,
   "word_count": 383,
   "cycle": 54
 }
