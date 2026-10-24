@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-10-23",
-    "day_index": 20749,
-    "index": 67,
+    "date": "2026-10-24",
+    "day_index": 20750,
+    "index": 68,
     "word": {
-      "thai": "ส่ง",
-      "rtgs": "song",
-      "pos": "Verb",
-      "gloss_de": "senden; schicken",
-      "topic": "Gefuehle & Kommunikation",
-      "example_th": "ฉัน ส่ง อีเมลไปแล้ว",
-      "example_de": "Ich habe die E-Mail bereits verschickt.",
+      "thai": "รถ",
+      "rtgs": "rot",
+      "pos": "Nomen",
+      "gloss_de": "Auto; Fahrzeug",
+      "topic": "Reisen & Verkehr",
+      "example_th": "เขาขับ รถ ไปทำงานทุกวัน",
+      "example_de": "Er fährt jeden Tag mit dem Auto zur Arbeit.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ส่ง",
-            "class": "Hochkonsonant",
+            "glyph": "รถ",
+            "class": "Tiefkonsonant",
             "syllable": "geschlossen",
             "length": "kurz",
-            "tone": "tief"
+            "tone": "hoch"
           }
         ],
-        "initial_class": "Hochkonsonant",
-        "rule_hint": "Hochkonsonant + geschlossene Silbe + kurzer Vokal + Tonzeichen ่ -> tief",
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": "Tiefkonsonant + geschlossene Silbe + kurzer Vokal -> hoch",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ส่ง"
+      "forvo_slug": "รถ"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1792766882.4109812,
+  "phase": "vormittag",
+  "last_updated": 1792805288.5520015,
   "word_count": 383,
   "cycle": 54
 }
