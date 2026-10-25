@@ -7770,37 +7770,37 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1792850040.633793,
+  "last_updated": 1792889917.9388516,
   "daily": {
-    "date": "2026-10-24",
-    "day_index": 20750,
-    "index": 68,
+    "date": "2026-10-25",
+    "day_index": 20751,
+    "index": 69,
     "word": {
-      "thai": "รถ",
-      "rtgs": "rot",
+      "thai": "มือ",
+      "rtgs": "mue",
       "pos": "Nomen",
-      "gloss_de": "Auto; Fahrzeug",
-      "topic": "Reisen & Verkehr",
-      "example_th": "เขาขับ รถ ไปทำงานทุกวัน",
-      "example_de": "Er fährt jeden Tag mit dem Auto zur Arbeit.",
+      "gloss_de": "Hand",
+      "topic": "Gesundheit & Koerper",
+      "example_th": "ล้าง มือ ก่อนกินข้าว",
+      "example_de": "Wasch dir vor dem Essen die Hände.",
       "tone": {
         "syllables": [
           {
-            "glyph": "รถ",
+            "glyph": "มือ",
             "class": "Tiefkonsonant",
-            "syllable": "geschlossen",
-            "length": "kurz",
-            "tone": "hoch"
+            "syllable": "offen",
+            "length": "lang",
+            "tone": "mittel"
           }
         ],
         "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + geschlossene Silbe + kurzer Vokal -> hoch",
+        "rule_hint": "Tiefkonsonant + offene Silbe + langer Vokal -> mittel",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "รถ"
+      "forvo_slug": "มือ"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
