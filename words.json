@@ -7770,37 +7770,29 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1792937496.7437136,
+  "last_updated": 1792976706.4372659,
   "daily": {
-    "date": "2026-10-25",
-    "day_index": 20751,
-    "index": 69,
+    "date": "2026-10-26",
+    "day_index": 20752,
+    "index": 70,
     "word": {
-      "thai": "มือ",
-      "rtgs": "mue",
+      "thai": "ฤดูหนาว",
+      "rtgs": "ruedu nao",
       "pos": "Nomen",
-      "gloss_de": "Hand",
-      "topic": "Gesundheit & Koerper",
-      "example_th": "ล้าง มือ ก่อนกินข้าว",
-      "example_de": "Wasch dir vor dem Essen die Hände.",
+      "gloss_de": "Winter",
+      "topic": "Wetter & Jahreszeiten",
+      "example_th": "ฤดูหนาว อากาศเย็นสบาย",
+      "example_de": "Im Winter ist es angenehm kühl.",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "มือ",
-            "class": "Tiefkonsonant",
-            "syllable": "offen",
-            "length": "lang",
-            "tone": "mittel"
-          }
-        ],
-        "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + offene Silbe + langer Vokal -> mittel",
-        "source": "regelbasiert berechnet"
+        "syllables": null,
+        "initial_class": "Mittelkonsonant",
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "มือ"
+      "forvo_slug": "ฤดูหนาว"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
