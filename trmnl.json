@@ -1,27 +1,35 @@
 {
   "daily": {
-    "date": "2026-10-26",
-    "day_index": 20752,
-    "index": 70,
+    "date": "2026-10-27",
+    "day_index": 20753,
+    "index": 71,
     "word": {
-      "thai": "ฤดูหนาว",
-      "rtgs": "ruedu nao",
-      "pos": "Nomen",
-      "gloss_de": "Winter",
-      "topic": "Wetter & Jahreszeiten",
-      "example_th": "ฤดูหนาว อากาศเย็นสบาย",
-      "example_de": "Im Winter ist es angenehm kühl.",
+      "thai": "ผัด",
+      "rtgs": "phat",
+      "pos": "Verb/Nomen",
+      "gloss_de": "anbraten; Pfanne",
+      "topic": "Essen & Trinken",
+      "example_th": "เขาชอบ ผัด ผักกับกระเทียม",
+      "example_de": "Er mag Gemüse mit Knoblauch anbraten.",
       "tone": {
-        "syllables": null,
-        "initial_class": "Mittelkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "ผัด",
+            "class": "Hochkonsonant",
+            "syllable": "geschlossen",
+            "length": "kurz",
+            "tone": "tief"
+          }
+        ],
+        "initial_class": "Hochkonsonant",
+        "rule_hint": "Hochkonsonant + geschlossene Silbe + kurzer Vokal -> tief",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ฤดูหนาว"
+      "forvo_slug": "ผัด"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1793032816.9013278,
+  "phase": "vormittag",
+  "last_updated": 1793066248.3280358,
   "word_count": 383,
   "cycle": 54
 }
