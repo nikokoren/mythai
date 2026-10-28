@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-10-27",
-    "day_index": 20753,
-    "index": 71,
+    "date": "2026-10-28",
+    "day_index": 20754,
+    "index": 72,
     "word": {
-      "thai": "ผัด",
-      "rtgs": "phat",
-      "pos": "Verb/Nomen",
-      "gloss_de": "anbraten; Pfanne",
-      "topic": "Essen & Trinken",
-      "example_th": "เขาชอบ ผัด ผักกับกระเทียม",
-      "example_de": "Er mag Gemüse mit Knoblauch anbraten.",
+      "thai": "รีด",
+      "rtgs": "rit",
+      "pos": "Verb",
+      "gloss_de": "bügeln",
+      "topic": "Wohnen & Haushalt",
+      "example_th": "เธอ รีด ผ้าอย่างเรียบร้อย",
+      "example_de": "Sie bügelt die Wäsche ordentlich.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ผัด",
-            "class": "Hochkonsonant",
+            "glyph": "รีด",
+            "class": "Tiefkonsonant",
             "syllable": "geschlossen",
-            "length": "kurz",
-            "tone": "tief"
+            "length": "lang",
+            "tone": "fallend"
           }
         ],
-        "initial_class": "Hochkonsonant",
-        "rule_hint": "Hochkonsonant + geschlossene Silbe + kurzer Vokal -> tief",
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": "Tiefkonsonant + geschlossene Silbe + langer Vokal -> fallend",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ผัด"
+      "forvo_slug": "รีด"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1793116069.6009061,
+  "phase": "vormittag",
+  "last_updated": 1793153155.7390528,
   "word_count": 383,
   "cycle": 54
 }
