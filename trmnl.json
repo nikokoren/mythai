@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-10-28",
-    "day_index": 20754,
-    "index": 72,
+    "date": "2026-10-29",
+    "day_index": 20755,
+    "index": 73,
     "word": {
-      "thai": "รีด",
-      "rtgs": "rit",
-      "pos": "Verb",
-      "gloss_de": "bügeln",
-      "topic": "Wohnen & Haushalt",
-      "example_th": "เธอ รีด ผ้าอย่างเรียบร้อย",
-      "example_de": "Sie bügelt die Wäsche ordentlich.",
+      "thai": "เทา",
+      "rtgs": "thao",
+      "pos": "Adjektiv",
+      "gloss_de": "grau",
+      "topic": "Farben",
+      "example_th": "กำแพงสี เทา ดูสงบ",
+      "example_de": "Graue Wände wirken ruhig.",
       "tone": {
         "syllables": [
           {
-            "glyph": "รีด",
+            "glyph": "เทา",
             "class": "Tiefkonsonant",
-            "syllable": "geschlossen",
-            "length": "lang",
-            "tone": "fallend"
+            "syllable": "offen",
+            "length": "kurz",
+            "tone": "mittel"
           }
         ],
         "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + geschlossene Silbe + langer Vokal -> fallend",
+        "rule_hint": "Tiefkonsonant + offene Silbe + kurzer Vokal -> mittel",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "รีด"
+      "forvo_slug": "เทา"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1793205062.2386122,
+  "phase": "vormittag",
+  "last_updated": 1793240178.8564901,
   "word_count": 383,
   "cycle": 54
 }
