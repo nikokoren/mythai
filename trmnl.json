@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-10-29",
-    "day_index": 20755,
-    "index": 73,
+    "date": "2026-10-30",
+    "day_index": 20756,
+    "index": 74,
     "word": {
-      "thai": "เทา",
-      "rtgs": "thao",
-      "pos": "Adjektiv",
-      "gloss_de": "grau",
-      "topic": "Farben",
-      "example_th": "กำแพงสี เทา ดูสงบ",
-      "example_de": "Graue Wände wirken ruhig.",
+      "thai": "ฉัน",
+      "rtgs": "chan",
+      "pos": "Pronomen",
+      "gloss_de": "ich (weiblich; informell)",
+      "topic": "Pronomen",
+      "example_th": "ฉันชอบอาหารไทย",
+      "example_de": "Ich mag thailaendisches Essen.",
       "tone": {
         "syllables": [
           {
-            "glyph": "เทา",
-            "class": "Tiefkonsonant",
-            "syllable": "offen",
+            "glyph": "ฉัน",
+            "class": "Hochkonsonant",
+            "syllable": "geschlossen",
             "length": "kurz",
-            "tone": "mittel"
+            "tone": "steigend"
           }
         ],
-        "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + offene Silbe + kurzer Vokal -> mittel",
+        "initial_class": "Hochkonsonant",
+        "rule_hint": "Hochkonsonant + geschlossene Silbe + kurzer Vokal -> steigend",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "เทา"
+      "forvo_slug": "ฉัน"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1793292434.3883579,
+  "phase": "vormittag",
+  "last_updated": 1793327381.4817395,
   "word_count": 383,
   "cycle": 54
 }
