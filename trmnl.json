@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-10-30",
-    "day_index": 20756,
-    "index": 74,
+    "date": "2026-10-31",
+    "day_index": 20757,
+    "index": 75,
     "word": {
-      "thai": "ฉัน",
-      "rtgs": "chan",
-      "pos": "Pronomen",
-      "gloss_de": "ich (weiblich; informell)",
-      "topic": "Pronomen",
-      "example_th": "ฉันชอบอาหารไทย",
-      "example_de": "Ich mag thailaendisches Essen.",
+      "thai": "ต้อง",
+      "rtgs": "tong",
+      "pos": "Verb",
+      "gloss_de": "muessen",
+      "topic": "Alltagsverben",
+      "example_th": "ผมต้องทำงานวันนี้",
+      "example_de": "Ich muss heute arbeiten.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ฉัน",
-            "class": "Hochkonsonant",
+            "glyph": "ต้อง",
+            "class": "Mittelkonsonant",
             "syllable": "geschlossen",
-            "length": "kurz",
-            "tone": "steigend"
+            "length": "lang",
+            "tone": "fallend"
           }
         ],
-        "initial_class": "Hochkonsonant",
-        "rule_hint": "Hochkonsonant + geschlossene Silbe + kurzer Vokal -> steigend",
+        "initial_class": "Mittelkonsonant",
+        "rule_hint": "Mittelkonsonant + geschlossene Silbe + langer Vokal + Tonzeichen ้ -> fallend",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ฉัน"
+      "forvo_slug": "ต้อง"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1793378180.402264,
+  "phase": "vormittag",
+  "last_updated": 1793412760.560743,
   "word_count": 383,
   "cycle": 54
 }
