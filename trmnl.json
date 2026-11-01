@@ -1,35 +1,27 @@
 {
   "daily": {
-    "date": "2026-10-31",
-    "day_index": 20757,
-    "index": 75,
+    "date": "2026-11-01",
+    "day_index": 20758,
+    "index": 76,
     "word": {
-      "thai": "ต้อง",
-      "rtgs": "tong",
-      "pos": "Verb",
-      "gloss_de": "muessen",
-      "topic": "Alltagsverben",
-      "example_th": "ผมต้องทำงานวันนี้",
-      "example_de": "Ich muss heute arbeiten.",
+      "thai": "ถอนเงิน",
+      "rtgs": "thon ngoen",
+      "pos": "Verbphrase",
+      "gloss_de": "Geld abheben",
+      "topic": "Einkaufen & Geld",
+      "example_th": "เขาไป ถอนเงิน ที่ตู้เอทีเอ็ม",
+      "example_de": "Er hebt Geld am Geldautomaten ab.",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "ต้อง",
-            "class": "Mittelkonsonant",
-            "syllable": "geschlossen",
-            "length": "lang",
-            "tone": "fallend"
-          }
-        ],
-        "initial_class": "Mittelkonsonant",
-        "rule_hint": "Mittelkonsonant + geschlossene Silbe + langer Vokal + Tonzeichen ้ -> fallend",
-        "source": "regelbasiert berechnet"
+        "syllables": null,
+        "initial_class": "Hochkonsonant",
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "ต้อง"
+      "forvo_slug": "ถอนเงิน"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1793461170.6318917,
+  "phase": "vormittag",
+  "last_updated": 1793498590.2141435,
   "word_count": 383,
   "cycle": 54
 }
