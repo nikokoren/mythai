@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-11-03",
-    "day_index": 20760,
-    "index": 78,
+    "date": "2026-11-04",
+    "day_index": 20761,
+    "index": 79,
     "word": {
-      "thai": "เปียก",
-      "rtgs": "piak",
-      "pos": "Adjektiv",
-      "gloss_de": "nass",
-      "topic": "Eigenschaften",
-      "example_th": "รองเท้าเปียกหมดเลย",
-      "example_de": "Meine Schuhe sind ganz nass.",
+      "thai": "เดือน",
+      "rtgs": "duean",
+      "pos": "Nomen",
+      "gloss_de": "Monat; Mond",
+      "topic": "Zeit & Kalender",
+      "example_th": "ฉันวางแผนท่องเที่ยวเดือนหน้า",
+      "example_de": "Ich plane eine Reise für nächsten Monat.",
       "tone": {
         "syllables": [
           {
-            "glyph": "เปียก",
+            "glyph": "เดือน",
             "class": "Mittelkonsonant",
             "syllable": "geschlossen",
             "length": "lang",
-            "tone": "tief"
+            "tone": "mittel"
           }
         ],
         "initial_class": "Mittelkonsonant",
-        "rule_hint": "Mittelkonsonant + geschlossene Silbe + langer Vokal -> tief",
+        "rule_hint": "Mittelkonsonant + geschlossene Silbe + langer Vokal -> mittel",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "เปียก"
+      "forvo_slug": "เดือน"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1793727522.0513673,
+  "phase": "vormittag",
+  "last_updated": 1793761087.9499152,
   "word_count": 383,
   "cycle": 54
 }
