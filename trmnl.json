@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-11-04",
-    "day_index": 20761,
-    "index": 79,
+    "date": "2026-11-05",
+    "day_index": 20762,
+    "index": 80,
     "word": {
-      "thai": "เดือน",
-      "rtgs": "duean",
-      "pos": "Nomen",
-      "gloss_de": "Monat; Mond",
-      "topic": "Zeit & Kalender",
-      "example_th": "ฉันวางแผนท่องเที่ยวเดือนหน้า",
-      "example_de": "Ich plane eine Reise für nächsten Monat.",
+      "thai": "ออก",
+      "rtgs": "ok",
+      "pos": "Verb/Adverb",
+      "gloss_de": "abfahren; heraus",
+      "topic": "Bewegung",
+      "example_th": "เครื่องบิน ออก ตอนเจ็ดโมงเช้า",
+      "example_de": "Das Flugzeug startet um sieben Uhr morgens.",
       "tone": {
         "syllables": [
           {
-            "glyph": "เดือน",
+            "glyph": "ออก",
             "class": "Mittelkonsonant",
             "syllable": "geschlossen",
             "length": "lang",
-            "tone": "mittel"
+            "tone": "tief"
           }
         ],
         "initial_class": "Mittelkonsonant",
-        "rule_hint": "Mittelkonsonant + geschlossene Silbe + langer Vokal -> mittel",
+        "rule_hint": "Mittelkonsonant + geschlossene Silbe + langer Vokal -> tief",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "เดือน"
+      "forvo_slug": "ออก"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1793814771.8650064,
+  "phase": "vormittag",
+  "last_updated": 1793849049.752876,
   "word_count": 383,
   "cycle": 54
 }
