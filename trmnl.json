@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-11-05",
-    "day_index": 20762,
-    "index": 80,
+    "date": "2026-11-06",
+    "day_index": 20763,
+    "index": 81,
     "word": {
-      "thai": "ออก",
-      "rtgs": "ok",
-      "pos": "Verb/Adverb",
-      "gloss_de": "abfahren; heraus",
-      "topic": "Bewegung",
-      "example_th": "เครื่องบิน ออก ตอนเจ็ดโมงเช้า",
-      "example_de": "Das Flugzeug startet um sieben Uhr morgens.",
+      "thai": "ใช่",
+      "rtgs": "chai",
+      "pos": "Verb/Partikel",
+      "gloss_de": "ja",
+      "topic": "Begruessung & Hoeflichkeit",
+      "example_th": "เขาตอบว่า ใช่ อย่างมั่นใจ",
+      "example_de": "Er antwortete selbstbewusst: Ja.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ออก",
-            "class": "Mittelkonsonant",
-            "syllable": "geschlossen",
-            "length": "lang",
-            "tone": "tief"
+            "glyph": "ใช่",
+            "class": "Tiefkonsonant",
+            "syllable": "offen",
+            "length": "kurz",
+            "tone": "fallend"
           }
         ],
-        "initial_class": "Mittelkonsonant",
-        "rule_hint": "Mittelkonsonant + geschlossene Silbe + langer Vokal -> tief",
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": "Tiefkonsonant + offene Silbe + kurzer Vokal + Tonzeichen ่ -> fallend",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ออก"
+      "forvo_slug": "ใช่"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1793901309.480404,
+  "phase": "vormittag",
+  "last_updated": 1793935195.6895292,
   "word_count": 383,
   "cycle": 54
 }
