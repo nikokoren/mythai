@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-11-06",
-    "day_index": 20763,
-    "index": 81,
+    "date": "2026-11-07",
+    "day_index": 20764,
+    "index": 82,
     "word": {
-      "thai": "ใช่",
-      "rtgs": "chai",
-      "pos": "Verb/Partikel",
-      "gloss_de": "ja",
-      "topic": "Begruessung & Hoeflichkeit",
-      "example_th": "เขาตอบว่า ใช่ อย่างมั่นใจ",
-      "example_de": "Er antwortete selbstbewusst: Ja.",
+      "thai": "นม",
+      "rtgs": "nom",
+      "pos": "Nomen",
+      "gloss_de": "Milch",
+      "topic": "Essen & Trinken",
+      "example_th": "ลูกดื่ม นม อุ่นก่อนนอน",
+      "example_de": "Das Kind trinkt vor dem Schlafen warme Milch.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ใช่",
+            "glyph": "นม",
             "class": "Tiefkonsonant",
-            "syllable": "offen",
+            "syllable": "geschlossen",
             "length": "kurz",
-            "tone": "fallend"
+            "tone": "mittel"
           }
         ],
         "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + offene Silbe + kurzer Vokal + Tonzeichen ่ -> fallend",
+        "rule_hint": "Tiefkonsonant + geschlossene Silbe + kurzer Vokal -> mittel",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ใช่"
+      "forvo_slug": "นม"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1793985372.5266511,
+  "phase": "vormittag",
+  "last_updated": 1794019138.309113,
   "word_count": 383,
   "cycle": 54
 }
