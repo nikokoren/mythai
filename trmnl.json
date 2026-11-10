@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-11-09",
-    "day_index": 20766,
-    "index": 84,
+    "date": "2026-11-10",
+    "day_index": 20767,
+    "index": 85,
     "word": {
-      "thai": "เจ็ด",
-      "rtgs": "chet",
-      "pos": "Numerale",
-      "gloss_de": "sieben",
-      "topic": "Zahlen",
-      "example_th": "หนึ่งสัปดาห์มีเจ็ดวัน",
-      "example_de": "Eine Woche hat sieben Tage.",
+      "thai": "ท้อง",
+      "rtgs": "thong",
+      "pos": "Nomen",
+      "gloss_de": "Bauch",
+      "topic": "Gesundheit & Koerper",
+      "example_th": "ฉันปวดท้องตั้งแต่เมื่อวาน",
+      "example_de": "Ich habe seit gestern Bauchschmerzen.",
       "tone": {
         "syllables": [
           {
-            "glyph": "เจ็ด",
-            "class": "Mittelkonsonant",
+            "glyph": "ท้อง",
+            "class": "Tiefkonsonant",
             "syllable": "geschlossen",
-            "length": "kurz",
-            "tone": "tief"
+            "length": "lang",
+            "tone": "hoch"
           }
         ],
-        "initial_class": "Mittelkonsonant",
-        "rule_hint": "Mittelkonsonant + geschlossene Silbe + kurzer Vokal -> tief",
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": "Tiefkonsonant + geschlossene Silbe + langer Vokal + Tonzeichen ้ -> hoch",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "เจ็ด"
+      "forvo_slug": "ท้อง"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1794256391.3921719,
+  "phase": "vormittag",
+  "last_updated": 1794285229.119867,
   "word_count": 383,
   "cycle": 54
 }
