@@ -1,27 +1,27 @@
 {
   "daily": {
-    "date": "2026-11-11",
-    "day_index": 20768,
-    "index": 86,
+    "date": "2026-11-12",
+    "day_index": 20769,
+    "index": 87,
     "word": {
-      "thai": "ข้างหลัง",
-      "rtgs": "khang lang",
-      "pos": "Adverb/Praeposition",
-      "gloss_de": "hinten; hinter",
-      "topic": "Richtung & Ort",
-      "example_th": "สวนอยู่ ข้างหลัง บ้านเรา",
-      "example_de": "Der Garten ist hinter unserem Haus.",
+      "thai": "เมื่อวาน",
+      "rtgs": "muea wan",
+      "pos": "Adverb/Nomen",
+      "gloss_de": "gestern",
+      "topic": "Zeit & Kalender",
+      "example_th": "เมื่อวาน ฉันทำงานจากบ้าน",
+      "example_de": "Gestern habe ich von zu Hause gearbeitet.",
       "tone": {
         "syllables": null,
-        "initial_class": "Hochkonsonant",
+        "initial_class": "Tiefkonsonant",
         "rule_hint": null,
         "source": "unvollstaendig"
       },
-      "forvo_slug": "ข้างหลัง"
+      "forvo_slug": "เมื่อวาน"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1794419241.18872,
+  "phase": "vormittag",
+  "last_updated": 1794454985.9537926,
   "word_count": 383,
   "cycle": 54
 }
