@@ -7770,29 +7770,37 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1794506475.58736,
+  "last_updated": 1794540044.5716603,
   "daily": {
-    "date": "2026-11-12",
-    "day_index": 20769,
-    "index": 87,
+    "date": "2026-11-13",
+    "day_index": 20770,
+    "index": 88,
     "word": {
-      "thai": "เมื่อวาน",
-      "rtgs": "muea wan",
-      "pos": "Adverb/Nomen",
-      "gloss_de": "gestern",
-      "topic": "Zeit & Kalender",
-      "example_th": "เมื่อวาน ฉันทำงานจากบ้าน",
-      "example_de": "Gestern habe ich von zu Hause gearbeitet.",
+      "thai": "เพื่อน",
+      "rtgs": "phuean",
+      "pos": "Nomen",
+      "gloss_de": "Freund; Freundin",
+      "topic": "Familie & Menschen",
+      "example_th": "ฉันไปดูหนังกับ เพื่อน",
+      "example_de": "Ich gehe mit Freunden ins Kino.",
       "tone": {
-        "syllables": null,
+        "syllables": [
+          {
+            "glyph": "เพื่อน",
+            "class": "Tiefkonsonant",
+            "syllable": "geschlossen",
+            "length": "lang",
+            "tone": "fallend"
+          }
+        ],
         "initial_class": "Tiefkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "rule_hint": "Tiefkonsonant + geschlossene Silbe + langer Vokal + Tonzeichen ่ -> fallend",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "เมื่อวาน"
+      "forvo_slug": "เพื่อน"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
