@@ -7770,37 +7770,29 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1794591336.7026384,
+  "last_updated": 1794625215.870676,
   "daily": {
-    "date": "2026-11-13",
-    "day_index": 20770,
-    "index": 88,
+    "date": "2026-11-14",
+    "day_index": 20771,
+    "index": 89,
     "word": {
-      "thai": "เพื่อน",
-      "rtgs": "phuean",
+      "thai": "จักรยาน",
+      "rtgs": "chakkrayan",
       "pos": "Nomen",
-      "gloss_de": "Freund; Freundin",
-      "topic": "Familie & Menschen",
-      "example_th": "ฉันไปดูหนังกับ เพื่อน",
-      "example_de": "Ich gehe mit Freunden ins Kino.",
+      "gloss_de": "Fahrrad",
+      "topic": "Reisen & Verkehr",
+      "example_th": "เขาปั่น จักรยาน ทุกเช้า",
+      "example_de": "Er fährt jeden Morgen Fahrrad.",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "เพื่อน",
-            "class": "Tiefkonsonant",
-            "syllable": "geschlossen",
-            "length": "lang",
-            "tone": "fallend"
-          }
-        ],
-        "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + geschlossene Silbe + langer Vokal + Tonzeichen ่ -> fallend",
-        "source": "regelbasiert berechnet"
+        "syllables": null,
+        "initial_class": "Mittelkonsonant",
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "เพื่อน"
+      "forvo_slug": "จักรยาน"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
