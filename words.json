@@ -7770,29 +7770,29 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1794673698.6378727,
+  "last_updated": 1794709811.5647194,
   "daily": {
-    "date": "2026-11-14",
-    "day_index": 20771,
-    "index": 89,
+    "date": "2026-11-15",
+    "day_index": 20772,
+    "index": 90,
     "word": {
-      "thai": "จักรยาน",
-      "rtgs": "chakkrayan",
-      "pos": "Nomen",
-      "gloss_de": "Fahrrad",
-      "topic": "Reisen & Verkehr",
-      "example_th": "เขาปั่น จักรยาน ทุกเช้า",
-      "example_de": "Er fährt jeden Morgen Fahrrad.",
+      "thai": "เข้าใจ",
+      "rtgs": "khao chai",
+      "pos": "Verb",
+      "gloss_de": "verstehen",
+      "topic": "Gefuehle & Kommunikation",
+      "example_th": "ตอนนี้ฉัน เข้าใจ คำอธิบายแล้ว",
+      "example_de": "Jetzt verstehe ich die Erklärung.",
       "tone": {
         "syllables": null,
-        "initial_class": "Mittelkonsonant",
+        "initial_class": "Hochkonsonant",
         "rule_hint": null,
         "source": "unvollstaendig"
       },
-      "forvo_slug": "จักรยาน"
+      "forvo_slug": "เข้าใจ"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
