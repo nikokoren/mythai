@@ -7770,29 +7770,29 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1794859740.3218553,
+  "last_updated": 1794891626.1424248,
   "daily": {
-    "date": "2026-11-16",
-    "day_index": 20773,
-    "index": 91,
+    "date": "2026-11-17",
+    "day_index": 20774,
+    "index": 92,
     "word": {
-      "thai": "โรงเรียน",
-      "rtgs": "rong rian",
+      "thai": "ทะเลทราย",
+      "rtgs": "thale sai",
       "pos": "Nomen",
-      "gloss_de": "Schule",
-      "topic": "Schule & Lernen",
-      "example_th": "เด็กๆ ไป โรงเรียน ตอนเจ็ดโมงเช้า",
-      "example_de": "Die Kinder gehen um sieben Uhr morgens zur Schule.",
+      "gloss_de": "Wüste",
+      "topic": "Natur & Orte",
+      "example_th": "ทะเลทรายร้อนมากตอนกลางวัน",
+      "example_de": "In der Wüste ist es tagsüber sehr heiß.",
       "tone": {
         "syllables": null,
         "initial_class": "Tiefkonsonant",
         "rule_hint": null,
         "source": "unvollstaendig"
       },
-      "forvo_slug": "โรงเรียน"
+      "forvo_slug": "ทะเลทราย"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
