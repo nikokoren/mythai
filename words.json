@@ -7770,29 +7770,29 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1794942010.6066093,
+  "last_updated": 1794974828.5466123,
   "daily": {
-    "date": "2026-11-17",
-    "day_index": 20774,
-    "index": 92,
+    "date": "2026-11-18",
+    "day_index": 20775,
+    "index": 93,
     "word": {
-      "thai": "ทะเลทราย",
-      "rtgs": "thale sai",
+      "thai": "บัตร",
+      "rtgs": "bat",
       "pos": "Nomen",
-      "gloss_de": "Wüste",
-      "topic": "Natur & Orte",
-      "example_th": "ทะเลทรายร้อนมากตอนกลางวัน",
-      "example_de": "In der Wüste ist es tagsüber sehr heiß.",
+      "gloss_de": "Karte; Ausweis",
+      "topic": "Einkaufen & Geld",
+      "example_th": "ฉันจ่ายด้วย บัตร เครดิต",
+      "example_de": "Ich zahle mit Kreditkarte.",
       "tone": {
         "syllables": null,
-        "initial_class": "Tiefkonsonant",
+        "initial_class": "Mittelkonsonant",
         "rule_hint": null,
         "source": "unvollstaendig"
       },
-      "forvo_slug": "ทะเลทราย"
+      "forvo_slug": "บัตร"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
