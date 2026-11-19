@@ -7770,29 +7770,29 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1795027461.8443284,
+  "last_updated": 1795061018.4822562,
   "daily": {
-    "date": "2026-11-18",
-    "day_index": 20775,
-    "index": 93,
+    "date": "2026-11-19",
+    "day_index": 20776,
+    "index": 94,
     "word": {
-      "thai": "บัตร",
-      "rtgs": "bat",
-      "pos": "Nomen",
-      "gloss_de": "Karte; Ausweis",
-      "topic": "Einkaufen & Geld",
-      "example_th": "ฉันจ่ายด้วย บัตร เครดิต",
-      "example_de": "Ich zahle mit Kreditkarte.",
+      "thai": "ปีนเขา",
+      "rtgs": "pin khao",
+      "pos": "Nomen/Verb",
+      "gloss_de": "wandern",
+      "topic": "Freizeit & Medien",
+      "example_th": "สุดสัปดาห์นี้ไปปีนเขากัน",
+      "example_de": "Dieses Wochenende gehen wir wandern.",
       "tone": {
         "syllables": null,
         "initial_class": "Mittelkonsonant",
         "rule_hint": null,
         "source": "unvollstaendig"
       },
-      "forvo_slug": "บัตร"
+      "forvo_slug": "ปีนเขา"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
