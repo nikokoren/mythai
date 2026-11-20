@@ -1,27 +1,35 @@
 {
   "daily": {
-    "date": "2026-11-19",
-    "day_index": 20776,
-    "index": 94,
+    "date": "2026-11-20",
+    "day_index": 20777,
+    "index": 95,
     "word": {
-      "thai": "ปีนเขา",
-      "rtgs": "pin khao",
-      "pos": "Nomen/Verb",
-      "gloss_de": "wandern",
-      "topic": "Freizeit & Medien",
-      "example_th": "สุดสัปดาห์นี้ไปปีนเขากัน",
-      "example_de": "Dieses Wochenende gehen wir wandern.",
+      "thai": "ช้าง",
+      "rtgs": "chang",
+      "pos": "Nomen",
+      "gloss_de": "Elefant",
+      "topic": "Tiere",
+      "example_th": "ช้างเป็นสัตว์ประจำชาติไทย",
+      "example_de": "Der Elefant ist Thailands Nationaltier.",
       "tone": {
-        "syllables": null,
-        "initial_class": "Mittelkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "ช้าง",
+            "class": "Tiefkonsonant",
+            "syllable": "geschlossen",
+            "length": "lang",
+            "tone": "hoch"
+          }
+        ],
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": "Tiefkonsonant + geschlossene Silbe + langer Vokal + Tonzeichen ้ -> hoch",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ปีนเขา"
+      "forvo_slug": "ช้าง"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1795114524.78634,
+  "phase": "vormittag",
+  "last_updated": 1795146934.7873452,
   "word_count": 383,
   "cycle": 54
 }
