@@ -7770,37 +7770,37 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1795199169.3213456,
+  "last_updated": 1795233143.0278006,
   "daily": {
-    "date": "2026-11-20",
-    "day_index": 20777,
-    "index": 95,
+    "date": "2026-11-21",
+    "day_index": 20778,
+    "index": 96,
     "word": {
-      "thai": "ช้าง",
-      "rtgs": "chang",
+      "thai": "เตียง",
+      "rtgs": "tiang",
       "pos": "Nomen",
-      "gloss_de": "Elefant",
-      "topic": "Tiere",
-      "example_th": "ช้างเป็นสัตว์ประจำชาติไทย",
-      "example_de": "Der Elefant ist Thailands Nationaltier.",
+      "gloss_de": "Bett",
+      "topic": "Wohnen & Haushalt",
+      "example_th": "ฉันปูผ้าปูที่นอนบน เตียง ใหม่",
+      "example_de": "Ich beziehe das Bett neu.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ช้าง",
-            "class": "Tiefkonsonant",
+            "glyph": "เตียง",
+            "class": "Mittelkonsonant",
             "syllable": "geschlossen",
             "length": "lang",
-            "tone": "hoch"
+            "tone": "mittel"
           }
         ],
-        "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + geschlossene Silbe + langer Vokal + Tonzeichen ้ -> hoch",
+        "initial_class": "Mittelkonsonant",
+        "rule_hint": "Mittelkonsonant + geschlossene Silbe + langer Vokal -> mittel",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ช้าง"
+      "forvo_slug": "เตียง"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
