@@ -1,27 +1,35 @@
 {
   "daily": {
-    "date": "2026-11-22",
-    "day_index": 20779,
-    "index": 97,
+    "date": "2026-11-23",
+    "day_index": 20780,
+    "index": 98,
     "word": {
-      "thai": "ต้มยำ",
-      "rtgs": "tom yam",
-      "pos": "Nomen",
-      "gloss_de": "Tom Yam (scharfe Suppe)",
-      "topic": "Essen & Trinken",
-      "example_th": "ต้มยำกุ้งเผ็ดมาก",
-      "example_de": "Tom Yam Gung ist sehr scharf.",
+      "thai": "ยัง",
+      "rtgs": "yang",
+      "pos": "Adverb",
+      "gloss_de": "noch; noch nicht",
+      "topic": "Grammatik & Partikeln",
+      "example_th": "เขายังไม่มา",
+      "example_de": "Er ist noch nicht gekommen.",
       "tone": {
-        "syllables": null,
-        "initial_class": "Mittelkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "ยัง",
+            "class": "Tiefkonsonant",
+            "syllable": "geschlossen",
+            "length": "kurz",
+            "tone": "mittel"
+          }
+        ],
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": "Tiefkonsonant + geschlossene Silbe + kurzer Vokal -> mittel",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ต้มยำ"
+      "forvo_slug": "ยัง"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1795369311.3896203,
+  "phase": "vormittag",
+  "last_updated": 1795405137.6106148,
   "word_count": 383,
   "cycle": 54
 }
