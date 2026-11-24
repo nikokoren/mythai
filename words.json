@@ -7770,37 +7770,37 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1795471032.1528118,
+  "last_updated": 1795503186.388492,
   "daily": {
-    "date": "2026-11-23",
-    "day_index": 20780,
-    "index": 98,
+    "date": "2026-11-24",
+    "day_index": 20781,
+    "index": 99,
     "word": {
-      "thai": "ยัง",
-      "rtgs": "yang",
-      "pos": "Adverb",
-      "gloss_de": "noch; noch nicht",
-      "topic": "Grammatik & Partikeln",
-      "example_th": "เขายังไม่มา",
-      "example_de": "Er ist noch nicht gekommen.",
+      "thai": "ใหญ่",
+      "rtgs": "yai",
+      "pos": "Adjektiv",
+      "gloss_de": "groß",
+      "topic": "Eigenschaften",
+      "example_th": "บ้านหลังนี้ ใหญ่ และสว่าง",
+      "example_de": "Dieses Haus ist groß und hell.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ยัง",
-            "class": "Tiefkonsonant",
-            "syllable": "geschlossen",
+            "glyph": "ใหญ่",
+            "class": "Hochkonsonant",
+            "syllable": "offen",
             "length": "kurz",
-            "tone": "mittel"
+            "tone": "tief"
           }
         ],
-        "initial_class": "Tiefkonsonant",
-        "rule_hint": "Tiefkonsonant + geschlossene Silbe + kurzer Vokal -> mittel",
+        "initial_class": "Hochkonsonant",
+        "rule_hint": "Hochkonsonant + offene Silbe + kurzer Vokal + Tonzeichen ่ -> tief",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ยัง"
+      "forvo_slug": "ใหญ่"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
