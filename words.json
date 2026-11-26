@@ -7770,37 +7770,29 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1795636219.8939128,
+  "last_updated": 1795668748.278086,
   "daily": {
-    "date": "2026-11-25",
-    "day_index": 20782,
-    "index": 100,
+    "date": "2026-11-26",
+    "day_index": 20783,
+    "index": 101,
     "word": {
-      "thai": "เป็น",
-      "rtgs": "pen",
-      "pos": "Verb",
-      "gloss_de": "sein (Zustand, Beruf)",
-      "topic": "Alltagsverben",
-      "example_th": "เขาเป็นครู",
-      "example_de": "Er ist Lehrer.",
+      "thai": "เมษายน",
+      "rtgs": "mesayon",
+      "pos": "Nomen",
+      "gloss_de": "April",
+      "topic": "Zeit & Kalender",
+      "example_th": "เดือนเมษายนร้อนมากในไทย",
+      "example_de": "Der April ist in Thailand sehr heiss.",
       "tone": {
-        "syllables": [
-          {
-            "glyph": "เป็น",
-            "class": "Mittelkonsonant",
-            "syllable": "geschlossen",
-            "length": "kurz",
-            "tone": "mittel"
-          }
-        ],
-        "initial_class": "Mittelkonsonant",
-        "rule_hint": "Mittelkonsonant + geschlossene Silbe + kurzer Vokal -> mittel",
-        "source": "regelbasiert berechnet"
+        "syllables": null,
+        "initial_class": "Tiefkonsonant",
+        "rule_hint": null,
+        "source": "unvollstaendig"
       },
-      "forvo_slug": "เป็น"
+      "forvo_slug": "เมษายน"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
