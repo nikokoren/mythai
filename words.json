@@ -7770,29 +7770,37 @@
       "forvo_slug": "ตั๋ว"
     }
   ],
-  "last_updated": 1795721271.3917162,
+  "last_updated": 1795755257.3326933,
   "daily": {
-    "date": "2026-11-26",
-    "day_index": 20783,
-    "index": 101,
+    "date": "2026-11-27",
+    "day_index": 20784,
+    "index": 102,
     "word": {
-      "thai": "เมษายน",
-      "rtgs": "mesayon",
+      "thai": "ขา",
+      "rtgs": "kha",
       "pos": "Nomen",
-      "gloss_de": "April",
-      "topic": "Zeit & Kalender",
-      "example_th": "เดือนเมษายนร้อนมากในไทย",
-      "example_de": "Der April ist in Thailand sehr heiss.",
+      "gloss_de": "Bein",
+      "topic": "Gesundheit & Koerper",
+      "example_th": "ขาของผมเจ็บ",
+      "example_de": "Mein Bein tut weh.",
       "tone": {
-        "syllables": null,
-        "initial_class": "Tiefkonsonant",
-        "rule_hint": null,
-        "source": "unvollstaendig"
+        "syllables": [
+          {
+            "glyph": "ขา",
+            "class": "Hochkonsonant",
+            "syllable": "offen",
+            "length": "lang",
+            "tone": "steigend"
+          }
+        ],
+        "initial_class": "Hochkonsonant",
+        "rule_hint": "Hochkonsonant + offene Silbe + langer Vokal -> steigend",
+        "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "เมษายน"
+      "forvo_slug": "ขา"
     }
   },
   "word_count": 383,
   "cycle": 54,
-  "phase": "nachmittag"
+  "phase": "vormittag"
 }
