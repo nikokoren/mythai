@@ -1,35 +1,35 @@
 {
   "daily": {
-    "date": "2026-11-27",
-    "day_index": 20784,
-    "index": 102,
+    "date": "2026-11-28",
+    "day_index": 20785,
+    "index": 103,
     "word": {
-      "thai": "ขา",
-      "rtgs": "kha",
-      "pos": "Nomen",
-      "gloss_de": "Bein",
-      "topic": "Gesundheit & Koerper",
-      "example_th": "ขาของผมเจ็บ",
-      "example_de": "Mein Bein tut weh.",
+      "thai": "ต้ม",
+      "rtgs": "tom",
+      "pos": "Verb",
+      "gloss_de": "kochen; sieden",
+      "topic": "Essen & Trinken",
+      "example_th": "แม่ ต้ม ซุปไก่ตอนเย็น",
+      "example_de": "Mama kocht abends Hühnersuppe.",
       "tone": {
         "syllables": [
           {
-            "glyph": "ขา",
-            "class": "Hochkonsonant",
-            "syllable": "offen",
-            "length": "lang",
-            "tone": "steigend"
+            "glyph": "ต้ม",
+            "class": "Mittelkonsonant",
+            "syllable": "geschlossen",
+            "length": "kurz",
+            "tone": "fallend"
           }
         ],
-        "initial_class": "Hochkonsonant",
-        "rule_hint": "Hochkonsonant + offene Silbe + langer Vokal -> steigend",
+        "initial_class": "Mittelkonsonant",
+        "rule_hint": "Mittelkonsonant + geschlossene Silbe + kurzer Vokal + Tonzeichen ้ -> fallend",
         "source": "regelbasiert berechnet"
       },
-      "forvo_slug": "ขา"
+      "forvo_slug": "ต้ม"
     }
   },
-  "phase": "nachmittag",
-  "last_updated": 1795807436.793951,
+  "phase": "vormittag",
+  "last_updated": 1795840770.6671321,
   "word_count": 383,
   "cycle": 54
 }
